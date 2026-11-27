@@ -22,10 +22,10 @@ Dữ liệu là các file `.js` nạp bằng thẻ `<script>` (không dùng fetc
 | `data/tests/mini1.js` | Thi thử mini **50 câu** (Nghe 25 · Đọc 25), đủ 7 Part, có câu kèm bảng, chuỗi tin nhắn, đoạn kép. Không trùng câu với bài xếp lớp. Là bài thi chuyển GĐ1 → GĐ2 (≥ 300) |
 | `data/stage2–5/*` | Khung 4 giai đoạn + 5 bài mẫu: s2-l1, s2-l2, s3-l1, s4-l1, s5-l1 |
 | `data/parts/part1–7.js` | Ngân hàng luyện Part: 3 + 4 + 1 + 1 + 6 + 1 + 2 nhóm câu, có `lvl` |
-| `data/tests/full1.js` | Khung đề đầy đủ (chưa có câu hỏi; màn hình đề hiện bảng cấu trúc) |
+| `data/tests/full1*.js` | **Đề đầy đủ 200 câu** (2026-11-27): `full1-p12.js` P1 6 + P2 25 · `full1-p3.js` P3 13×3 · `full1-p4.js` P4 10×3 · `full1-p56.js` P5 30 + P6 4×4 · `full1-p7.js` P7 54 (10 đoạn đơn = 29 câu, 2 đoạn kép × 5, 3 đoạn ba × 5). Mỗi file gán `TOEIC.full1.pXX`; `full1.js` (nạp sau cùng) ghép lại. Id `full1-pN-xx`. |
 | `tools/` | `validate.js` (rà dữ liệu), `e2e.py` (kiểm thử trình duyệt). Không được `index.html` nạp |
 
-**Số liệu hiện có:** 59 bài học (GĐ1 23 · GĐ2 23 · GĐ3 6 · GĐ4 6 · GĐ5 1 bài mẫu) · 1.218 từ vựng · 1.001 câu hỏi · 12 bài kiểm tra chặng · đề mini1, mini2 · ngân hàng luyện Part: P1 25, P2 61, P3 14, P4 12, P5 292, P6 29, P7 19 nhóm (tính cả câu trong bài học). **GĐ1 và GĐ2 đã đủ bài + bài thi chuyển giai đoạn.**
+**Số liệu hiện có:** 59 bài học · 1.218 từ vựng · 1.201 câu hỏi · 12 bài kiểm tra chặng · đề mini1, mini2 · **đề đầy đủ full1 200 câu** · ngân hàng luyện mỗi Part ≥ 10 nhóm. GĐ1 và GĐ2 đã đủ bài + bài thi chuyển giai đoạn.
 
 **Mới (2026-11-27):** giao diện mới (font Be Vietnam Pro, icon SVG, hero gradient); thêm 10 bài ngữ pháp GĐ1 (chặng u2b, u2c); trang **Ngữ pháp theo chủ đề** `#/grammar` theo cây 17 chủ đề (xem mục 2b); deploy Vercel tại https://toeic-0-990.vercel.app (chạy `npx vercel deploy --prod` trong thư mục này).
 
@@ -35,7 +35,7 @@ Dữ liệu là các file `.js` nạp bằng thẻ `<script>` (không dùng fetc
 - GĐ2: chưa có bài chiến lược Part 1–4, Part 6, Part 7; chưa có đề `mini2` làm `gateTest` (≥ 500).
 - Giai đoạn 3–5 mới có 1 bài mẫu mỗi giai đoạn; GĐ2–5 chưa có bài thi chuyển giai đoạn (`gateTest: null`).
 - Ngân hàng luyện Part còn mỏng (Part 3, 4, 6 mỗi Part 1 nhóm).
-- Đề đầy đủ `full1` chưa có câu hỏi.
+- Mới có 1 đề đầy đủ (full1). Nên có thêm full2, full3… (cùng cách chia file).
 
 ### ⚠️ Lưu ý khi sửa dữ liệu
 - Đổi nội dung câu hỏi hoặc thêm/bớt nhóm câu **trong một đề đã có người làm** sẽ làm lệch phần “xem lại” của các lần thi cũ (lịch sử lưu chỉ số lựa chọn). Muốn sửa nhiều thì tạo đề mới với id mới.
@@ -47,7 +47,7 @@ Dữ liệu là các file `.js` nạp bằng thẻ `<script>` (không dùng fetc
 2. Nội dung đầy đủ Giai đoạn 2 (dàn ý gợi ý: chiến lược Part 1–4, từ loại, thì hoàn thành, bị động, so sánh, liên từ, Part 6, đoạn đơn Part 7) + 2–3 bài kiểm tra chặng + đề `mini2` làm `gateTest` (≥ 500).
 3. Làm tương tự cho Giai đoạn 3, 4, 5 (gateTest ≥ 700, ≥ 850).
 4. Mở rộng `data/parts/` (mỗi Part tối thiểu 10 nhóm, trải đều lvl 1–5).
-5. Viết `full1.js` đủ 200 câu theo cấu trúc thật.
+5. ~~Viết `full1.js` đủ 200 câu~~ ĐÃ XONG. Tiếp: full2, full3 theo cùng cấu trúc file.
 6. Trước khi soạn từ mới: `node tools/listwords.js .` để tránh trùng. Sau mỗi lần thêm dữ liệu, chạy:
    ```
    node tools/validate.js .          # trong thư mục toeic-web
@@ -193,6 +193,8 @@ Dàn ý gốc 12 bài (u1–u3):
 **Giai đoạn 3 (tiếp):** u2 Ngữ pháp trung cấp 2: s3-l4 Bài 4 To V/V-ing nâng cao · s3-l5 Bài 5 Mạo từ & lượng từ nâng cao · s3-l6 Bài 6 Liên từ nâng cao (checkpoint `cp-s3-u2`).
 
 **Giai đoạn 4:** u1 Ngữ pháp nâng cao: s4-l1 Bài 1 Đảo ngữ (`data/stage4/stage4.js`) · s4-l2 Bài 2 Cấu trúc nâng cao (`data/stage4/unit1-cau-truc-nang-cao.js`); checkpoint `cp-s4-u1` (bài 1–2). u2 Từ vựng – ngữ pháp Part 5 cấp cao: s4-l3 Bài 3 Cặp từ dễ nhầm · s4-l4 Bài 4 Trạng từ · s4-l5 Bài 5 Collocation · s4-l6 Bài 6 Giới từ đi kèm (checkpoint `cp-s4-u2`).
+
+**Bài thi tự lưu:** bài đang làm được lưu ở localStorage khóa `toeic990_exam` (đáp án, đoạn đã nghe, câu đang làm, mốc kết thúc từng phần). Tải lại / đóng trang rồi mở lại đề sẽ làm tiếp, đồng hồ vẫn tính tiếp theo giờ thật; nộp bài thì xóa. Bản lưu quá 6 tiếng bị bỏ qua.
 
 **Khi deploy:** tăng số `?v=` trong mọi thẻ script/link của `index.html` để trình duyệt không trộn file cũ và mới. Nếu khởi động lỗi, trang hiện thông báo kèm nút Tải lại (xem script đầu `index.html`, `window.__booted`).
 

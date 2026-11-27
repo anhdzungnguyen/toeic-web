@@ -245,7 +245,7 @@
     if (ctx.mode === 'exam') {
       EX.ans[uid] = i;
       $$('.ch', qEl).forEach(c => c.classList.toggle('sel', c === b));
-      updatePalette(); return;
+      updatePalette(); saveExam(); return;
     }
     if (qEl.dataset.done) return;
     qEl.dataset.done = '1'; qEl.classList.add('revealed');
@@ -262,7 +262,7 @@
       const ex = EX; b.disabled = true; b.textContent = '⏳ Đang tải giọng đọc…';
       // Chỉ tính là “đã nghe” khi giọng đọc thực sự bắt đầu; lỗi trước khi phát thì cho bấm lại
       T.speech.speak(items, {
-        onstart: () => { ex.played[g.id] = 1; b.textContent = '🔊 Đang phát…'; },
+        onstart: () => { ex.played[g.id] = 1; b.textContent = '🔊 Đang phát…'; if (EX === ex) saveExam(); },
         onend: () => { if (ex.played[g.id]) b.textContent = '🔇 Đã phát'; else { b.disabled = false; b.textContent = '▶ Nghe (thử lại)'; } }
       });
     } else T.speech.speak(items, { rate: b.dataset.slow ? 0.7 : 1 });
@@ -414,7 +414,7 @@
     const inf = testInfo(t), tm = t.timing, gate = gateOf(t);
     let h = `<a class="back" href="#/${D.onboarded ? 'tests' : ''}">← Quay lại</a><h2>${esc(t.title)}</h2><p class="muted">${KIND[t.kind] || ''}</p>`;
     if (!inf.n) { app.innerHTML = h + `<div class="card"><p>⚙️ Đề này mới có khung và bộ máy chấm, chưa có câu hỏi. Cấu trúc đề thật:</p>${formatTable()}</div>`; return; }
-    const resume = EX && EX.test === t;
+    const saved = loadSavedExam(), resume = (EX && EX.test === t) || (saved && saved.id === t.id);
     h += `<div class="card"><ul>
       <li>Số câu: <b>${inf.n}</b> (Nghe ${inf.nL} · Đọc ${inf.nR})</li>
       ${tm ? `<li>Thời gian: Listening ${Math.round(tm.L / 60)} phút · Reading ${Math.round(tm.R / 60)} phút. Hết giờ Listening sẽ tự chuyển sang Reading, hết giờ Reading sẽ tự nộp bài.</li>` : '<li>Không giới hạn thời gian.</li>'}
@@ -436,9 +436,30 @@
       EX = { test: t, pages, num, total: k - 1, secOf: pages.map(g => (audioItems(g) ? 'L' : 'R')), ans: {}, played: {}, idx: 0,
         left: t.timing ? { L: t.timing.L || 0, R: t.timing.R || 0 } : null };
       EX.sec = EX.secOf[0];
+      // Có bài đang làm dở của đề này (đã tải lại / đóng trang) → khôi phục
+      const s = loadSavedExam();
+      if (s && s.id === t.id) {
+        Object.assign(EX, { ans: s.ans || {}, played: s.played || {}, ends: s.ends || {} });
+        if (s.left && EX.left) EX.left = s.left;
+        if (s.sec && EX.secOf.includes(s.sec)) EX.sec = s.sec;
+        if (s.idx >= 0 && s.idx < EX.pages.length && EX.secOf[s.idx] === EX.sec) EX.idx = s.idx;
+        else EX.idx = EX.secOf.indexOf(EX.sec);
+        T.toast('Đã khôi phục bài đang làm dở.');
+      }
     }
     ctx = { mode: 'exam' };
     renderExam(); startTimer();
+  }
+  // Lưu bài thi đang làm để không mất khi tải lại trang / đóng tab (đề đầy đủ dài 2 tiếng)
+  const EXKEY = 'toeic990_exam';
+  function saveExam() {
+    try {
+      if (!EX) { localStorage.removeItem(EXKEY); return; }
+      localStorage.setItem(EXKEY, JSON.stringify({ id: EX.test.id, ans: EX.ans, played: EX.played, idx: EX.idx, sec: EX.sec, left: EX.left, ends: EX.ends || {}, at: Date.now() }));
+    } catch (e) {}
+  }
+  function loadSavedExam() {
+    try { const s = JSON.parse(localStorage.getItem(EXKEY) || 'null'); return s && T.tests[s.id] && Date.now() - s.at < 6 * 3600 * 1000 ? s : null; } catch (e) { return null; }
   }
   function locked(pi) { return EX.secOf[pi] !== EX.sec; }
   function renderExam() {
@@ -449,6 +470,7 @@
       <div class="card">${groupHTML(g, { mode: 'exam', ans: ex.ans, num: ex.num[ex.idx], played: ex.played })}</div>
       <div class="navrow"><button class="btn" data-act="prev" ${ex.idx === 0 || locked(ex.idx - 1) ? 'disabled' : ''}>← Trước</button><button class="btn primary" data-act="next">${last ? 'Nộp bài' : 'Tiếp →'}</button></div>`;
     window.scrollTo(0, 0);
+    saveExam();
   }
   function updatePalette() {
     $$('#palette .pq').forEach(b => b.classList.toggle('done', EX.ans[b.dataset.uid] != null));
@@ -461,7 +483,7 @@
     const tick = () => {
       if (!EX) return stopTimer();
       const s = EX.sec;
-      if (!EX.ends[s]) EX.ends[s] = Date.now() + EX.left[s] * 1000;
+      if (!EX.ends[s]) { EX.ends[s] = Date.now() + EX.left[s] * 1000; saveExam(); }
       EX.left[s] = Math.max(0, Math.round((EX.ends[s] - Date.now()) / 1000));
       const el = $('#timer'); if (el) { el.textContent = fmtT(EX.left[s]); el.classList.toggle('warn', EX.left[s] < 60); }
       if (EX.left[s] === 0) {
@@ -474,7 +496,7 @@
   function stopTimer() { if (timer) clearInterval(timer); timer = null; }
   function submitExam() {
     stopTimer(); T.speech.stop();
-    const ex = EX; EX = null; ctx = { mode: 'practice' };
+    const ex = EX; EX = null; ctx = { mode: 'practice' }; saveExam();
     const t = ex.test;
     const r = { id: t.id, kind: t.kind, title: t.title, date: new Date().toISOString(), parts: {}, L: { c: 0, n: 0 }, R: { c: 0, n: 0 }, tags: {}, ans: ex.ans };
     ex.pages.forEach((g, pi) => g.qs.forEach(q => {
