@@ -51,7 +51,7 @@ TOEIC.addLesson({
 
 TOEIC.addTest({
   id: "cp-s4-u1", kind: "checkpoint", title: "Kiểm tra Chặng 1 – Ngữ pháp nâng cao",
-  desc: "Đảo ngữ với trạng từ phủ định, Not until, Only, No sooner…than, Hardly…when (bài 1).",
+  desc: "Đảo ngữ với trạng từ phủ định, Not until, Only, No sooner…than, Hardly…when; mệnh đề quan hệ nâng cao (whereby, of which / of whom, whoever), as if / wish / It's time, it takes, no matter how (bài 1–2).",
   groups: [
     { id: "cp-s4-u1-g0", p: 5, lvl: 4, q: "Seldom ___ such a large order ahead of schedule.", c: ["does our supplier deliver", "our supplier delivers", "our supplier does deliver", "delivering our supplier"], a: 0, e: "“Seldom” (ít khi) đứng đầu câu → đảo ngữ; động từ thường, hiện tại đơn, chủ ngữ số ít → <b>does our supplier deliver</b>.", t: "dao-ngu" },
     { id: "cp-s4-u1-g1", p: 5, lvl: 4, q: "At no time ___ the customers' personal information shared with third parties.", c: ["was", "it was", "did", "has"], a: 0, e: "“At no time” đầu câu → đảo ngữ. Câu bị động (shared, không có tân ngữ) cần be: đảo be lên trước chủ ngữ → <b>was</b>. “did … shared” và “has … shared” (thiếu been) đều sai ngữ pháp; “it was” thừa chủ ngữ.", t: "dao-ngu" },
@@ -67,6 +67,8 @@ TOEIC.addTest({
       qs: [
         { q: "(1)", c: ["may visitors enter", "visitors may enter", "visitors entering", "may visitors entering"], a: 0, e: "“Under no circumstances” (dù thế nào cũng không) đứng đầu câu → đảo trợ động từ lên trước chủ ngữ: may + S + V nguyên mẫu → <b>may visitors enter</b>.", t: "dao-ngu" },
         { q: "(2)", c: ["must new employees complete", "new employees must complete", "new employees complete", "completing new employees"], a: 0, e: "“Not only” đứng đầu câu → vế đầu đảo ngữ: <b>must new employees complete</b>; vế sau “but they must also sign…” giữ trật tự thường.", t: "dao-ngu" }
-      ] }
+      ] },
+    { id: "cp-s4-u1-g10", p: 5, lvl: 4, q: "___ submits the most innovative cost-saving proposal will receive a two-day paid leave.", c: ["Whoever", "Whomever", "Anyone", "Those"], a: 0, e: "Chỗ trống mở đầu mệnh đề làm chủ ngữ, ngay sau là động từ “submits” → cần đại từ làm chủ ngữ, không cần danh từ phía trước: <b>Whoever</b> (= anyone who). “Whomever” làm tân ngữ; “Anyone” thiếu who nên câu có hai động từ chia; “Those” số nhiều, không hợp “submits”.", t: "quan-he" },
+    { id: "cp-s4-u1-g11", p: 5, lvl: 4, q: "No matter ___ carefully the budget is planned, unexpected expenses may still arise.", c: ["how", "what", "however", "much"], a: 0, e: "<b>No matter how</b> + trạng từ / tính từ + S + V (dù… thế nào đi nữa) → <b>how</b>. “No matter what” đi với danh từ hoặc mệnh đề thiếu tân ngữ; “no matter however” là cách viết sai.", t: "cau-truc" }
   ]
 });
