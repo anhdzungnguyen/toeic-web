@@ -24,7 +24,7 @@ html.dark{
 
 /* ============ Base ============ */
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
+html{scroll-behavior:smooth;scroll-padding-top:116px}
 body{margin:0;background:var(--bg);color:var(--text);font:15.5px/1.65 var(--font);-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;
   background-image:radial-gradient(1200px 400px at 50% -200px,var(--bg2),transparent);background-repeat:no-repeat;min-height:100vh}
 a{color:var(--pri);text-underline-offset:3px}
@@ -42,7 +42,7 @@ ul{padding-left:1.2em}li{margin:.25em 0}
 img,svg{max-width:100%}
 
 /* ============ Header ============ */
-header.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--card) 82%,transparent);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
+header.top{position:sticky;top:0;z-index:30;background:var(--card);background:color-mix(in srgb,var(--card) 82%,transparent);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
 .top-in{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:10px 20px;height:62px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;color:var(--text);font-size:17px;white-space:nowrap;letter-spacing:-.02em}
 .brand:hover{color:var(--text)}
@@ -65,7 +65,7 @@ main#app{max-width:900px;margin:0 auto;padding:24px 20px 120px;animation:fade .2
   header.top{backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--card)}
   .top-in{padding:8px 16px;height:56px}
   #nav{position:fixed;left:0;right:0;bottom:0;margin:0;z-index:40;border-radius:0;border:0;border-top:1px solid var(--line);
-    background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    background:var(--card);background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
     justify-content:space-around;padding:6px 4px calc(6px + env(safe-area-inset-bottom))}
   #nav a span{display:block}
   #nav a{flex-direction:column;gap:2px;padding:5px 2px;font-size:10.5px;flex:1;text-align:center;border-radius:10px}
@@ -80,7 +80,7 @@ main#app{max-width:900px;margin:0 auto;padding:24px 20px 120px;animation:fade .2
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:14px 0;box-shadow:var(--sh-1)}
 .card>h3:first-child,.card>h2:first-child{margin-top:0}
 a.card{display:block;color:inherit;text-decoration:none;transition:transform .15s,box-shadow .15s,border-color .15s}
-a.card:hover{border-color:var(--pri-line);box-shadow:var(--sh-2);transform:translateY(-2px);color:inherit}
+@media (hover:hover){a.card:hover{border-color:var(--pri-line);box-shadow:var(--sh-2);transform:translateY(-2px);color:inherit}}
 a.card b{color:var(--text)}
 .muted{color:var(--muted)}.small{font-size:.86rem}.center{text-align:center}
 .grid2,.grid3{display:grid;gap:14px}.grid2{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:repeat(3,1fr)}
@@ -127,7 +127,7 @@ a.card b{color:var(--text)}
 .btn.danger:hover,.btn.bad:hover{background:var(--bad-soft);border-color:var(--bad);color:var(--bad)}
 .btn.ok{border-color:color-mix(in srgb,var(--ok) 45%,transparent);color:var(--ok)}
 .btn.ok:hover{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
-.icon{border:0;background:var(--pri-soft);color:var(--text);border-radius:8px;cursor:pointer;padding:3px 8px;font-size:15px;line-height:1.6;transition:.15s}
+.icon{border:0;background:var(--pri-soft);color:var(--text);border-radius:10px;cursor:pointer;padding:0 8px;min-width:40px;min-height:40px;font-size:16px;line-height:1;transition:.15s;flex:none}
 .icon:hover{background:var(--pri-line)}
 
 /* ============ Pills, notes ============ */
@@ -206,7 +206,7 @@ details.stage h4{margin-top:1.2em;font-size:.82rem;text-transform:uppercase;lett
 /* ============ Câu hỏi ============ */
 .q{margin:18px 0}
 .qt{display:flex;justify-content:space-between;gap:10px;font-weight:600;color:var(--text);margin-bottom:4px}
-.flag{border:0;background:none;font-size:19px;color:var(--line2);cursor:pointer;padding:0 4px;transition:.15s}.flag:hover{color:var(--acc)}.flag.on{color:var(--acc)}
+.flag{border:0;background:none;font-size:20px;color:var(--line2);cursor:pointer;padding:0;min-width:40px;min-height:40px;margin:-8px -6px -8px 0;transition:.15s}.flag:hover{color:var(--acc)}.flag.on{color:var(--acc)}
 .ch{display:flex;align-items:baseline;gap:6px;width:100%;text-align:left;margin:8px 0;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--card);color:var(--text);font:inherit;cursor:pointer;transition:border-color .15s,background .15s,transform .1s}
 .ch b{display:inline-grid;place-items:center;flex:none;min-width:26px;height:26px;border-radius:8px;background:var(--bg);color:var(--pri);font-size:.85rem;margin-right:4px}
 .ch:hover:not(:disabled){border-color:var(--pri);background:var(--pri-soft)}
@@ -226,7 +226,7 @@ details.stage h4{margin-top:1.2em;font-size:.82rem;text-transform:uppercase;lett
 .finish .btn.primary{padding:13px 28px;font-size:1rem}
 
 /* ============ Thi ============ */
-.exambar{position:sticky;top:72px;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:14px;padding:10px 16px;margin:0 0 12px;box-shadow:var(--sh-2)}
+.exambar{position:sticky;top:72px;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--card);background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:14px;padding:10px 16px;margin:0 0 12px;box-shadow:var(--sh-2)}
 @media (max-width:760px){.exambar{top:64px}}
 .timer{font-variant-numeric:tabular-nums;font-size:1.35rem;font-weight:800;padding:4px 12px;border-radius:10px;background:var(--bg);letter-spacing:.02em}
 .timer.warn{color:var(--bad);background:var(--bad-soft);animation:pulse 1s infinite}
@@ -276,3 +276,17 @@ input[type=checkbox]{accent-color:var(--pri);width:18px;height:18px}
 .foot{max-width:900px;margin:0 auto;padding:0 20px 40px;text-align:center;color:var(--muted);font-size:.82rem}
 @media (max-width:760px){.foot{padding-bottom:100px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* ============ Sửa theo review: điện thoại, chế độ thi ============ */
+.prose,.passage{overflow-x:auto}
+.exambar>div:first-child{min-width:0;flex:1}
+.exambar b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.in-exam #nav{display:none}
+@media (max-width:760px){
+  .search,select,textarea,input[type=text]{font-size:16px}
+  body.in-exam main#app{padding-bottom:40px}
+  body.in-exam .foot{display:none}
+}
+/* Part 1 khi luyện: mô tả tranh bằng chữ ẩn tới khi trả lời xong (hoặc bấm Hiện chữ) */
+.group:not(.answered):not(.showtext) .cap-hide{display:none}
+code{font-size:.85em;background:var(--bg2);padding:1px 5px;border-radius:5px}

@@ -29,10 +29,10 @@ TOEIC.addLesson({
     "skip|v|/skɪp/|bỏ qua|—|Skip difficult questions and come back later.|Bỏ qua câu khó và quay lại sau."
   ],
   exercises: [
-    { q: "Phần Listening của đề TOEIC L&R có bao nhiêu câu?", c: ["50", "100", "120", "200"], a: 1, e: "Listening <b>100 câu</b> (Part 1–4), Reading cũng 100 câu (Part 5–7).", t: "doc-hieu" },
-    { q: "Part nào chỉ có 3 lựa chọn A, B, C?", c: ["Part 1", "Part 2", "Part 5", "Part 7"], a: 1, e: "<b>Part 2</b> (Hỏi – đáp) chỉ có 3 lựa chọn; các Part còn lại có 4.", t: "hoi-dap" },
-    { q: "Tổng điểm TOEIC Listening & Reading nằm trong khoảng nào?", c: ["0–990", "10–990", "5–495", "0–1000"], a: 1, e: "Mỗi phần 5–495, tổng <b>10–990</b>.", t: "doc-hieu" },
-    { q: "Khi không biết đáp án, bạn nên làm gì?", c: ["Bỏ trống câu đó", "Đoán một đáp án, vì sai không bị trừ điểm", "Tô hai đáp án", "Chờ đến cuối giờ mới làm"], a: 1, e: "TOEIC <b>không trừ điểm</b> câu sai, bỏ trống thì chắc chắn mất điểm.", t: "doc-hieu" }
+    { id: "s2-l1-ex0", q: "Phần Listening của đề TOEIC L&R có bao nhiêu câu?", c: ["50", "100", "120", "200"], a: 1, e: "Listening <b>100 câu</b> (Part 1–4), Reading cũng 100 câu (Part 5–7).", t: "de-thi" },
+    { id: "s2-l1-ex1", q: "Part nào chỉ có 3 lựa chọn A, B, C?", c: ["Part 1", "Part 2", "Part 5", "Part 7"], a: 1, e: "<b>Part 2</b> (Hỏi – đáp) chỉ có 3 lựa chọn; các Part còn lại có 4.", t: "de-thi" },
+    { id: "s2-l1-ex2", q: "Tổng điểm TOEIC Listening & Reading nằm trong khoảng nào?", c: ["0–990", "10–990", "5–495", "0–1000"], a: 1, e: "Mỗi phần 5–495, tổng <b>10–990</b>.", t: "de-thi" },
+    { id: "s2-l1-ex3", q: "Khi không biết đáp án, bạn nên làm gì?", c: ["Bỏ trống câu đó", "Đoán một đáp án, vì sai không bị trừ điểm", "Tô hai đáp án", "Chờ đến cuối giờ mới làm"], a: 1, e: "TOEIC <b>không trừ điểm</b> câu sai, bỏ trống thì chắc chắn mất điểm.", t: "de-thi" }
   ]
 });
 
@@ -58,9 +58,9 @@ TOEIC.addLesson({
     "assistance|n|/əˈsɪstəns/|sự hỗ trợ|help|Thank you for your assistance.|Cảm ơn sự hỗ trợ của bạn."
   ],
   exercises: [
-    { p: 5, q: "The company made a ___ to expand into Asia.", c: ["decide", "decisive", "decision", "decisively"], a: 2, e: "Sau mạo từ “a” cần danh từ → <b>decision</b>.", t: "tu-loai" },
-    { p: 5, q: "Ms. Tran is a very ___ negotiator.", c: ["success", "successful", "succeed", "successfully"], a: 1, e: "Trước danh từ “negotiator” cần tính từ → <b>successful</b>.", t: "tu-loai" },
-    { p: 5, q: "Please read the safety instructions ___.", c: ["careful", "care", "carefully", "carefulness"], a: 2, e: "Bổ nghĩa cho động từ “read” → trạng từ <b>carefully</b>.", t: "tu-loai" },
-    { p: 5, q: "The new system increased ___ by 20 percent.", c: ["productive", "productivity", "produce", "productively"], a: 1, e: "Sau động từ “increased” cần tân ngữ là danh từ → <b>productivity</b>.", t: "tu-loai" }
+    { id: "s2-l2-ex0", p: 5, q: "The company made a ___ to expand into Asia.", c: ["decide", "decisive", "decision", "decisively"], a: 2, e: "Sau mạo từ “a” cần danh từ → <b>decision</b>.", t: "tu-loai" },
+    { id: "s2-l2-ex1", p: 5, q: "Ms. Tran is a very ___ negotiator.", c: ["success", "successful", "succeed", "successfully"], a: 1, e: "Trước danh từ “negotiator” cần tính từ → <b>successful</b>.", t: "tu-loai" },
+    { id: "s2-l2-ex2", p: 5, q: "Please read the safety instructions ___.", c: ["careful", "care", "carefully", "carefulness"], a: 2, e: "Bổ nghĩa cho động từ “read” → trạng từ <b>carefully</b>.", t: "tu-loai" },
+    { id: "s2-l2-ex3", p: 5, q: "The new system increased ___ by 20 percent.", c: ["productive", "productivity", "produce", "productively"], a: 1, e: "Sau động từ “increased” cần tân ngữ là danh từ → <b>productivity</b>.", t: "tu-loai" }
   ]
 });

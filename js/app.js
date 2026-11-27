@@ -36,6 +36,7 @@
     if (!D.onboarded && !['exam', 'run', 'result', 'settings'].includes(name)) { onboarding(); setNav(''); return; }
     (routes[name] || home).apply(null, parts.slice(1));
     setNav(name);
+    document.body.classList.toggle('in-exam', name === 'run' && !!EX);
     if (name !== 'run') window.scrollTo(0, 0);
   }
   function setNav(name) {
@@ -85,7 +86,7 @@
     else if (ns.type === 'cp') next = `<p class="muted">Bạn đã học xong một chặng</p><h3>${esc(ns.test.title)}</h3><p class="small">Đạt từ 80% để chắc kiến thức trước khi đi tiếp.</p><a class="btn primary" href="#/exam/${ns.test.id}">📝 Làm bài kiểm tra</a>${ns.then ? ` <a class="btn ghost" href="#/lesson/${ns.then.id}">Học tiếp bài sau</a>` : ''}`;
     else if (ns.type === 'gate') next = `<p class="muted">Đã học hết bài của giai đoạn này</p><h3>Bài thi chuyển giai đoạn</h3><p class="small">Cần đạt từ <b>${ns.stage.target}</b> điểm ước lượng ở “${esc(ns.test.title)}”.</p><a class="btn primary" href="#/exam/${ns.test.id}">📝 Thi ngay</a>`;
     else next = `<p>Nội dung tiếp theo của giai đoạn này đang được soạn. Trong lúc chờ, hãy ôn từ vựng và luyện theo Part.</p><a class="btn" href="#/practice">🎯 Luyện tập</a>`;
-    app.innerHTML = `${!T.storageOK ? '<p class="note bad">⚠️ Trình duyệt đang chặn lưu trữ, tiến độ có thể mất khi đóng trang. Vào ⚙️ Cài đặt để xuất dữ liệu.</p>' : ''}
+    app.innerHTML = `${T.corrupt ? '<p class="note bad">⚠️ Dữ liệu tiến độ cũ trên trình duyệt này bị hỏng nên không đọc được. Bản gốc đã được sao lưu ở khóa <code>toeic990_v1_corrupt</code> trong bộ nhớ trình duyệt; web bắt đầu lại với tiến độ trống.</p>' : !T.storageOK ? '<p class="note bad">⚠️ Trình duyệt đang chặn lưu trữ, tiến độ có thể mất khi đóng trang. Vào ⚙️ Cài đặt để xuất dữ liệu.</p>' : ''}
       <section class="card hero"><div class="eyebrow">Giai đoạn ${s.id}/5 · mục tiêu ${s.target || 990} điểm</div><h2>${esc(s.name)} <span class="pill">${s.range[0]} → ${s.range[1]}</span></h2>${next}</section>
       <div class="grid3">
         <a class="card stat" href="#/flash"><div class="big">${due}</div><div class="small">từ cần ôn hôm nay</div></a>
@@ -147,7 +148,7 @@
     app.innerHTML = h;
   }
   function ipaTable(list) {
-    return `<div class="tablewrap"><table class="ipa"><tr><th>Âm</th><th>Ví dụ</th><th>Cách đọc (gần đúng)</th><th></th></tr>${list.map(x => `<tr><td class="sym">${x.s}</td><td>${x.ex}</td><td>${x.note}</td><td><button class="icon" data-speak="${esc(x.ex.replace(/,/g, '.'))}">🔊</button></td></tr>`).join('')}</table></div>`;
+    return `<div class="tablewrap"><table class="ipa"><tr><th>Âm</th><th>Ví dụ</th><th>Cách đọc (gần đúng)</th><th></th></tr>${list.map(x => `<tr><td class="sym">${x.s}</td><td>${x.ex}</td><td>${x.note}</td><td><button class="icon" data-speak="${esc(strip(x.ex).replace(/\([^)]*\)/g, '').replace(/,/g, '.'))}">🔊</button></td></tr>`).join('')}</table></div>`;
   }
   function wordCard(id) {
     const v = T.vocab[id]; if (!v) return '';
@@ -199,7 +200,12 @@
     const audio = audioItems(g), hide = (g.p === 1 || g.p === 2) && mode !== 'review';
     let h = `<div class="group ${hide ? 'hidetext' : ''}" data-g="${esc(g.id)}">`;
     if (g.p) h += `<div class="ptag">Part ${g.p} · ${esc(T.FORMAT.parts[g.p].name)}</div>`;
-    if (g.scene) h += `<figure class="scene">${(g.svg && T.scenes[g.svg]) || ''}<figcaption>🖼️ <b>Tranh:</b> ${g.scene}</figcaption></figure>`;
+    if (g.scene) {
+      // Có hình SVG thì mô tả chữ sẽ lộ đáp án: ẩn khi thi, ẩn tới khi trả lời xong khi luyện
+      const svg = g.svg && T.scenes[g.svg];
+      const cap = svg && mode === 'exam' ? '' : `<figcaption class="${svg && mode === 'practice' ? 'cap-hide' : ''}">🖼️ <b>Tranh:</b> ${g.scene}</figcaption>`;
+      h += `<figure class="scene">${svg || ''}${cap}</figure>`;
+    }
     if (audio) {
       const used = mode === 'exam' && o.played && o.played[g.id];
       h += `<div class="audio"><button class="btn play" data-play="${esc(g.id)}" ${used ? 'disabled' : ''}>${used ? '🔇 Đã phát' : '▶ Nghe'}</button>`;
@@ -247,14 +253,18 @@
     $('.expwrap', qEl).innerHTML = expHTML(q, i);
     T.record(uid, i === q.a);
     const gEl = b.closest('.group');
-    if (!$$('.q', gEl).some(e => !e.dataset.done)) { const tr = $('.transcript', gEl); if (tr) tr.hidden = false; }
+    if (!$$('.q', gEl).some(e => !e.dataset.done)) { gEl.classList.add('answered'); const tr = $('.transcript', gEl); if (tr) tr.hidden = false; }
   }
   function playGroup(b) {
     const g = T.groups[b.dataset.play], items = g && audioItems(g); if (!items) return;
     if (ctx.mode === 'exam') {
       if (EX.played[g.id]) return;
-      EX.played[g.id] = 1; b.disabled = true; b.textContent = '🔊 Đang phát…';
-      T.speech.speak(items, { onend: () => { b.textContent = '🔇 Đã phát'; } });
+      const ex = EX; b.disabled = true; b.textContent = '⏳ Đang tải giọng đọc…';
+      // Chỉ tính là “đã nghe” khi giọng đọc thực sự bắt đầu; lỗi trước khi phát thì cho bấm lại
+      T.speech.speak(items, {
+        onstart: () => { ex.played[g.id] = 1; b.textContent = '🔊 Đang phát…'; },
+        onend: () => { if (ex.played[g.id]) b.textContent = '🔇 Đã phát'; else { b.disabled = false; b.textContent = '▶ Nghe (thử lại)'; } }
+      });
     } else T.speech.speak(items, { rate: b.dataset.slow ? 0.7 : 1 });
   }
 
@@ -279,7 +289,8 @@
   /* ================= Ngữ pháp theo chủ đề ================= */
   function topicGroups(tp) {
     const set = new Set(), tags = new Set(tp.tags);
-    Object.values(T.qIndex).forEach(x => { if (tags.has(x.g.qs[x.i].t)) set.add(x.g); });
+    // Không lấy câu của đề thi / bài kiểm tra (để không lộ đề) và câu ôn từ sinh tự động
+    Object.values(T.qIndex).forEach(x => { if (!x.g.inTest && !x.g.dyn && tags.has(x.g.qs[x.i].t)) set.add(x.g); });
     return [...set];
   }
   function topicStat(tp) {
@@ -345,13 +356,14 @@
       const due = T.srs.due().length, has = Object.keys(D.srs).filter(k => T.vocab[k]).length;
       app.innerHTML = `<h2>🃏 Flashcard</h2><p>Hôm nay cần ôn <b>${due}</b> từ.${!has ? ' Hãy hoàn thành bài học đầu tiên để có từ ôn tập.' : ''}</p>
         ${has ? `<div class="grid3">${[['w2m', '👀 Nhìn từ → đoán nghĩa', 'Tự chấm mức nhớ'], ['m2w', '🇻🇳 Nhìn nghĩa → chọn từ', '4 lựa chọn'], ['listen', '🎧 Nghe → chọn từ', 'Luyện tai']].map(([m, a, b]) => `<a class="card" href="#/flash/${m}${due ? '' : '/extra'}"><b>${a}</b><div class="small muted">${b}</div></a>`).join('')}</div>` : ''}
-        ${!due && has ? '<p class="small muted">Không có từ đến hạn – chọn một chế độ để ôn thêm ngẫu nhiên các từ đã học.</p>' : ''}`;
+        ${!due && has ? '<p class="small muted">Không có từ đến hạn – chọn một chế độ để ôn thêm ngẫu nhiên các từ đã học (ôn thêm không làm thay đổi lịch ôn).</p>' : ''}`;
       return;
     }
-    let q = T.srs.due();
-    if (!q.length || extra) q = Object.keys(D.srs).filter(k => T.vocab[k]);
+    let q = T.srs.due(); const isExtra = !q.length || !!extra;
+    if (isExtra) q = Object.keys(D.srs).filter(k => T.vocab[k]);
     if (!q.length) return go('#/flash');
-    FS = { mode, queue: shuffle(q).slice(0, 20), i: 0, retry: new Set(), right: 0 };
+    // extra: ôn thêm ngoài lịch → không chấm SRS; seen: chỉ chấm lần gặp đầu tiên trong phiên
+    FS = { mode, queue: shuffle(q).slice(0, 20), i: 0, retry: new Set(), right: 0, seen: new Set(), extra: isExtra };
     drawCard();
   }
   function drawCard() {
@@ -444,15 +456,20 @@
   }
   function startTimer() {
     stopTimer(); if (!EX || !EX.left) return;
-    timer = setInterval(() => {
+    // Tính theo mốc kết thúc của từng phần: đồng hồ vẫn chạy đúng khi sang trang khác hoặc tắt màn hình
+    EX.ends = EX.ends || {};
+    const tick = () => {
       if (!EX) return stopTimer();
-      const s = EX.sec; EX.left[s] = Math.max(0, EX.left[s] - 1);
+      const s = EX.sec;
+      if (!EX.ends[s]) EX.ends[s] = Date.now() + EX.left[s] * 1000;
+      EX.left[s] = Math.max(0, Math.round((EX.ends[s] - Date.now()) / 1000));
       const el = $('#timer'); if (el) { el.textContent = fmtT(EX.left[s]); el.classList.toggle('warn', EX.left[s] < 60); }
       if (EX.left[s] === 0) {
         if (s === 'L' && EX.secOf.includes('R')) { T.speech.stop(); T.toast('⏰ Hết giờ Listening – chuyển sang Reading'); EX.sec = 'R'; EX.idx = EX.secOf.indexOf('R'); renderExam(); }
         else { T.toast('⏰ Hết giờ! Bài đã được nộp tự động.'); submitExam(); }
       }
-    }, 1000);
+    };
+    tick(); if (EX) timer = setInterval(tick, 1000);
   }
   function stopTimer() { if (timer) clearInterval(timer); timer = null; }
   function submitExam() {
@@ -480,9 +497,11 @@
       D.cp[t.id] = Math.max(D.cp[t.id] || 0, r.pct);
       r.msg = r.pct >= 0.8 ? `🏅 Đạt ${pct(c, n)}% (từ 80% trở lên). Bạn có thể học tiếp chặng sau.` : `Bạn đạt ${pct(c, n)}%, chưa tới 80%. Hãy ôn lại các bài ở chặng này rồi làm lại.`;
     } else if (t.kind === 'placement') {
-      D.stage = T.stageFromScore(r.total); D.onboarded = true;
-      const s = T.stages[D.stage];
-      r.msg = `📍 Bạn được xếp vào <b>Giai đoạn ${D.stage}${s ? ': ' + esc(s.name) : ''}</b>.`;
+      // Chỉ lần làm bài xếp lớp đầu tiên mới đổi giai đoạn. Làm lại (câu hỏi cố định, dễ thuộc) không được dùng để vượt bài thi chuyển giai đoạn hay bị hạ giai đoạn.
+      const first = !D.history.some(h => h.kind === 'placement'), sug = T.stageFromScore(r.total), ss = T.stages[sug];
+      D.onboarded = true;
+      if (first) { D.stage = sug; r.msg = `📍 Bạn được xếp vào <b>Giai đoạn ${sug}${ss ? ': ' + esc(ss.name) : ''}</b>.`; }
+      else r.msg = `Kết quả này tương ứng <b>Giai đoạn ${sug}</b>. Vì đây là lần làm lại nên giai đoạn học của bạn được giữ nguyên (<b>Giai đoạn ${D.stage}</b>). Để lên giai đoạn sau, hãy làm bài thi chuyển giai đoạn.`;
     } else {
       const s = T.stages[D.stage];
       if (s && s.gateTest === t.id) {
@@ -511,7 +530,7 @@
       ${r.msg ? `<p class="note">${r.msg}</p>` : ''}</section>`;
     h += `<section class="card"><h3>Theo từng Part</h3><table class="tbl"><tr><th>Part</th><th>Đúng</th><th>Tỉ lệ</th></tr>${parts.map(([k, v]) => `<tr class="${weak && weak[0] === k && v.c < v.n ? 'weak' : ''}"><td>${+k ? 'Part ' + k + ' · ' + T.FORMAT.parts[k].name : 'Nền tảng'}</td><td>${v.c}/${v.n}</td><td>${pct(v.c, v.n)}%</td></tr>`).join('')}</table>`;
     const tags = Object.entries(r.tags).sort((a, b) => b[1] - a[1]).slice(0, 4);
-    if (tags.length) h += `<h4>Lỗi gặp nhiều nhất</h4><ul>${tags.map(([k, v]) => { const tg = T.TAGS[k] || { n: k }, l = tg.l && T.lessons[tg.l]; return `<li>${tg.n}: <b>${v}</b> câu${l ? ` – ôn <a href="#/lesson/${l.id}">${esc(l.title)}</a>` : ''}</li>`; }).join('')}</ul>`;
+    if (tags.length) h += `<h4>Lỗi gặp nhiều nhất</h4><ul>${tags.map(([k, v]) => { const tg = T.TAGS[k] || { n: k }, l = tg.l && T.lessons[tg.l]; return `<li>${esc(tg.n)}: <b>${+v || 0}</b> câu${l ? ` – ôn <a href="#/lesson/${l.id}">${esc(l.title)}</a>` : ''}</li>`; }).join('')}</ul>`;
     h += '</section>';
     if (t) {
       const wrong = t.groups.filter(g => g.qs.some(q => r.ans[q.uid] !== q.a));
@@ -580,6 +599,8 @@
       rd.onload = () => {
         try {
           const o = JSON.parse(rd.result); if (!o || typeof o !== 'object' || !o.settings) throw 0;
+          // File nhập từ ngoài: chỉ giữ thẻ <b> trong thông điệp kết quả, bỏ mọi thẻ HTML khác
+          if (Array.isArray(o.history)) o.history.forEach(r => { if (r && typeof r.msg === 'string') r.msg = r.msg.replace(/<(?!\/?b>)[^>]*>/gi, ''); });
           Object.keys(D).forEach(k => delete D[k]);
           Object.assign(D, T.defaults(), o); D.settings = Object.assign(T.defaults().settings, o.settings);
           T.save(); document.documentElement.classList.toggle('dark', !!D.settings.dark);
@@ -605,8 +626,9 @@
 
   /* ================= Hành động (data-act) ================= */
   function fGrade(ok, q) {
-    const f = FS, id = f.queue[f.i];
-    T.srs.grade(id, q);
+    const f = FS, id = f.queue[f.i], first = !f.seen.has(id);
+    f.seen.add(id);
+    if (first && !f.extra) { T.srs.grade(id, q); T.save(); } // lưu ngay sau mỗi thẻ
     if (ok) f.right++;
     else if (!f.retry.has(id)) { f.retry.add(id); f.queue.push(id); }
   }

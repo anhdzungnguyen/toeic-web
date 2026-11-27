@@ -27,9 +27,9 @@ TOEIC.addLesson({
     "prior to|prep|/ˈpraɪə tə/|trước khi|before|Please arrive prior to 9 A.M.|Vui lòng đến trước 9 giờ sáng."
   ],
   exercises: [
-    { p: 5, q: "Rarely ___ such strong sales in the first quarter.", c: ["we see", "do we see", "we do see", "seeing"], a: 1, e: "“Rarely” đứng đầu câu → đảo ngữ: <b>do we see</b>.", t: "ngu-phap" },
-    { p: 5, q: "Not only ___ the project on time, but she also stayed under budget.", c: ["she finished", "did she finish", "she did finish", "finishing"], a: 1, e: "“Not only” đầu câu → đảo trợ động từ: <b>did she finish</b>.", t: "ngu-phap" },
-    { p: 5, q: "Under no circumstances ___ leave the building during the fire drill.", c: ["employees should", "should employees", "employees", "do employees should"], a: 1, e: "“Under no circumstances” đầu câu → <b>should employees</b> leave.", t: "ngu-phap" },
-    { p: 5, q: "___ you require further assistance, please contact our help desk.", c: ["Should", "Would", "Had", "Unless"], a: 0, e: "Đảo ngữ điều kiện loại 1: <b>Should</b> you require… = If you require…", t: "ngu-phap" }
+    { id: "s4-l1-ex0", p: 5, q: "Rarely ___ such strong sales in the first quarter.", c: ["we see", "do we see", "we do see", "seeing"], a: 1, e: "“Rarely” đứng đầu câu → đảo ngữ: <b>do we see</b>.", t: "ngu-phap" },
+    { id: "s4-l1-ex1", p: 5, q: "Not only ___ the project on time, but she also stayed under budget.", c: ["she finished", "did she finish", "she did finish", "finishing"], a: 1, e: "“Not only” đầu câu → đảo trợ động từ: <b>did she finish</b>.", t: "ngu-phap" },
+    { id: "s4-l1-ex2", p: 5, q: "Under no circumstances ___ leave the building during the fire drill.", c: ["employees should", "should employees", "employees", "do employees should"], a: 1, e: "“Under no circumstances” đầu câu → <b>should employees</b> leave.", t: "ngu-phap" },
+    { id: "s4-l1-ex3", p: 5, q: "___ you require further assistance, please contact our help desk.", c: ["Should", "Would", "Had", "Unless"], a: 0, e: "Đảo ngữ điều kiện loại 1: <b>Should</b> you require… = If you require…", t: "ngu-phap" }
   ]
 });

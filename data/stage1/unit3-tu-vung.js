@@ -29,10 +29,10 @@ TOEIC.addLesson({
     "submit|v|/səbˈmɪt/|nộp, đệ trình|hand in|Submit your expense report by Friday.|Hãy nộp báo cáo chi phí trước thứ Sáu."
   ],
   exercises: [
-    { q: "Please ___ your application by Friday.", c: ["attend", "submit", "retire", "hire"], a: 1, e: "<b>submit</b> an application = nộp đơn. attend = tham dự, retire = nghỉ hưu, hire = tuyển.", t: "tu-vung" },
-    { q: "We are out of paper. Could you order more office ___?", c: ["applicants", "salaries", "supplies", "positions"], a: 2, e: "<b>office supplies</b> = văn phòng phẩm (giấy, bút, ghim…).", t: "tu-vung" },
-    { q: "The ___ is jammed, so I can't make copies.", c: ["cabinet", "extension", "memo", "photocopier"], a: 3, e: "make copies (photo tài liệu) → <b>photocopier</b> (máy photocopy). jammed = bị kẹt giấy.", t: "tu-vung" },
-    { q: "She applied for the sales ___ last week.", c: ["position", "printer", "reception", "supply"], a: 0, e: "apply for a <b>position</b> = ứng tuyển một vị trí.", t: "tu-vung" }
+    { id: "s1-l10-ex0", q: "Please ___ your application by Friday.", c: ["attend", "submit", "retire", "hire"], a: 1, e: "<b>submit</b> an application = nộp đơn. attend = tham dự, retire = nghỉ hưu, hire = tuyển.", t: "tu-vung" },
+    { id: "s1-l10-ex1", q: "We are out of paper. Could you order more office ___?", c: ["applicants", "salaries", "supplies", "positions"], a: 2, e: "<b>office supplies</b> = văn phòng phẩm (giấy, bút, ghim…).", t: "tu-vung" },
+    { id: "s1-l10-ex2", q: "The ___ is jammed, so I can't make copies.", c: ["cabinet", "extension", "memo", "photocopier"], a: 3, e: "make copies (photo tài liệu) → <b>photocopier</b> (máy photocopy). jammed = bị kẹt giấy.", t: "tu-vung" },
+    { id: "s1-l10-ex3", q: "She applied for the sales ___ last week.", c: ["position", "printer", "reception", "supply"], a: 0, e: "apply for a <b>position</b> = ứng tuyển một vị trí.", t: "tu-vung" }
   ]
 });
 
@@ -61,11 +61,11 @@ TOEIC.addLesson({
     "directions|n|/dəˈrekʃnz/|chỉ dẫn đường đi|—|Could you give me directions to the station?|Bạn chỉ đường giúp tôi đến nhà ga được không?"
   ],
   exercises: [
-    { p: 2, say: "Where is the nearest bank?", c: ["Yes, I banked there.", "Two blocks from here.", "At three o'clock."], a: 1, e: "Where → nơi chốn: <b>Two blocks from here</b>. (A) trả lời Yes cho câu Wh- và lặp âm “bank”; (C) trả lời thời gian.", t: "hoi-dap" },
-    { p: 2, say: "When does the flight to Seoul leave?", c: ["In about an hour.", "By plane.", "To Seoul, please."], a: 0, e: "When → thời gian: <b>In about an hour</b>. (B) trả lời How; (C) lặp từ “Seoul”.", t: "hoi-dap" },
-    { p: 2, say: "Who's in charge of the reservation?", c: ["For two people, please.", "It's in the charger.", "Ms. Patel handles that."], a: 2, e: "Who → người: <b>Ms. Patel handles that</b>. (B) là bẫy âm giống: charge – charger.", t: "bay-am" },
-    { p: 2, say: "Why was the meeting delayed?", c: ["In meeting room B.", "Yes, it was.", "Because the manager's flight was late."], a: 2, e: "Why → lý do: <b>Because…</b>. (A) trả lời Where và lặp từ “meeting”; (B) Yes/No không dùng cho câu Wh-.", t: "hoi-dap" },
-    { p: 2, say: "How often do you visit the Paris branch?", c: ["By train.", "About twice a year.", "It's a large branch."], a: 1, e: "How often → tần suất: <b>About twice a year</b>. (A) trả lời How (cách đi); (C) lặp từ “branch”.", t: "hoi-dap" }
+    { id: "s1-l11-ex0", p: 2, say: "Where is the nearest bank?", c: ["Yes, I banked there.", "Two blocks from here.", "At three o'clock."], a: 1, e: "Where → nơi chốn: <b>Two blocks from here</b>. (A) trả lời Yes cho câu Wh- và lặp âm “bank”; (C) trả lời thời gian.", t: "hoi-dap" },
+    { id: "s1-l11-ex1", p: 2, say: "When does the flight to Seoul leave?", c: ["In about an hour.", "By plane.", "To Seoul, please."], a: 0, e: "When → thời gian: <b>In about an hour</b>. (B) trả lời How; (C) lặp từ “Seoul”.", t: "hoi-dap" },
+    { id: "s1-l11-ex2", p: 2, say: "Who's in charge of the reservation?", c: ["For two people, please.", "It's in the charger.", "Ms. Patel handles that."], a: 2, e: "Who → người: <b>Ms. Patel handles that</b>. (B) là bẫy âm giống: charge – charger.", t: "bay-am" },
+    { id: "s1-l11-ex3", p: 2, say: "Why was the meeting delayed?", c: ["In meeting room B.", "Yes, it was.", "Because the manager's flight was late."], a: 2, e: "Why → lý do: <b>Because…</b>. (A) trả lời Where và lặp từ “meeting”; (B) Yes/No không dùng cho câu Wh-.", t: "hoi-dap" },
+    { id: "s1-l11-ex4", p: 2, say: "How often do you visit the Paris branch?", c: ["By train.", "About twice a year.", "It's a large branch."], a: 1, e: "How often → tần suất: <b>About twice a year</b>. (A) trả lời How (cách đi); (C) lặp từ “branch”.", t: "hoi-dap" }
   ]
 });
 
@@ -94,13 +94,13 @@ TOEIC.addLesson({
     "confirm|v|/kənˈfɜːm/|xác nhận|verify|Please confirm your reservation.|Vui lòng xác nhận việc đặt chỗ."
   ],
   exercises: [
-    { p: 1, scene: "Một người đàn ông đứng cạnh cửa sổ, tay cầm một chiếc cốc.", svg: "man_cup",
+    { id: "s1-l12-ex0", p: 1, scene: "Một người đàn ông đứng cạnh cửa sổ, tay cầm một chiếc cốc.", svg: "man_cup",
       c: ["He is pouring coffee into a cup.", "He is holding a cup.", "He is opening the window.", "He is sitting at a desk."], a: 1,
       e: "Người đàn ông đang <b>cầm</b> cốc (holding). (A) nhắc đúng đồ vật “cup” nhưng sai động tác; (C) có cửa sổ nhưng anh ấy không mở; (D) anh ấy đang đứng.", t: "mo-ta-tranh" },
-    { p: 1, scene: "Nhiều thùng các-tông được xếp chồng lên nhau trên sàn. Không có người trong tranh.", svg: "boxes",
+    { id: "s1-l12-ex1", p: 1, scene: "Nhiều thùng các-tông được xếp chồng lên nhau trên sàn. Không có người trong tranh.", svg: "boxes",
       c: ["A man is stacking some boxes.", "Some boxes are being carried.", "The boxes are on a truck.", "Some boxes have been stacked on the floor."], a: 3,
       e: "Tranh không có người → loại (A) và (B) (is being + V3 cần có người đang làm). <b>have been stacked</b> mô tả trạng thái: đã được xếp chồng.", t: "mo-ta-tranh" },
-    { p: 7, passage: "<p><b>From:</b> Laura Chen<br><b>To:</b> All staff<br><b>Subject:</b> Printer on the third floor<br><b>Date:</b> May 12</p><p>Dear all,</p><p>The printer on the third floor is broken. A technician will repair it on Thursday morning. Until then, please use the printer on the second floor, next to the reception desk.</p><p>If you have any questions, please call me at extension 214.</p><p>Sincerely,<br>Laura Chen<br>Office Manager</p>",
+    { id: "s1-l12-ex2", p: 7, passage: "<p><b>From:</b> Laura Chen<br><b>To:</b> All staff<br><b>Subject:</b> Printer on the third floor<br><b>Date:</b> May 12</p><p>Dear all,</p><p>The printer on the third floor is broken. A technician will repair it on Thursday morning. Until then, please use the printer on the second floor, next to the reception desk.</p><p>If you have any questions, please call me at extension 214.</p><p>Sincerely,<br>Laura Chen<br>Office Manager</p>",
       qs: [
         { q: "What is the purpose of the e-mail?", c: ["To announce the purchase of a new printer", "To report a problem and give instructions", "To invite staff to a meeting", "To ask for a technician's phone number"], a: 1, e: "Câu đầu báo máy in tầng 3 hỏng (vấn đề), sau đó hướng dẫn dùng máy tầng 2 → <b>báo vấn đề và hướng dẫn</b>.", t: "y-chinh" },
         { q: "Where should employees print documents until Thursday?", c: ["On the third floor", "At a nearby copy shop", "On the second floor", "In Ms. Chen's office"], a: 2, e: "“Until then, please use the printer on the <b>second floor</b>, next to the reception desk.”", t: "doc-hieu" }

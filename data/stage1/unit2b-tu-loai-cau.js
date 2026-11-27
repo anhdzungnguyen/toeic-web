@@ -30,16 +30,16 @@ TOEIC.addLesson({
     "operator|n|/ˈɒpəreɪtə(r)/|người điều hành, tổng đài viên|—|The tour operator changed our hotel.|Công ty lữ hành đã đổi khách sạn cho chúng tôi."
   ],
   exercises: [
-    { q: "The store displays its new products in an ___ way.", c: ["attract", "attraction", "attractive", "attractively"], a: 2, e: "Giữa mạo từ “an” và danh từ “way” cần tính từ → <b>attractive</b>. “attract” là động từ, “attraction” là danh từ, “attractively” là trạng từ.", t: "tu-loai" },
-    { p: 5, lvl: 1, q: "The technician repaired the copy machine very ___.", c: ["quick", "quickly", "quickness", "quicken"], a: 1, e: "Câu đã đủ S + V + O, cần trạng từ bổ nghĩa cho động từ “repaired” → <b>quickly</b>.", t: "tu-loai" },
-    { q: "Our customer service representatives are always ___.", c: ["help", "helps", "helpfully", "helpful"], a: 3, e: "Sau to be “are” cần tính từ → <b>helpful</b>. “helpfully” là trạng từ, không đứng sau to be để mô tả người.", t: "tu-loai" },
-    { q: "The new ticket machine looks ___ to use.", c: ["simple", "simply", "simplicity", "simplify"], a: 0, e: "“look” là động từ nối, theo sau là tính từ → <b>simple</b>. Không dùng trạng từ “simply” sau look/seem/become.", t: "tu-loai" },
-    { q: "Mr. Cho works very ___ to answer every customer e-mail on time.", c: ["hardly", "hard", "hardness", "hardship"], a: 1, e: "<b>hard</b> vừa là tính từ vừa là trạng từ (làm việc chăm chỉ). “hardly” nghĩa là “hầu như không”, sai nghĩa.", t: "tu-loai" },
-    { p: 5, lvl: 1, q: "Customer ___ is the main goal of our service team.", c: ["satisfy", "satisfied", "satisfaction", "satisfying"], a: 2, e: "Chỗ trống là chủ ngữ, đứng trước động từ “is” → cần danh từ <b>satisfaction</b> (đuôi -tion).", t: "tu-loai" },
-    { q: "We appreciate your ___ while our website is being updated.", c: ["patient", "patience", "patiently", "patients"], a: 1, e: "Sau tính từ sở hữu “your” cần danh từ → <b>patience</b> (sự kiên nhẫn). “patients” cũng là danh từ nhưng nghĩa là “bệnh nhân”, sai nghĩa.", t: "tu-loai" },
-    { say: "Our staff handled the problem quickly.", q: "Nghe và chọn câu bạn nghe được.", c: ["Our staff handled the problem quick.", "Our staff handled the problem quickly.", "Our staff handle the quick problem.", "Our staff quickly handled the problems."], a: 1, e: "Câu nghe được: “Our staff handled the problem <b>quickly</b>.” Trạng từ “quickly” đứng cuối câu, bổ nghĩa cho “handled”.", t: "tu-loai" },
-    { p: 2, say: "How was the hotel you stayed at?", c: ["It was clean and comfortable.", "I stayed for three nights.", "At the front desk."], a: 0, e: "Hỏi “How was…?” (thế nào) → trả lời bằng tính từ: <b>It was clean and comfortable.</b> “three nights” trả lời How long; “At the front desk” trả lời Where.", t: "hoi-dap" },
-    { p: 5, lvl: 1, q: "The new hotel is ___ located near the airport.", c: ["convenience", "convenient", "conveniently", "conveniences"], a: 2, e: "Đứng trước V3 “located” (giữa “is” và “located”) cần trạng từ → <b>conveniently</b>.", t: "tu-loai" }
+    { id: "s1-l13-ex0", q: "The store displays its new products in an ___ way.", c: ["attract", "attraction", "attractive", "attractively"], a: 2, e: "Giữa mạo từ “an” và danh từ “way” cần tính từ → <b>attractive</b>. “attract” là động từ, “attraction” là danh từ, “attractively” là trạng từ.", t: "tu-loai" },
+    { id: "s1-l13-ex1", p: 5, lvl: 1, q: "The technician repaired the copy machine very ___.", c: ["quick", "quickly", "quickness", "quicken"], a: 1, e: "Câu đã đủ S + V + O, cần trạng từ bổ nghĩa cho động từ “repaired” → <b>quickly</b>.", t: "tu-loai" },
+    { id: "s1-l13-ex2", q: "Our customer service representatives are always ___.", c: ["help", "helps", "helpfully", "helpful"], a: 3, e: "Sau to be “are” cần tính từ → <b>helpful</b>. “helpfully” là trạng từ, không đứng sau to be để mô tả người.", t: "tu-loai" },
+    { id: "s1-l13-ex3", q: "The new ticket machine looks ___ to use.", c: ["simple", "simply", "simplicity", "simplify"], a: 0, e: "“look” là động từ nối, theo sau là tính từ → <b>simple</b>. Không dùng trạng từ “simply” sau look/seem/become.", t: "tu-loai" },
+    { id: "s1-l13-ex4", q: "Mr. Cho works very ___ to answer every customer e-mail on time.", c: ["hardly", "hard", "hardness", "hardship"], a: 1, e: "<b>hard</b> vừa là tính từ vừa là trạng từ (làm việc chăm chỉ). “hardly” nghĩa là “hầu như không”, sai nghĩa.", t: "tu-loai" },
+    { id: "s1-l13-ex5", p: 5, lvl: 1, q: "Customer ___ is the main goal of our service team.", c: ["satisfy", "satisfied", "satisfaction", "satisfying"], a: 2, e: "Chỗ trống là chủ ngữ, đứng trước động từ “is” → cần danh từ <b>satisfaction</b> (đuôi -tion).", t: "tu-loai" },
+    { id: "s1-l13-ex6", q: "We appreciate your ___ while our website is being updated.", c: ["patient", "patience", "patiently", "patients"], a: 1, e: "Sau tính từ sở hữu “your” cần danh từ → <b>patience</b> (sự kiên nhẫn). “patients” cũng là danh từ nhưng nghĩa là “bệnh nhân”, sai nghĩa.", t: "tu-loai" },
+    { id: "s1-l13-ex7", say: "Our staff handled the problem quickly.", q: "Nghe và chọn câu bạn nghe được.", c: ["Our staff handled the problem quick.", "Our staff handled the problem quickly.", "Our staff handle the quick problem.", "Our staff quickly handled the problems."], a: 1, e: "Câu nghe được: “Our staff handled the problem <b>quickly</b>.” Trạng từ “quickly” đứng cuối câu, bổ nghĩa cho “handled”.", t: "tu-loai" },
+    { id: "s1-l13-ex8", p: 2, say: "How was the hotel you stayed at?", c: ["It was clean and comfortable.", "I stayed for three nights.", "At the front desk."], a: 0, e: "Hỏi “How was…?” (thế nào) → trả lời bằng tính từ: <b>It was clean and comfortable.</b> “three nights” trả lời How long; “At the front desk” trả lời Where.", t: "hoi-dap" },
+    { id: "s1-l13-ex9", p: 5, lvl: 1, q: "The new hotel is ___ located near the airport.", c: ["convenience", "convenient", "conveniently", "conveniences"], a: 2, e: "Đứng trước V3 “located” (giữa “is” và “located”) cần trạng từ → <b>conveniently</b>.", t: "tu-loai" }
   ]
 });
 
@@ -74,16 +74,16 @@ TOEIC.addLesson({
     "round-trip|adj|/ˌraʊnd ˈtrɪp/|khứ hồi|return|A round-trip ticket is cheaper.|Vé khứ hồi rẻ hơn."
   ],
   exercises: [
-    { q: "The hotel ___ not have a swimming pool.", c: ["is", "do", "does", "are"], a: 2, e: "Động từ thường “have”, chủ ngữ số ít “The hotel” → phủ định bằng <b>does</b> not have.", t: "cau-hoi" },
-    { q: "___ there any flights to Busan this evening?", c: ["Is", "Are", "Do", "Does"], a: 1, e: "Danh từ phía sau “flights” số nhiều → <b>Are</b> there…? Câu hỏi với There không dùng do/does.", t: "cau-hoi" },
-    { p: 5, lvl: 1, q: "There ___ a free shuttle bus to the airport every hour.", c: ["is", "are", "be", "have"], a: 0, e: "“a free shuttle bus” là danh từ số ít → There <b>is</b>.", t: "cau-hoi" },
-    { q: "We didn't ___ the confirmation e-mail for our hotel booking.", c: ["received", "receives", "receiving", "receive"], a: 3, e: "Sau “didn't” động từ ở dạng nguyên mẫu → <b>receive</b>. Lỗi hay gặp là “didn't received”.", t: "cau-hoi" },
-    { q: "Sorry, there aren't ___ seats left on the 6 P.M. train.", c: ["some", "any", "a", "much"], a: 1, e: "Câu phủ định → dùng <b>any</b>. “a” không đi với danh từ số nhiều; “much” dùng cho danh từ không đếm được.", t: "cau-hoi" },
-    { q: "___ the train leave on time yesterday?", c: ["Did", "Does", "Was", "Is"], a: 0, e: "“yesterday” → quá khứ; “leave” là động từ thường → câu hỏi bằng <b>Did</b>. “Was/Is” không đi với động từ nguyên mẫu.", t: "cau-hoi" },
-    { p: 5, lvl: 1, q: "The restaurant ___ closed on Mondays.", c: ["doesn't", "isn't", "don't", "aren't"], a: 1, e: "“closed” là tính từ (đóng cửa), nên cần to be chứ không dùng do/does. Chủ ngữ số ít → <b>isn't</b>. “doesn't closed” sai vì sau doesn't phải là động từ nguyên mẫu.", t: "cau-hoi" },
-    { q: "“Can you speak Japanese?” – “No, I ___.”", c: ["don't", "won't", "can't", "am not"], a: 2, e: "Câu trả lời ngắn lặp lại trợ động từ của câu hỏi: Can…? → No, I <b>can't</b>.", t: "cau-hoi" },
-    { p: 2, say: "Is there a bank near the hotel?", c: ["I'd like to open an account.", "It's a five-star hotel.", "Yes, there's one across the street."], a: 2, e: "Hỏi có ngân hàng gần không → <b>Yes, there's one across the street.</b> Hai lựa chọn còn lại lặp từ “bank”/“hotel” nhưng không trả lời câu hỏi.", t: "hoi-dap" },
-    { q: "Will the tickets ___ cheaper next week?", c: ["is", "be", "are", "being"], a: 1, e: "Sau “will” luôn là động từ nguyên mẫu → <b>be</b>.", t: "cau-hoi" }
+    { id: "s1-l14-ex0", q: "The hotel ___ not have a swimming pool.", c: ["is", "do", "does", "are"], a: 2, e: "Động từ thường “have”, chủ ngữ số ít “The hotel” → phủ định bằng <b>does</b> not have.", t: "cau-hoi" },
+    { id: "s1-l14-ex1", q: "___ there any flights to Busan this evening?", c: ["Is", "Are", "Do", "Does"], a: 1, e: "Danh từ phía sau “flights” số nhiều → <b>Are</b> there…? Câu hỏi với There không dùng do/does.", t: "cau-hoi" },
+    { id: "s1-l14-ex2", p: 5, lvl: 1, q: "There ___ a free shuttle bus to the airport every hour.", c: ["is", "are", "be", "have"], a: 0, e: "“a free shuttle bus” là danh từ số ít → There <b>is</b>.", t: "cau-hoi" },
+    { id: "s1-l14-ex3", q: "We didn't ___ the confirmation e-mail for our hotel booking.", c: ["received", "receives", "receiving", "receive"], a: 3, e: "Sau “didn't” động từ ở dạng nguyên mẫu → <b>receive</b>. Lỗi hay gặp là “didn't received”.", t: "cau-hoi" },
+    { id: "s1-l14-ex4", q: "Sorry, there aren't ___ seats left on the 6 P.M. train.", c: ["some", "any", "a", "much"], a: 1, e: "Câu phủ định → dùng <b>any</b>. “a” không đi với danh từ số nhiều; “much” dùng cho danh từ không đếm được.", t: "cau-hoi" },
+    { id: "s1-l14-ex5", q: "___ the train leave on time yesterday?", c: ["Did", "Does", "Was", "Is"], a: 0, e: "“yesterday” → quá khứ; “leave” là động từ thường → câu hỏi bằng <b>Did</b>. “Was/Is” không đi với động từ nguyên mẫu.", t: "cau-hoi" },
+    { id: "s1-l14-ex6", p: 5, lvl: 1, q: "The restaurant ___ closed on Mondays.", c: ["doesn't", "isn't", "don't", "aren't"], a: 1, e: "“closed” là tính từ (đóng cửa), nên cần to be chứ không dùng do/does. Chủ ngữ số ít → <b>isn't</b>. “doesn't closed” sai vì sau doesn't phải là động từ nguyên mẫu.", t: "cau-hoi" },
+    { id: "s1-l14-ex7", q: "“Can you speak Japanese?” – “No, I ___.”", c: ["don't", "won't", "can't", "am not"], a: 2, e: "Câu trả lời ngắn lặp lại trợ động từ của câu hỏi: Can…? → No, I <b>can't</b>.", t: "cau-hoi" },
+    { id: "s1-l14-ex8", p: 2, say: "Is there a bank near the hotel?", c: ["I'd like to open an account.", "It's a five-star hotel.", "Yes, there's one across the street."], a: 2, e: "Hỏi có ngân hàng gần không → <b>Yes, there's one across the street.</b> Hai lựa chọn còn lại lặp từ “bank”/“hotel” nhưng không trả lời câu hỏi.", t: "hoi-dap" },
+    { id: "s1-l14-ex9", q: "Will the tickets ___ cheaper next week?", c: ["is", "be", "are", "being"], a: 1, e: "Sau “will” luôn là động từ nguyên mẫu → <b>be</b>.", t: "cau-hoi" }
   ]
 });
 
@@ -118,16 +118,16 @@ TOEIC.addLesson({
     "place an order|phr|/pleɪs ən ˈɔːdə(r)/|đặt hàng, gọi món|order|You can place an order online.|Bạn có thể đặt hàng trực tuyến."
   ],
   exercises: [
-    { q: "Could you ___ me the menu, please?", c: ["brings", "to bring", "bring", "bringing"], a: 2, e: "Sau “could” là động từ nguyên mẫu không to → <b>bring</b>.", t: "khuyet-thieu" },
-    { p: 5, lvl: 1, q: "Hotel guests ___ check out by 11 A.M.", c: ["must to", "has to", "must", "musts"], a: 2, e: "<b>must</b> + V nguyên mẫu. “must to” thừa “to”; “musts” sai vì động từ khuyết thiếu không thêm -s; “has to” không hợp với chủ ngữ số nhiều “guests”.", t: "khuyet-thieu" },
-    { q: "___ I see your boarding pass, please?", c: ["May", "Am", "Does", "Have"], a: 0, e: "Xin phép lịch sự: <b>May</b> I + V…? “Am/Does/Have” không đi với chủ ngữ I + động từ nguyên mẫu “see” theo cách này.", t: "khuyet-thieu" },
-    { q: "Would you like ___ a dessert, sir?", c: ["order", "to order", "ordering", "ordered"], a: 1, e: "<b>would like + to V</b> → would like <b>to order</b>.", t: "khuyet-thieu" },
-    { q: "The new translation app ___ read signs in ten languages.", c: ["cans", "can to", "can", "is can"], a: 2, e: "Động từ khuyết thiếu giữ nguyên dạng, không thêm -s, không có to → <b>can</b> read.", t: "khuyet-thieu" },
-    { p: 5, lvl: 1, q: "Ms. Tran ___ to meet a client at the airport this afternoon.", c: ["must", "have", "has", "should"], a: 2, e: "Phía sau có “to meet” → cấu trúc <b>have to</b>; chủ ngữ số ít → <b>has</b> to. “must/should” không đi với to.", t: "khuyet-thieu" },
-    { q: "Passengers ___ not use mobile phones during takeoff.", c: ["are", "has", "must", "doesn't"], a: 2, e: "<b>must not</b> + V = cấm. “are not use”, “has not use” sai cấu trúc; “doesn't” không hợp với chủ ngữ số nhiều.", t: "khuyet-thieu" },
-    { q: "Take an umbrella. It ___ rain later this afternoon.", c: ["mights", "might to", "is might", "might"], a: 3, e: "<b>might</b> + V nguyên mẫu = có lẽ sẽ. Không thêm -s, không có to, không đi với to be.", t: "khuyet-thieu" },
-    { p: 2, say: "Could you help me carry these boxes?", c: ["Sure, where should I put them?", "They're in the box.", "I bought them yesterday."], a: 0, e: "Lời nhờ “Could you…?” → đồng ý: <b>Sure, where should I put them?</b> “They're in the box” lặp từ box gây bẫy.", t: "hoi-dap" },
-    { p: 2, say: "Would you like some more coffee?", c: ["Yes, I liked it.", "No, thanks. I've had enough.", "The coffee shop is downstairs."], a: 1, e: "Lời mời “Would you like…?” → từ chối lịch sự: <b>No, thanks. I've had enough.</b> Hai câu còn lại lặp từ like/coffee nhưng không đáp lời mời.", t: "hoi-dap" }
+    { id: "s1-l15-ex0", q: "Could you ___ me the menu, please?", c: ["brings", "to bring", "bring", "bringing"], a: 2, e: "Sau “could” là động từ nguyên mẫu không to → <b>bring</b>.", t: "khuyet-thieu" },
+    { id: "s1-l15-ex1", p: 5, lvl: 1, q: "Hotel guests ___ check out by 11 A.M.", c: ["must to", "has to", "must", "musts"], a: 2, e: "<b>must</b> + V nguyên mẫu. “must to” thừa “to”; “musts” sai vì động từ khuyết thiếu không thêm -s; “has to” không hợp với chủ ngữ số nhiều “guests”.", t: "khuyet-thieu" },
+    { id: "s1-l15-ex2", q: "___ I see your boarding pass, please?", c: ["May", "Am", "Does", "Have"], a: 0, e: "Xin phép lịch sự: <b>May</b> I + V…? “Am/Does/Have” không đi với chủ ngữ I + động từ nguyên mẫu “see” theo cách này.", t: "khuyet-thieu" },
+    { id: "s1-l15-ex3", q: "Would you like ___ a dessert, sir?", c: ["order", "to order", "ordering", "ordered"], a: 1, e: "<b>would like + to V</b> → would like <b>to order</b>.", t: "khuyet-thieu" },
+    { id: "s1-l15-ex4", q: "The new translation app ___ read signs in ten languages.", c: ["cans", "can to", "can", "is can"], a: 2, e: "Động từ khuyết thiếu giữ nguyên dạng, không thêm -s, không có to → <b>can</b> read.", t: "khuyet-thieu" },
+    { id: "s1-l15-ex5", p: 5, lvl: 1, q: "Ms. Tran ___ to meet a client at the airport this afternoon.", c: ["must", "have", "has", "should"], a: 2, e: "Phía sau có “to meet” → cấu trúc <b>have to</b>; chủ ngữ số ít → <b>has</b> to. “must/should” không đi với to.", t: "khuyet-thieu" },
+    { id: "s1-l15-ex6", q: "Passengers ___ not use mobile phones during takeoff.", c: ["are", "has", "must", "doesn't"], a: 2, e: "<b>must not</b> + V = cấm. “are not use”, “has not use” sai cấu trúc; “doesn't” không hợp với chủ ngữ số nhiều.", t: "khuyet-thieu" },
+    { id: "s1-l15-ex7", q: "Take an umbrella. It ___ rain later this afternoon.", c: ["mights", "might to", "is might", "might"], a: 3, e: "<b>might</b> + V nguyên mẫu = có lẽ sẽ. Không thêm -s, không có to, không đi với to be.", t: "khuyet-thieu" },
+    { id: "s1-l15-ex8", p: 2, say: "Could you help me carry these boxes?", c: ["Sure, where should I put them?", "They're in the box.", "I bought them yesterday."], a: 0, e: "Lời nhờ “Could you…?” → đồng ý: <b>Sure, where should I put them?</b> “They're in the box” lặp từ box gây bẫy.", t: "hoi-dap" },
+    { id: "s1-l15-ex9", p: 2, say: "Would you like some more coffee?", c: ["Yes, I liked it.", "No, thanks. I've had enough.", "The coffee shop is downstairs."], a: 1, e: "Lời mời “Would you like…?” → từ chối lịch sự: <b>No, thanks. I've had enough.</b> Hai câu còn lại lặp từ like/coffee nhưng không đáp lời mời.", t: "hoi-dap" }
   ]
 });
 
@@ -162,16 +162,16 @@ TOEIC.addLesson({
     "loyalty card|n|/ˈlɔɪəlti kɑːd/|thẻ khách hàng thân thiết|membership card|Show your loyalty card to get points.|Xuất trình thẻ thành viên để được tích điểm."
   ],
   exercises: [
-    { q: "How ___ luggage are you bringing on the trip?", c: ["many", "much", "few", "several"], a: 1, e: "“luggage” không đếm được → How <b>much</b>. many, few, several chỉ đi với danh từ đếm được số nhiều.", t: "luong-tu" },
-    { p: 5, lvl: 1, q: "Each ___ must show a ticket before boarding the ferry.", c: ["passengers", "passenger", "of passengers", "the passengers"], a: 1, e: "<b>each + danh từ số ít</b> → each <b>passenger</b>. Muốn dùng số nhiều phải nói “each of the passengers”.", t: "luong-tu" },
-    { q: "We had very ___ customers this morning because of the heavy rain.", c: ["a few", "few", "little", "much"], a: 1, e: "“customers” đếm được số nhiều, có “very” đi trước → very <b>few</b> (rất ít). “very a few” sai; little/much dùng cho danh từ không đếm được.", t: "luong-tu" },
-    { q: "There is only ___ time left before the train leaves.", c: ["a few", "many", "several", "a little"], a: 3, e: "“time” không đếm được → only <b>a little</b> time. a few, many, several đi với danh từ số nhiều.", t: "luong-tu" },
-    { q: "The hotel has ___ rooms with a view of the ocean.", c: ["much", "a little", "every", "several"], a: 3, e: "“rooms” số nhiều → <b>several</b>. “every” cần danh từ số ít; much, a little dùng cho danh từ không đếm được.", t: "luong-tu" },
-    { p: 5, lvl: 1, q: "A large ___ of shoppers used coupons during the holiday sale.", c: ["amount", "much", "number", "deal"], a: 2, e: "“shoppers” đếm được số nhiều → a large <b>number</b> of. “amount” và “a great deal of” dùng cho danh từ không đếm được.", t: "luong-tu" },
-    { q: "The ___ of money we spend on delivery has doubled.", c: ["number", "amount", "many", "few"], a: 1, e: "“money” không đếm được → the <b>amount</b> of money. “the number of” chỉ đi với danh từ số nhiều.", t: "luong-tu" },
-    { q: "Every room in the hotel ___ a safe and a minibar.", c: ["have", "has", "having", "are having"], a: 1, e: "<b>every + danh từ số ít + động từ số ít</b> → every room <b>has</b>.", t: "luong-tu" },
-    { q: "We don't have ___ information about the new bus fares yet.", c: ["many", "a few", "much", "several"], a: 2, e: "“information” không đếm được, câu phủ định → <b>much</b> information.", t: "luong-tu" },
-    { say: "Most of the passengers have already boarded.", q: "Nghe và chọn câu bạn nghe được.", c: ["Most passengers haven't boarded yet.", "Some of the passengers have already boarded.", "Most of the passengers have already boarded.", "Most of the passenger has already boarded."], a: 2, e: "Câu nghe được: “<b>Most of the passengers</b> have already boarded.” – most of the + danh từ số nhiều.", t: "luong-tu" }
+    { id: "s1-l16-ex0", q: "How ___ luggage are you bringing on the trip?", c: ["many", "much", "few", "several"], a: 1, e: "“luggage” không đếm được → How <b>much</b>. many, few, several chỉ đi với danh từ đếm được số nhiều.", t: "luong-tu" },
+    { id: "s1-l16-ex1", p: 5, lvl: 1, q: "Each ___ must show a ticket before boarding the ferry.", c: ["passengers", "passenger", "of passengers", "the passengers"], a: 1, e: "<b>each + danh từ số ít</b> → each <b>passenger</b>. Muốn dùng số nhiều phải nói “each of the passengers”.", t: "luong-tu" },
+    { id: "s1-l16-ex2", q: "We had very ___ customers this morning because of the heavy rain.", c: ["a few", "few", "little", "much"], a: 1, e: "“customers” đếm được số nhiều, có “very” đi trước → very <b>few</b> (rất ít). “very a few” sai; little/much dùng cho danh từ không đếm được.", t: "luong-tu" },
+    { id: "s1-l16-ex3", q: "There is only ___ time left before the train leaves.", c: ["a few", "many", "several", "a little"], a: 3, e: "“time” không đếm được → only <b>a little</b> time. a few, many, several đi với danh từ số nhiều.", t: "luong-tu" },
+    { id: "s1-l16-ex4", q: "The hotel has ___ rooms with a view of the ocean.", c: ["much", "a little", "every", "several"], a: 3, e: "“rooms” số nhiều → <b>several</b>. “every” cần danh từ số ít; much, a little dùng cho danh từ không đếm được.", t: "luong-tu" },
+    { id: "s1-l16-ex5", p: 5, lvl: 1, q: "A large ___ of shoppers used coupons during the holiday sale.", c: ["amount", "much", "number", "deal"], a: 2, e: "“shoppers” đếm được số nhiều → a large <b>number</b> of. “amount” và “a great deal of” dùng cho danh từ không đếm được.", t: "luong-tu" },
+    { id: "s1-l16-ex6", q: "The ___ of money we spend on delivery has doubled.", c: ["number", "amount", "many", "few"], a: 1, e: "“money” không đếm được → the <b>amount</b> of money. “the number of” chỉ đi với danh từ số nhiều.", t: "luong-tu" },
+    { id: "s1-l16-ex7", q: "Every room in the hotel ___ a safe and a minibar.", c: ["have", "has", "having", "are having"], a: 1, e: "<b>every + danh từ số ít + động từ số ít</b> → every room <b>has</b>.", t: "luong-tu" },
+    { id: "s1-l16-ex8", q: "We don't have ___ information about the new bus fares yet.", c: ["many", "a few", "much", "several"], a: 2, e: "“information” không đếm được, câu phủ định → <b>much</b> information.", t: "luong-tu" },
+    { id: "s1-l16-ex9", say: "Most of the passengers have already boarded.", q: "Nghe và chọn câu bạn nghe được.", c: ["Most passengers haven't boarded yet.", "Some of the passengers have already boarded.", "Most of the passengers have already boarded.", "Most of the passenger has already boarded."], a: 2, e: "Câu nghe được: “<b>Most of the passengers</b> have already boarded.” – most of the + danh từ số nhiều.", t: "luong-tu" }
   ]
 });
 
@@ -206,16 +206,16 @@ TOEIC.addLesson({
     "commute|n|/kəˈmjuːt/|quãng đường đi làm hằng ngày|journey to work|My commute takes forty minutes by bus.|Tôi đi làm bằng xe buýt mất bốn mươi phút."
   ],
   exercises: [
-    { q: "This new laptop is ___ than the one I bought last year.", c: ["light", "lighter", "lightest", "more light"], a: 1, e: "Có “than”, “light” là tính từ ngắn → <b>lighter</b>. “more light” sai vì tính từ ngắn dùng -er.", t: "so-sanh" },
-    { p: 5, lvl: 1, q: "The Grand Palace is the ___ hotel in the city.", c: ["expensive", "more expensive", "most expensive", "expensivest"], a: 2, e: "Có “the … in the city” → so sánh nhất; “expensive” là tính từ dài → the <b>most expensive</b>.", t: "so-sanh" },
-    { q: "The updated software works ___ than the old version.", c: ["good", "better", "best", "more good"], a: 1, e: "Có “than” → so sánh hơn. Bất quy tắc: good/well → <b>better</b>.", t: "so-sanh" },
-    { q: "The new battery lasts as ___ as the old one.", c: ["long", "longer", "longest", "the longest"], a: 0, e: "Cấu trúc so sánh bằng <b>as + nguyên mẫu + as</b> → as <b>long</b> as.", t: "so-sanh" },
-    { q: "Traffic on the highway is ___ today than it was yesterday.", c: ["bad", "worse", "worst", "badder"], a: 1, e: "Có “than” → so sánh hơn. Bất quy tắc: bad → <b>worse</b> → the worst. “badder” không tồn tại.", t: "so-sanh" },
-    { p: 5, lvl: 1, q: "Of all our stores, the downtown store had the ___ sales last month.", c: ["high", "higher", "highest", "more high"], a: 2, e: "“Of all … the ___” → so sánh nhất: the <b>highest</b>.", t: "so-sanh" },
-    { q: "Our new office is much ___ than the old one.", c: ["big", "biger", "biggest", "bigger"], a: 3, e: "Có “much … than” → so sánh hơn. big có 1 nguyên âm + 1 phụ âm cuối → gấp đôi g: <b>bigger</b>.", t: "so-sanh" },
-    { q: "Taking the subway is ___ than driving during rush hour.", c: ["more convenient", "convenienter", "most convenient", "convenient"], a: 0, e: "“convenient” là tính từ dài, có “than” → <b>more convenient</b>.", t: "so-sanh" },
-    { p: 2, say: "Which printer is the fastest?", c: ["The one by the window.", "Yes, it's very fast.", "I printed it faster."], a: 0, e: "Hỏi “Which…?” → chỉ ra một cái cụ thể: <b>The one by the window.</b> Câu hỏi Which không trả lời bằng Yes; “faster” lặp âm gây bẫy.", t: "hoi-dap" },
-    { q: "This model is ___ expensive than the other two.", c: ["much", "more", "most", "many"], a: 1, e: "Có “than” và “expensive” là tính từ dài → <b>more</b> expensive. “much expensive” sai vì much chỉ đứng trước dạng so sánh hơn (much more expensive).", t: "so-sanh" }
+    { id: "s1-l17-ex0", q: "This new laptop is ___ than the one I bought last year.", c: ["light", "lighter", "lightest", "more light"], a: 1, e: "Có “than”, “light” là tính từ ngắn → <b>lighter</b>. “more light” sai vì tính từ ngắn dùng -er.", t: "so-sanh" },
+    { id: "s1-l17-ex1", p: 5, lvl: 1, q: "The Grand Palace is the ___ hotel in the city.", c: ["expensive", "more expensive", "most expensive", "expensivest"], a: 2, e: "Có “the … in the city” → so sánh nhất; “expensive” là tính từ dài → the <b>most expensive</b>.", t: "so-sanh" },
+    { id: "s1-l17-ex2", q: "The updated software works ___ than the old version.", c: ["good", "better", "best", "more good"], a: 1, e: "Có “than” → so sánh hơn. Bất quy tắc: good/well → <b>better</b>.", t: "so-sanh" },
+    { id: "s1-l17-ex3", q: "The new battery lasts as ___ as the old one.", c: ["long", "longer", "longest", "the longest"], a: 0, e: "Cấu trúc so sánh bằng <b>as + nguyên mẫu + as</b> → as <b>long</b> as.", t: "so-sanh" },
+    { id: "s1-l17-ex4", q: "Traffic on the highway is ___ today than it was yesterday.", c: ["bad", "worse", "worst", "badder"], a: 1, e: "Có “than” → so sánh hơn. Bất quy tắc: bad → <b>worse</b> → the worst. “badder” không tồn tại.", t: "so-sanh" },
+    { id: "s1-l17-ex5", p: 5, lvl: 1, q: "Of all our stores, the downtown store had the ___ sales last month.", c: ["high", "higher", "highest", "more high"], a: 2, e: "“Of all … the ___” → so sánh nhất: the <b>highest</b>.", t: "so-sanh" },
+    { id: "s1-l17-ex6", q: "Our new office is much ___ than the old one.", c: ["big", "biger", "biggest", "bigger"], a: 3, e: "Có “much … than” → so sánh hơn. big có 1 nguyên âm + 1 phụ âm cuối → gấp đôi g: <b>bigger</b>.", t: "so-sanh" },
+    { id: "s1-l17-ex7", q: "Taking the subway is ___ than driving during rush hour.", c: ["more convenient", "convenienter", "most convenient", "convenient"], a: 0, e: "“convenient” là tính từ dài, có “than” → <b>more convenient</b>.", t: "so-sanh" },
+    { id: "s1-l17-ex8", p: 2, say: "Which printer is the fastest?", c: ["The one by the window.", "Yes, it's very fast.", "I printed it faster."], a: 0, e: "Hỏi “Which…?” → chỉ ra một cái cụ thể: <b>The one by the window.</b> Câu hỏi Which không trả lời bằng Yes; “faster” lặp âm gây bẫy.", t: "hoi-dap" },
+    { id: "s1-l17-ex9", q: "This model is ___ expensive than the other two.", c: ["much", "more", "most", "many"], a: 1, e: "Có “than” và “expensive” là tính từ dài → <b>more</b> expensive. “much expensive” sai vì much chỉ đứng trước dạng so sánh hơn (much more expensive).", t: "so-sanh" }
   ]
 });
 
@@ -223,15 +223,15 @@ TOEIC.addTest({
   id: "cp-s1-u2b", kind: "checkpoint", title: "Kiểm tra Chặng 3 – Từ loại & các kiểu câu",
   desc: "Tính từ và trạng từ, câu phủ định và câu hỏi, động từ khuyết thiếu, lượng từ, so sánh (bài 10–14).",
   groups: [
-    { q: "The bus arrived ___ because of the heavy snow.", c: ["lately", "late", "latest", "lateness"], a: 1, e: "<b>late</b> vừa là tính từ vừa là trạng từ (muộn). “lately” nghĩa là “gần đây”, sai nghĩa.", t: "tu-loai" },
-    { q: "The hotel provides ___ service to all of its guests.", c: ["excellence", "excellently", "excellent", "excel"], a: 2, e: "Trước danh từ “service” cần tính từ → <b>excellent</b>.", t: "tu-loai" },
-    { q: "There ___ some new dishes on the lunch menu this week.", c: ["is", "are", "be", "has"], a: 1, e: "“some new dishes” số nhiều → There <b>are</b>.", t: "cau-hoi" },
-    { q: "The cashier ___ accept my coupon yesterday.", c: ["doesn't", "wasn't", "didn't", "isn't"], a: 2, e: "“yesterday” → quá khứ; “accept” là động từ thường → <b>didn't</b> accept. wasn't/isn't không đi với động từ nguyên mẫu.", t: "cau-hoi" },
-    { q: "All visitors ___ wear a badge inside the building.", c: ["must", "must to", "musts", "are must"], a: 0, e: "<b>must</b> + V nguyên mẫu, không thêm to, không thêm -s.", t: "khuyet-thieu" },
-    { p: 2, say: "May I take your order now?", c: ["I ordered it online.", "Yes, I'd like the chicken salad.", "No, it's not mine."], a: 1, e: "Người phục vụ hỏi gọi món → <b>Yes, I'd like the chicken salad.</b> “ordered” lặp từ gây bẫy.", t: "hoi-dap" },
-    { q: "We received ___ complaints about the slow Wi-Fi.", c: ["much", "a little", "a number of", "an amount of"], a: 2, e: "“complaints” đếm được số nhiều → <b>a number of</b>. much, a little, an amount of đi với danh từ không đếm được.", t: "luong-tu" },
-    { q: "There is ___ coffee left in the pot if you want some.", c: ["a few", "many", "several", "a little"], a: 3, e: "“coffee” không đếm được → <b>a little</b> coffee.", t: "luong-tu" },
-    { q: "The express train is ___ than the local train.", c: ["fast", "faster", "fastest", "more fast"], a: 1, e: "Có “than”, “fast” là tính từ ngắn → <b>faster</b>.", t: "so-sanh" },
-    { q: "Many people say this is the ___ restaurant in town.", c: ["good", "better", "best", "goodest"], a: 2, e: "“the … in town” → so sánh nhất; bất quy tắc good → better → the <b>best</b>.", t: "so-sanh" }
+    { id: "cp-s1-u2b-g0", q: "The bus arrived ___ because of the heavy snow.", c: ["lately", "late", "latest", "lateness"], a: 1, e: "<b>late</b> vừa là tính từ vừa là trạng từ (muộn). “lately” nghĩa là “gần đây”, sai nghĩa.", t: "tu-loai" },
+    { id: "cp-s1-u2b-g1", q: "The hotel provides ___ service to all of its guests.", c: ["excellence", "excellently", "excellent", "excel"], a: 2, e: "Trước danh từ “service” cần tính từ → <b>excellent</b>.", t: "tu-loai" },
+    { id: "cp-s1-u2b-g2", q: "There ___ some new dishes on the lunch menu this week.", c: ["is", "are", "be", "has"], a: 1, e: "“some new dishes” số nhiều → There <b>are</b>.", t: "cau-hoi" },
+    { id: "cp-s1-u2b-g3", q: "The cashier ___ accept my coupon yesterday.", c: ["doesn't", "wasn't", "didn't", "isn't"], a: 2, e: "“yesterday” → quá khứ; “accept” là động từ thường → <b>didn't</b> accept. wasn't/isn't không đi với động từ nguyên mẫu.", t: "cau-hoi" },
+    { id: "cp-s1-u2b-g4", q: "All visitors ___ wear a badge inside the building.", c: ["must", "must to", "musts", "are must"], a: 0, e: "<b>must</b> + V nguyên mẫu, không thêm to, không thêm -s.", t: "khuyet-thieu" },
+    { id: "cp-s1-u2b-g5", p: 2, say: "May I take your order now?", c: ["I ordered it online.", "Yes, I'd like the chicken salad.", "No, it's not mine."], a: 1, e: "Người phục vụ hỏi gọi món → <b>Yes, I'd like the chicken salad.</b> “ordered” lặp từ gây bẫy.", t: "hoi-dap" },
+    { id: "cp-s1-u2b-g6", q: "We received ___ complaints about the slow Wi-Fi.", c: ["much", "a little", "a number of", "an amount of"], a: 2, e: "“complaints” đếm được số nhiều → <b>a number of</b>. much, a little, an amount of đi với danh từ không đếm được.", t: "luong-tu" },
+    { id: "cp-s1-u2b-g7", q: "There is ___ coffee left in the pot if you want some.", c: ["a few", "many", "several", "a little"], a: 3, e: "“coffee” không đếm được → <b>a little</b> coffee.", t: "luong-tu" },
+    { id: "cp-s1-u2b-g8", q: "The express train is ___ than the local train.", c: ["fast", "faster", "fastest", "more fast"], a: 1, e: "Có “than”, “fast” là tính từ ngắn → <b>faster</b>.", t: "so-sanh" },
+    { id: "cp-s1-u2b-g9", q: "Many people say this is the ___ restaurant in town.", c: ["good", "better", "best", "goodest"], a: 2, e: "“the … in town” → so sánh nhất; bất quy tắc good → better → the <b>best</b>.", t: "so-sanh" }
   ]
 });

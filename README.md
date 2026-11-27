@@ -76,6 +76,31 @@ Nguyên tắc: GĐ1 dạy mức cơ bản của mỗi chủ đề, GĐ2–5 dạ
 
 ---
 
+## 2c. VIỆC CÒN THIẾU (tổng hợp sau review 2026-11-27)
+
+**I. Ngữ pháp**
+1. Thì: quá khứ tiếp diễn · quá khứ hoàn thành tiếp diễn · tương lai tiếp diễn · tương lai hoàn thành tiếp diễn · hiện tại tiếp diễn cho lịch hẹn · hiện tại đơn cho lịch trình · be about to / be due to / be scheduled to · tương lai trong quá khứ (would, was going to) · động từ trạng thái không dùng tiếp diễn · lùi thì câu gián tiếp · bài tổng hợp chọn thì theo ngữ cảnh đoạn văn (Part 6)
+2. Điều kiện & đảo ngữ: loại 0–3, hỗn hợp · unless / provided that / otherwise / but for · Should… / Had… / Were… · Only… / Not until… / Rarely, Seldom… · Hardly…when / No sooner…than · Not only does…but also
+3. To V / V-ing: stop / remember / forget / try · V + O + to V (ask, allow, encourage, remind) · prevent / discourage / prohibit sb from V-ing · be used to / used to / get used to · so as to / in order that · bị động của V-ing và to V
+4. Mạo từ: the + so sánh nhất / số thứ tự / danh từ duy nhất · không dùng mạo từ · mạo từ trong cụm cố định
+5. Lượng từ: most / almost / most of · either / neither / both / all (từ hạn định & đại từ)
+6. Liên từ: now that / given that / in the event that · even if vs even though · in that / in order that
+7. Khác: as if / as though · wish / It's time + quá khứ · it takes sb + time + to V · the reason why/that · whereby, of which / of whom
+
+**II. Từ vựng – ngữ pháp (Part 5 cấp cao):** cặp tính từ cùng gốc khác nghĩa · trạng từ hay ra (still/yet/already, hardly/barely, nearly/almost, shortly/soon…) · collocation động từ + danh từ · nội/ngoại động từ dễ nhầm (rise/raise, lie/lay) · ~150 cụm giới từ đi kèm
+
+**III. Từ vựng:** GĐ2 lên ~1.200 · GĐ3–5 lên ~3.500 · phrasal verbs · paraphrase & đồng nghĩa
+
+**IV. Kỹ năng & chiến lược:** Part 1 chiến lược · Part 2 câu hỏi đuôi / đề nghị / trần thuật / trả lời gián tiếp · Part 3–4 hàm ý, biểu đồ, hội thoại 3 người · Part 6 chèn câu, đại từ trỏ ngược · Part 7 đoạn đôi/ba, NOT true, đồng nghĩa, phân bổ thời gian · dictation, shadowing
+
+**V. Ngân hàng câu & đề:** mỗi Part ≥ 10 nhóm · kiểm tra chặng GĐ3–5 · đề chuyển giai đoạn mini2 (≥ 500), GĐ3 (≥ 700), GĐ4 (≥ 850) · full1 đủ 200 câu · audio chất lượng cao nhiều giọng
+
+**VI. Lỗi code: đã sửa ngày 2026-11-27** (ẩn mô tả tranh Part 1 khi thi/luyện, loại câu đề thi khỏi trang chủ đề, đồng hồ theo mốc kết thúc, trừ điểm đoán mò, audio đánh dấu khi thực sự phát + chia câu, SRS chỉ chấm khi đến hạn / 1 lần mỗi phiên / lưu mỗi thẻ / quên chỉ trừ EF 0,2, sao lưu JSON hỏng, id cố định cho mọi câu, làm lại bài xếp lớp không đổi giai đoạn, lọc HTML khi nhập file, gắn lại nhãn, giữ thứ tự lựa chọn dạng số, sửa hiển thị điện thoại).
+
+**Quy ước dữ liệu bắt buộc (validate.js báo lỗi nếu sai):** mỗi nhóm câu có `id` cố định, không bao giờ đổi; mỗi câu (trừ Part 1–2) có nhãn `t` có trong `TOEIC.TAGS`; lời giải chỉ nhắc chữ cái dạng (A)…(D); lựa chọn giờ/giá viết theo thứ tự tăng dần (không bị xáo).
+
+---
+
 ## 3. CẤU TRÚC THƯ MỤC
 ```
 index.html            css/style.css
@@ -193,7 +218,7 @@ Dàn ý gốc 12 bài (u1–u3):
   4. Thứ tự mở khóa tính theo vị trí chặng, sau đó theo `order`.
 - **Từ vựng ngoài bài học:** `TOEIC.addVocab(1, ["word|pos|/ipa/|nghĩa|đồng nghĩa|ví dụ|dịch", …])`. Người học bấm “+ Thêm vào ôn tập” ở mục Từ vựng.
 - **Đề thi mới:** tạo `data/tests/ten-de.js` gọi `TOEIC.addTest`. Đề tự hiện ở mục Thi thử.
-- **Id phải duy nhất:** id nhóm câu hỏi và id đề không được trùng, vì sổ lỗi sai và lịch sử thi lưu theo id. Mở Console (F12) để xem cảnh báo `[TOEIC]` khi trùng id hoặc đáp án sai cấu trúc.
+- **Id phải duy nhất và cố định:** mọi nhóm câu phải ghi `id:` trong dữ liệu (validate.js báo lỗi nếu thiếu). id nhóm câu hỏi và id đề không được trùng, vì sổ lỗi sai và lịch sử thi lưu theo id. Mở Console (F12) để xem cảnh báo `[TOEIC]` khi trùng id hoặc đáp án sai cấu trúc.
 
 ---
 

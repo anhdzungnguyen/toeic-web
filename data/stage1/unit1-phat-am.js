@@ -44,10 +44,10 @@ TOEIC.addLesson({
     "phone|n|/fəʊn/|điện thoại|telephone|Please answer the phone.|Vui lòng nghe điện thoại."
   ],
   exercises: [
-    { say: "Please take a seat.", q: "Nghe câu và chọn từ bạn nghe được.", c: ["sit", "seat", "set", "sat"], a: 1, e: "Câu là “Please take a <b>seat</b>” – âm /iː/ kéo dài. <i>sit</i> có âm /ɪ/ ngắn.", t: "phat-am" },
-    { q: "Từ nào có nguyên âm dài /uː/?", c: ["full", "book", "food", "good"], a: 2, e: "<b>food</b> /fuːd/. Ba từ còn lại có âm /ʊ/ ngắn: full /fʊl/, book /bʊk/, good /ɡʊd/.", t: "phat-am" },
-    { q: "Âm /æ/ xuất hiện trong từ nào?", c: ["bed", "bird", "bud", "bad"], a: 3, e: "<b>bad</b> /bæd/. bed /bed/, bird /bɜːd/, bud /bʌd/.", t: "phat-am" },
-    { say: "The staff will leave at five.", q: "Nghe câu và chọn từ bạn nghe được.", c: ["live", "leave", "life", "love"], a: 1, e: "Câu là “The staff will <b>leave</b> at five” (/liːv/ – rời đi). <i>live</i> /lɪv/ có âm ngắn.", t: "bay-am" }
+    { id: "s1-l1-ex0", say: "Please take a seat.", q: "Nghe câu và chọn từ bạn nghe được.", c: ["sit", "seat", "set", "sat"], a: 1, e: "Câu là “Please take a <b>seat</b>” – âm /iː/ kéo dài. <i>sit</i> có âm /ɪ/ ngắn.", t: "phat-am" },
+    { id: "s1-l1-ex1", q: "Từ nào có nguyên âm dài /uː/?", c: ["full", "book", "food", "good"], a: 2, e: "<b>food</b> /fuːd/. Ba từ còn lại có âm /ʊ/ ngắn: full /fʊl/, book /bʊk/, good /ɡʊd/.", t: "phat-am" },
+    { id: "s1-l1-ex2", q: "Âm /æ/ xuất hiện trong từ nào?", c: ["bed", "bird", "bud", "bad"], a: 3, e: "<b>bad</b> /bæd/. bed /bed/, bird /bɜːd/, bud /bʌd/.", t: "phat-am" },
+    { id: "s1-l1-ex3", say: "The staff will leave at five.", q: "Nghe câu và chọn từ bạn nghe được.", c: ["live", "leave", "life", "love"], a: 1, e: "Câu là “The staff will <b>leave</b> at five” (/liːv/ – rời đi). <i>live</i> /lɪv/ có âm ngắn.", t: "bay-am" }
   ]
 });
 
@@ -88,10 +88,10 @@ TOEIC.addLesson({
     "close|v|/kləʊz/|đóng, đóng cửa|shut|The bank closes at 4 P.M.|Ngân hàng đóng cửa lúc 4 giờ chiều."
   ],
   exercises: [
-    { q: "Đuôi -ed trong “finished” đọc là gì?", c: ["/t/", "/d/", "/ɪd/"], a: 0, e: "finish kết thúc bằng /ʃ/ (vô thanh) nên -ed đọc <b>/t/</b>: /ˈfɪnɪʃt/.", t: "phat-am" },
-    { q: "Đuôi -ed trong “waited” đọc là gì?", c: ["/t/", "/d/", "/ɪd/"], a: 2, e: "wait kết thúc bằng /t/ nên -ed đọc <b>/ɪd/</b>: /ˈweɪtɪd/.", t: "phat-am" },
-    { q: "Đuôi -s trong “clients” đọc là gì?", c: ["/s/", "/z/", "/ɪz/"], a: 0, e: "client kết thúc bằng /t/ (vô thanh) nên -s đọc <b>/s/</b>.", t: "phat-am" },
-    { say: "We close at three on Thursday.", q: "Nghe câu và chọn từ bạn nghe được.", c: ["tree", "free", "three", "throw"], a: 2, e: "Câu là “We close at <b>three</b> on Thursday”. /θ/ trong three khác /t/ trong tree và /f/ trong free.", t: "bay-am" }
+    { id: "s1-l2-ex0", q: "Đuôi -ed trong “finished” đọc là gì?", c: ["/t/", "/d/", "/ɪd/"], a: 0, e: "finish kết thúc bằng /ʃ/ (vô thanh) nên -ed đọc <b>/t/</b>: /ˈfɪnɪʃt/.", t: "phat-am" },
+    { id: "s1-l2-ex1", q: "Đuôi -ed trong “waited” đọc là gì?", c: ["/t/", "/d/", "/ɪd/"], a: 2, e: "wait kết thúc bằng /t/ nên -ed đọc <b>/ɪd/</b>: /ˈweɪtɪd/.", t: "phat-am" },
+    { id: "s1-l2-ex2", q: "Đuôi -s trong “clients” đọc là gì?", c: ["/s/", "/z/", "/ɪz/"], a: 0, e: "client kết thúc bằng /t/ (vô thanh) nên -s đọc <b>/s/</b>.", t: "phat-am" },
+    { id: "s1-l2-ex3", say: "We close at three on Thursday.", q: "Nghe câu và chọn từ bạn nghe được.", c: ["tree", "free", "three", "throw"], a: 2, e: "Câu là “We close at <b>three</b> on Thursday”. /θ/ trong three khác /t/ trong tree và /f/ trong free.", t: "bay-am" }
   ]
 });
 
@@ -121,9 +121,9 @@ TOEIC.addLesson({
     "invoice|n|/ˈɪnvɔɪs/|hóa đơn|bill|We sent the invoice last week.|Chúng tôi đã gửi hóa đơn tuần trước."
   ],
   exercises: [
-    { q: "Trọng âm của “information” rơi vào âm tiết nào?", c: ["in", "for", "ma", "tion"], a: 2, e: "Từ có đuôi -tion nhấn ngay âm tiết trước: infor<b>MA</b>tion /ˌɪnfəˈmeɪʃn/.", t: "phat-am" },
-    { q: "Cách nhấn đúng của “manager” là gì?", c: ["ma-NA-ger", "MA-na-ger", "ma-na-GER"], a: 1, e: "<b>MA</b>nager /ˈmænɪdʒə/ – nhấn âm đầu.", t: "phat-am" },
-    { q: "“pick it up” được đọc nối như thế nào?", c: ["pick / it / up (tách rời từng từ)", "pi-kit-up", "pi-ki-tắp"], a: 2, e: "Phụ âm cuối nối sang nguyên âm đầu của từ sau: pick‿it‿up → “pi-ki-tắp”.", t: "phat-am" },
-    { say: "Is the manager available on Thursday?", q: "Nghe và chọn câu bạn nghe được.", c: ["Is the manager available on Tuesday?", "Was the manager available on Thursday?", "Is the manager available on Thursday?", "Is the manager in the lobby on Thursday?"], a: 2, e: "Câu là “Is the manager available on Thursday?”. Chú ý: Tuesday /ˈtjuːzdeɪ/ khác Thursday /ˈθɜːzdeɪ/.", t: "nghe-chi-tiet" }
+    { id: "s1-l3-ex0", q: "Trọng âm của “information” rơi vào âm tiết nào?", c: ["in", "for", "ma", "tion"], a: 2, e: "Từ có đuôi -tion nhấn ngay âm tiết trước: infor<b>MA</b>tion /ˌɪnfəˈmeɪʃn/.", t: "phat-am" },
+    { id: "s1-l3-ex1", q: "Cách nhấn đúng của “manager” là gì?", c: ["ma-NA-ger", "MA-na-ger", "ma-na-GER"], a: 1, e: "<b>MA</b>nager /ˈmænɪdʒə/ – nhấn âm đầu.", t: "phat-am" },
+    { id: "s1-l3-ex2", q: "“pick it up” được đọc nối như thế nào?", c: ["pick / it / up (tách rời từng từ)", "pick-up (bỏ hẳn từ “it”)", "pi-ki-tắp"], a: 2, e: "Phụ âm cuối nối sang nguyên âm đầu của từ sau: pick‿it‿up → “pi-ki-tắp”.", t: "phat-am" },
+    { id: "s1-l3-ex3", say: "Is the manager available on Thursday?", q: "Nghe và chọn câu bạn nghe được.", c: ["Is the manager available on Tuesday?", "Was the manager available on Thursday?", "Is the manager available on Thursday?", "Is the manager in the lobby on Thursday?"], a: 2, e: "Câu là “Is the manager available on Thursday?”. Chú ý: Tuesday /ˈtjuːzdeɪ/ khác Thursday /ˈθɜːzdeɪ/.", t: "nghe-chi-tiet" }
   ]
 });

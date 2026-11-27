@@ -17,7 +17,8 @@
     }
     if (g.passage && !g.passages) g.passages = [g.passage];
     g.p = g.p || 0;
-    g.id = g.id || id;
+    if (!g.id) { g.id = id; g.autoId = true; } // id tự sinh theo vị trí – dữ liệu mới nên ghi id cố định
+
     if (T.groups[g.id] && T.groups[g.id] !== g) console.warn('[TOEIC] Trùng id nhóm:', g.id);
     T.groups[g.id] = g;
     g.qs.forEach((q, i) => {
@@ -30,9 +31,11 @@
     return g;
   };
   // Xáo thứ tự lựa chọn theo id câu (cố định giữa các lần mở trang) để đáp án đúng không dồn vào một chữ cái.
-  // Bỏ qua câu dưới 3 lựa chọn và câu chỉ gồm ký hiệu IPA. Các tham chiếu (A)…(D) trong lời giải được đổi theo.
+  // Bỏ qua câu dưới 3 lựa chọn, câu chỉ gồm ký hiệu IPA và câu có lựa chọn dạng số (giờ, giá, ngày – đề thật xếp tăng dần).
+  // Các tham chiếu (A)…(D) trong lời giải được đổi theo.
+  T.isNumChoice = c => /^\s*(\$|£|€|¥|at\s+\d|by\s+\d|on\s+\d|in\s+\d|\d)/i.test(String(c).replace(/<[^>]+>/g, ''));
   T.mix = function (q) {
-    if (!Array.isArray(q.c) || q.c.length < 3 || q.c.every(x => /^\/.+\/$/.test(x))) return;
+    if (!Array.isArray(q.c) || q.c.length < 3 || q.c.every(x => /^\/.+\/$/.test(x)) || q.c.every(T.isNumChoice)) return;
     let h = 2166136261; for (const ch of q.uid) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) >>> 0;
     const ord = q.c.map((_, i) => i);
     for (let i = ord.length - 1; i > 0; i--) { h = Math.imul(h ^ (h >>> 15), 2246822519) >>> 0; const j = h % (i + 1); [ord[i], ord[j]] = [ord[j], ord[i]]; }
@@ -55,7 +58,7 @@
     l.ex = (l.exercises || []).map((g, i) => { const r = T.reg(g, l.id + '-ex' + i); r.lvl = r.lvl || l.stage; return r; });
   };
   T.addTest = function (t) {
-    t.groups = (t.groups || []).map((g, i) => T.reg(g, t.id + '-g' + i));
+    t.groups = (t.groups || []).map((g, i) => { const r = T.reg(g, t.id + '-g' + i); r.inTest = t.id; return r; });
     T.tests[t.id] = t;
   };
   T.addPractice = function (part, list) {
@@ -74,7 +77,13 @@
   T.storageOK = true;
   T.load = function () {
     let d = null;
-    try { d = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) { T.storageOK = false; }
+    let raw = null;
+    try { raw = localStorage.getItem(KEY); } catch (e) { T.storageOK = false; }
+    try { d = JSON.parse(raw || 'null'); } catch (e) {
+      // Dữ liệu hỏng: sao lưu chuỗi gốc trước khi lần lưu kế tiếp ghi đè
+      try { localStorage.setItem(KEY + '_corrupt', raw); } catch (e2) {}
+      T.corrupt = true;
+    }
     T.D = Object.assign(T.defaults(), d && typeof d === 'object' ? d : {});
     T.D.settings = Object.assign(T.defaults().settings, T.D.settings || {});
     return T.D;
@@ -99,7 +108,9 @@
   T.record = function (uid, ok, noSave) {
     const x = T.qIndex[uid]; if (!x) return;
     const D = T.D, g = x.g, q = g.qs[x.i], tag = q.t || T.defTag(g);
-    if (q.vid) T.srs.grade(q.vid, ok ? 4 : 1);
+    // Ôn từ trong bài học chỉ chấm SRS khi từ đã đến hạn, để không đẩy lịch ôn đi quá nhanh
+    const card = q.vid && D.srs[q.vid];
+    if (card && card.due <= T.today()) T.srs.grade(q.vid, ok ? 4 : 1);
     if (g.dyn) { if (!noSave) T.touch(); return; }
     if (g.p) { const ps = D.partStats[g.p] = D.partStats[g.p] || { c: 0, n: 0 }; ps.n++; if (ok) ps.c++; }
     const ts = D.tagStats[tag] = D.tagStats[tag] || { c: 0, n: 0 }; ts.n++; if (ok) ts.c++;
@@ -109,9 +120,11 @@
   };
 
   /* ---------- Quy đổi điểm ƯỚC LƯỢNG (không phải bảng quy đổi của ETS) ---------- */
+  // Trừ phần đoán mò: chọn bừa đạt ~25% (Listening ~27% vì Part 2 chỉ có 3 lựa chọn) → quy về 0.
   T.scale = function (c, n, sec) {
     if (!n) return 5;
-    const v = 5 + 490 * Math.pow(c / n, sec === 'L' ? 0.9 : 1.05);
+    const g = sec === 'L' ? 0.27 : 0.25, p = Math.max(0, (c / n - g) / (1 - g));
+    const v = 5 + 490 * Math.pow(p, sec === 'L' ? 0.9 : 1.05);
     return Math.max(5, Math.min(495, Math.round(v / 5) * 5));
   };
   T.stageFromScore = s => s < 300 ? 1 : s < 500 ? 2 : s < 700 ? 3 : s < 850 ? 4 : 5;
@@ -128,7 +141,8 @@
         if (q === 3) c.iv = Math.max(1, Math.round(c.iv * 0.7));
         if (q === 5) c.iv += 2;
       }
-      c.ef = Math.max(1.3, c.ef + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02)));
+      // Quên: chỉ trừ 0.2 (như Anki) để từ không bị kẹt mãi ở mức dễ quên nhất
+      c.ef = Math.max(1.3, q < 3 ? c.ef - 0.2 : c.ef + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02)));
       c.due = T.addDays(T.today(), c.iv);
     },
     due() { const t = T.today(); return Object.keys(T.D.srs).filter(k => T.vocab[k] && T.D.srs[k].due <= t); },

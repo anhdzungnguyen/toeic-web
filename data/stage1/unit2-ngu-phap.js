@@ -24,10 +24,10 @@ TOEIC.addLesson({
     "colleague|n|/ˈkɒliːɡ/|đồng nghiệp|coworker|She is a former colleague of mine.|Cô ấy là đồng nghiệp cũ của tôi."
   ],
   exercises: [
-    { q: "The meeting room ___ on the second floor.", c: ["am", "is", "are", "be"], a: 1, e: "Chủ ngữ “The meeting room” là danh từ số ít → <b>is</b>.", t: "ngu-phap" },
-    { q: "My colleagues ___ very busy today.", c: ["is", "am", "be", "are"], a: 3, e: "“My colleagues” là danh từ số nhiều → <b>are</b>.", t: "ngu-phap" },
-    { q: "___ the receptionist in the lobby now?", c: ["Is", "Are", "Do", "Does"], a: 0, e: "Câu hỏi với to be: đảo to be lên đầu. “the receptionist” số ít → <b>Is</b>.", t: "ngu-phap" },
-    { q: "Câu nào đúng?", c: ["Sends the manager e-mails.", "The manager e-mails sends.", "The manager sends e-mails.", "The manager busy today."], a: 2, e: "Thứ tự đúng là S + V + O: <b>The manager sends e-mails.</b> “The manager busy today” thiếu động từ <i>is</i>.", t: "ngu-phap" }
+    { id: "s1-l4-ex0", q: "The meeting room ___ on the second floor.", c: ["am", "is", "are", "be"], a: 1, e: "Chủ ngữ “The meeting room” là danh từ số ít → <b>is</b>.", t: "ngu-phap" },
+    { id: "s1-l4-ex1", q: "My colleagues ___ very busy today.", c: ["is", "am", "be", "are"], a: 3, e: "“My colleagues” là danh từ số nhiều → <b>are</b>.", t: "ngu-phap" },
+    { id: "s1-l4-ex2", q: "___ the receptionist in the lobby now?", c: ["Is", "Are", "Do", "Does"], a: 0, e: "Câu hỏi với to be: đảo to be lên đầu. “the receptionist” số ít → <b>Is</b>.", t: "ngu-phap" },
+    { id: "s1-l4-ex3", q: "Câu nào đúng?", c: ["Sends the manager e-mails.", "The manager e-mails sends.", "The manager sends e-mails.", "The manager busy today."], a: 2, e: "Thứ tự đúng là S + V + O: <b>The manager sends e-mails.</b> “The manager busy today” thiếu động từ <i>is</i>.", t: "ngu-phap" }
   ]
 });
 
@@ -57,10 +57,10 @@ TOEIC.addLesson({
     "luggage|n|/ˈlʌɡɪdʒ/|hành lý (không đếm được)|baggage|You can leave your luggage at the front desk.|Bạn có thể để hành lý ở quầy lễ tân."
   ],
   exercises: [
-    { q: "We need ___ new printer for the office.", c: ["an", "a", "much", "many"], a: 1, e: "“printer” đếm được, số ít, bắt đầu bằng âm phụ âm /p/ → <b>a</b>.", t: "ngu-phap" },
-    { q: "How much ___ do we need for the new office?", c: ["furniture", "furnitures", "a furniture", "chairs"], a: 0, e: "<b>furniture</b> không đếm được: không thêm -s, không đi với “a”. “How much chairs” sai vì chairs đếm được phải dùng many.", t: "ngu-phap" },
-    { q: "She waited for ___ hour.", c: ["a", "many", "some", "an"], a: 3, e: "Chữ h trong hour câm, từ bắt đầu bằng âm nguyên âm /aʊ/ → <b>an</b> hour.", t: "ngu-phap" },
-    { q: "Please put all the ___ on the shelf.", c: ["box", "boxes", "boxs", "a box"], a: 1, e: "Sau “all the” cần danh từ số nhiều. box kết thúc bằng x → thêm -es: <b>boxes</b>.", t: "ngu-phap" }
+    { id: "s1-l5-ex0", q: "We need ___ new printer for the office.", c: ["an", "a", "much", "many"], a: 1, e: "“printer” đếm được, số ít, bắt đầu bằng âm phụ âm /p/ → <b>a</b>.", t: "mao-tu" },
+    { id: "s1-l5-ex1", q: "How much ___ do we need for the new office?", c: ["furniture", "furnitures", "a furniture", "chairs"], a: 0, e: "<b>furniture</b> không đếm được: không thêm -s, không đi với “a”. “How much chairs” sai vì chairs đếm được phải dùng many.", t: "ngu-phap" },
+    { id: "s1-l5-ex2", q: "She waited for ___ hour.", c: ["a", "many", "some", "an"], a: 3, e: "Chữ h trong hour câm, từ bắt đầu bằng âm nguyên âm /aʊ/ → <b>an</b> hour.", t: "mao-tu" },
+    { id: "s1-l5-ex3", q: "Please put all the ___ on the shelf.", c: ["box", "boxes", "boxs", "a box"], a: 1, e: "Sau “all the” cần danh từ số nhiều. box kết thúc bằng x → thêm -es: <b>boxes</b>.", t: "ngu-phap" }
   ]
 });
 
@@ -89,10 +89,10 @@ TOEIC.addLesson({
     "introduce|v|/ˌɪntrəˈdjuːs/|giới thiệu|present|Let me introduce our new director.|Xin giới thiệu giám đốc mới của chúng ta."
   ],
   exercises: [
-    { q: "Ms. Lee asked ___ assistant to send the contract.", c: ["she", "hers", "her", "herself"], a: 2, e: "Trước danh từ “assistant” cần tính từ sở hữu → <b>her</b>.", t: "dai-tu" },
-    { q: "Mr. Kim reviewed the report by ___.", c: ["himself", "he", "him", "his"], a: 0, e: "“by + đại từ phản thân” = tự mình làm → <b>by himself</b>.", t: "dai-tu" },
-    { q: "Please give the documents to ___ before noon.", c: ["I", "me", "my", "mine"], a: 1, e: "Sau giới từ “to” cần tân ngữ → <b>me</b>.", t: "dai-tu" },
-    { q: "That office is ours, and this one is ___.", c: ["their", "them", "they", "theirs"], a: 3, e: "Đứng một mình, thay cho “their office” → đại từ sở hữu <b>theirs</b>.", t: "dai-tu" }
+    { id: "s1-l6-ex0", q: "Ms. Lee asked ___ assistant to send the contract.", c: ["she", "hers", "her", "herself"], a: 2, e: "Trước danh từ “assistant” cần tính từ sở hữu → <b>her</b>.", t: "dai-tu" },
+    { id: "s1-l6-ex1", q: "Mr. Kim reviewed the report by ___.", c: ["himself", "he", "him", "his"], a: 0, e: "“by + đại từ phản thân” = tự mình làm → <b>by himself</b>.", t: "dai-tu" },
+    { id: "s1-l6-ex2", q: "Please give the documents to ___ before noon.", c: ["I", "me", "my", "mine"], a: 1, e: "Sau giới từ “to” cần tân ngữ → <b>me</b>.", t: "dai-tu" },
+    { id: "s1-l6-ex3", q: "That office is ours, and this one is ___.", c: ["their", "them", "they", "theirs"], a: 3, e: "Đứng một mình, thay cho “their office” → đại từ sở hữu <b>theirs</b>.", t: "dai-tu" }
   ]
 });
 
@@ -121,10 +121,10 @@ TOEIC.addLesson({
     "train|v|/treɪn/|đào tạo|teach|We train all new staff for two weeks.|Chúng tôi đào tạo tất cả nhân viên mới trong hai tuần."
   ],
   exercises: [
-    { q: "The store usually ___ at 9 A.M.", c: ["open", "opens", "is opening", "opening"], a: 1, e: "“usually” chỉ thói quen → hiện tại đơn; chủ ngữ số ít → <b>opens</b>.", t: "thi" },
-    { q: "Look! The technicians ___ the elevator now.", c: ["repair", "repairs", "repaired", "are repairing"], a: 3, e: "“Look!” và “now” → hiện tại tiếp diễn: <b>are repairing</b>.", t: "thi" },
-    { q: "Mr. Park ___ to work by bus every day.", c: ["goes", "go", "is going", "going"], a: 0, e: "“every day” → hiện tại đơn; “Mr. Park” là ngôi thứ ba số ít → <b>goes</b>.", t: "thi" },
-    { q: "We ___ a new sales report at the moment.", c: ["prepare", "prepares", "are preparing", "prepared"], a: 2, e: "“at the moment” → hiện tại tiếp diễn: <b>are preparing</b>.", t: "thi" }
+    { id: "s1-l7-ex0", q: "The store usually ___ at 9 A.M.", c: ["open", "opens", "is opening", "opening"], a: 1, e: "“usually” chỉ thói quen → hiện tại đơn; chủ ngữ số ít → <b>opens</b>.", t: "thi" },
+    { id: "s1-l7-ex1", q: "Look! The technicians ___ the elevator now.", c: ["repair", "repairs", "repaired", "are repairing"], a: 3, e: "“Look!” và “now” → hiện tại tiếp diễn: <b>are repairing</b>.", t: "thi" },
+    { id: "s1-l7-ex2", q: "Mr. Park ___ to work by bus every day.", c: ["goes", "go", "is going", "going"], a: 0, e: "“every day” → hiện tại đơn; “Mr. Park” là ngôi thứ ba số ít → <b>goes</b>.", t: "thi" },
+    { id: "s1-l7-ex3", q: "We ___ a new sales report at the moment.", c: ["prepare", "prepares", "are preparing", "prepared"], a: 2, e: "“at the moment” → hiện tại tiếp diễn: <b>are preparing</b>.", t: "thi" }
   ]
 });
 
@@ -153,10 +153,10 @@ TOEIC.addLesson({
     "announce|v|/əˈnaʊns/|thông báo, công bố|declare|The CEO announced a new plan.|Giám đốc điều hành đã công bố một kế hoạch mới."
   ],
   exercises: [
-    { q: "The company ___ ten new employees last month.", c: ["hire", "hires", "will hire", "hired"], a: 3, e: "“last month” → quá khứ đơn: <b>hired</b>.", t: "thi" },
-    { q: "We ___ the new product tomorrow.", c: ["launched", "will launch", "have launched", "launching"], a: 1, e: "“tomorrow” → tương lai: <b>will launch</b>. “launching” thiếu trợ động từ.", t: "thi" },
-    { q: "Mr. Tanaka retired two years ___.", c: ["ago", "last", "next", "since"], a: 0, e: "Khoảng thời gian + <b>ago</b> = cách đây: two years ago.", t: "thi" },
-    { q: "Look at those dark clouds. It ___ rain.", c: ["went to", "is going to", "goes to", "was"], a: 1, e: "Dự đoán có căn cứ (thấy mây đen) → <b>is going to</b>.", t: "thi" }
+    { id: "s1-l8-ex0", q: "The company ___ ten new employees last month.", c: ["hire", "hires", "will hire", "hired"], a: 3, e: "“last month” → quá khứ đơn: <b>hired</b>.", t: "thi" },
+    { id: "s1-l8-ex1", q: "We ___ the new product tomorrow.", c: ["launched", "will launch", "have launched", "launching"], a: 1, e: "“tomorrow” → tương lai: <b>will launch</b>. “launching” thiếu trợ động từ.", t: "thi" },
+    { id: "s1-l8-ex2", q: "Mr. Tanaka retired two years ___.", c: ["ago", "last", "next", "since"], a: 0, e: "Khoảng thời gian + <b>ago</b> = cách đây: two years ago.", t: "thi" },
+    { id: "s1-l8-ex3", q: "Look at those dark clouds. It ___ rain.", c: ["went to", "is going to", "goes to", "was"], a: 1, e: "Dự đoán có căn cứ (thấy mây đen) → <b>is going to</b>.", t: "thi" }
   ]
 });
 
@@ -186,9 +186,9 @@ TOEIC.addLesson({
     "deadline|n|/ˈdedlaɪn/|hạn chót|due date|The deadline is next Monday.|Hạn chót là thứ Hai tới."
   ],
   exercises: [
-    { q: "The meeting starts ___ 10 A.M.", c: ["in", "on", "at", "during"], a: 2, e: "Giờ cụ thể → <b>at</b> 10 A.M.", t: "gioi-tu" },
-    { q: "Our office is ___ the second floor.", c: ["on", "in", "at", "to"], a: 0, e: "Tầng → <b>on</b> the second floor.", t: "gioi-tu" },
-    { q: "Please submit the report ___ Friday.", c: ["until", "during", "at", "by"], a: 3, e: "Nộp là việc xảy ra một lần, phải xong trước hạn → <b>by</b>. “until” dùng cho trạng thái kéo dài (open until, wait until).", t: "gioi-tu" },
-    { q: "The bank is ___ the post office and the café.", c: ["among", "between", "across", "behind"], a: 1, e: "“___ A and B” → <b>between</b>. “among” dùng cho từ ba đối tượng trở lên, không đi với “A and B”.", t: "gioi-tu" }
+    { id: "s1-l9-ex0", q: "The meeting starts ___ 10 A.M.", c: ["in", "on", "at", "during"], a: 2, e: "Giờ cụ thể → <b>at</b> 10 A.M.", t: "gioi-tu" },
+    { id: "s1-l9-ex1", q: "Our office is ___ the second floor.", c: ["on", "in", "at", "to"], a: 0, e: "Tầng → <b>on</b> the second floor.", t: "gioi-tu" },
+    { id: "s1-l9-ex2", q: "Please submit the report ___ Friday.", c: ["until", "during", "at", "by"], a: 3, e: "Nộp là việc xảy ra một lần, phải xong trước hạn → <b>by</b>. “until” dùng cho trạng thái kéo dài (open until, wait until).", t: "gioi-tu" },
+    { id: "s1-l9-ex3", q: "The bank is ___ the post office and the café.", c: ["among", "between", "across", "behind"], a: 1, e: "“___ A and B” → <b>between</b>. “among” dùng cho từ ba đối tượng trở lên, không đi với “A and B”.", t: "gioi-tu" }
   ]
 });

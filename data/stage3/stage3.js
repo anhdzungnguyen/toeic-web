@@ -27,9 +27,9 @@ TOEIC.addLesson({
     "revenue|n|/ˈrevənjuː/|doanh thu|income|Annual revenue reached $2 million.|Doanh thu năm đạt 2 triệu đô la."
   ],
   exercises: [
-    { p: 5, q: "If the shipment ___ late, we will contact the customer.", c: ["arrives", "arrived", "will arrive", "would arrive"], a: 0, e: "Điều kiện loại 1: If + hiện tại đơn → <b>arrives</b>.", t: "ngu-phap" },
-    { p: 5, q: "If I ___ more time, I would join the planning committee.", c: ["have", "had", "will have", "having"], a: 1, e: "Mệnh đề chính “would join” → điều kiện loại 2: If + quá khứ đơn → <b>had</b>.", t: "ngu-phap" },
-    { p: 5, q: "___ you have a receipt, we cannot give you a refund.", c: ["If", "Unless", "Provided", "Otherwise"], a: 1, e: "Nghĩa: nếu bạn KHÔNG có biên lai thì không hoàn tiền → <b>Unless</b>.", t: "ngu-phap" },
-    { p: 5, q: "Had we known about the delay, we ___ another supplier.", c: ["chose", "will choose", "would have chosen", "have chosen"], a: 2, e: "“Had we known” = If we had known → loại 3 → <b>would have chosen</b>.", t: "ngu-phap" }
+    { id: "s3-l1-ex0", p: 5, q: "If the shipment ___ late, we will contact the customer.", c: ["arrives", "arrived", "will arrive", "would arrive"], a: 0, e: "Điều kiện loại 1: If + hiện tại đơn → <b>arrives</b>.", t: "ngu-phap" },
+    { id: "s3-l1-ex1", p: 5, q: "If I ___ more time, I would join the planning committee.", c: ["have", "had", "will have", "having"], a: 1, e: "Mệnh đề chính “would join” → điều kiện loại 2: If + quá khứ đơn → <b>had</b>.", t: "ngu-phap" },
+    { id: "s3-l1-ex2", p: 5, q: "___ you have a receipt, we cannot give you a refund.", c: ["If", "Unless", "Provided", "Otherwise"], a: 1, e: "Nghĩa: nếu bạn KHÔNG có biên lai thì không hoàn tiền → <b>Unless</b>.", t: "ngu-phap" },
+    { id: "s3-l1-ex3", p: 5, q: "Had we known about the delay, we ___ another supplier.", c: ["chose", "will choose", "would have chosen", "have chosen"], a: 2, e: "“Had we known” = If we had known → loại 3 → <b>would have chosen</b>.", t: "ngu-phap" }
   ]
 });
