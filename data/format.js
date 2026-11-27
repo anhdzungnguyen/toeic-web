@@ -33,6 +33,9 @@ TOEIC.TAGS = {
   "mao-tu": { n: "Mạo từ", l: "s1-l5" },
   "dieu-kien": { n: "Câu điều kiện", l: "s3-l1" },
   "dao-ngu": { n: "Đảo ngữ", l: "s4-l1" },
+  "cap-tu": { n: "Cặp từ dễ nhầm", l: "s4-l3" },
+  "trang-tu": { n: "Trạng từ hay gặp ở Part 5", l: "s4-l4" },
+  "collocation": { n: "Collocation (cụm từ cố định)", l: "s4-l5" },
   "de-thi": { n: "Cấu trúc đề & cách tính điểm", l: "s2-l1" },
   "hoa-hop": { n: "Hòa hợp chủ ngữ – động từ", l: "s2-l4" },
   "tu-noi": { n: "Trạng từ nối", l: "s2-l9" },
@@ -71,7 +74,7 @@ TOEIC.GRAMMAR = [
     sub: ["Chủ ngữ là cụm dài, each/every", "A number of / the number of", "Either…or, neither…nor, along with"] },
   { id: "dai-tu", n: "5. Đại từ (Pronouns)", tags: ["dai-tu"], lessons: ["s1-l6", "s2-l7"],
     sub: ["Nhân xưng, sở hữu, phản thân (by himself)", "another / other / the other / others", "those who, anyone, each other"] },
-  { id: "gioi-tu", n: "6. Giới từ (Prepositions)", tags: ["gioi-tu"], lessons: ["s1-l9", "s2-l8"],
+  { id: "gioi-tu", n: "6. Giới từ (Prepositions)", tags: ["gioi-tu"], lessons: ["s1-l9", "s2-l8", "s4-l6"],
     sub: ["Thời gian, nơi chốn (in/on/at, by/until, within/during)", "Giới từ đi kèm động từ, tính từ, danh từ (comply with, eligible for…)", "Giới từ hay liên từ (despite/although, because of/because, during/while)"] },
   { id: "lien-tu", n: "7. Liên từ & trạng từ nối", tags: ["lien-tu", "tu-noi"], lessons: ["s1-l21", "s2-l9", "s3-l6"],
     sub: ["Liên từ kết hợp, tương quan (both…and, not only…but also)", "Liên từ phụ thuộc (unless, provided that, so that, even though)", "Trạng từ nối (however, therefore, moreover, otherwise) – quan trọng ở Part 6"] },
@@ -94,7 +97,9 @@ TOEIC.GRAMMAR = [
   { id: "mao-tu", n: "16. Mạo từ (Articles)", tags: ["mao-tu"], lessons: ["s1-l5", "s3-l5"],
     sub: ["a / an / the / không mạo từ"] },
   { id: "dac-biet", n: "17. Cấu trúc đặc biệt", tags: ["cau-truc"], lessons: ["s2-l13", "s4-l2"],
-    sub: ["so…that, such…that, too…to, enough", "Câu chẻ It is…that", "Nhờ vả: have / get something done"] }
+    sub: ["so…that, such…that, too…to, enough", "Câu chẻ It is…that", "Nhờ vả: have / get something done"] },
+  { id: "tu-vung-p5", n: "18. Từ vựng – ngữ pháp Part 5 cấp cao", tags: ["cap-tu", "trang-tu", "collocation"], lessons: ["s4-l3", "s4-l4", "s4-l5", "s4-l6"],
+    sub: ["Cặp tính từ cùng gốc khác nghĩa (considerable / considerate…)", "Nội / ngoại động từ dễ nhầm (rise / raise, lie / lay)", "Trạng từ hay ra (still / yet / already, hardly / barely, shortly…)", "Collocation động từ + danh từ (meet a deadline, place an order…)", "~150 cụm giới từ đi kèm"] }
 ];
 
 /* Chủ đề từ vựng (lọc ở trang Từ vựng). Dùng: TOEIC.addVocab(stage, [...], "ma-chu-de") */

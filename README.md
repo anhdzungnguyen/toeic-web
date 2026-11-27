@@ -25,7 +25,7 @@ Dữ liệu là các file `.js` nạp bằng thẻ `<script>` (không dùng fetc
 | `data/tests/full1.js` | Khung đề đầy đủ (chưa có câu hỏi; màn hình đề hiện bảng cấu trúc) |
 | `tools/` | `validate.js` (rà dữ liệu), `e2e.py` (kiểm thử trình duyệt). Không được `index.html` nạp |
 
-**Số liệu hiện có:** 49 bài học (GĐ1 23 · GĐ2 17 · GĐ3 6 · GĐ4 2 · GĐ5 1 bài mẫu) · 794 từ vựng · 634 câu hỏi · 10 bài kiểm tra chặng. **Phần ngữ pháp (mục I) đã đủ.**
+**Số liệu hiện có:** 53 bài học (GĐ1 23 · GĐ2 17 · GĐ3 6 · GĐ4 6 · GĐ5 1 bài mẫu) · 842 từ vựng · 690 câu hỏi · 11 bài kiểm tra chặng. Ngữ pháp (mục I) và từ vựng – ngữ pháp Part 5 (mục II) đã đủ.
 
 **Mới (2026-11-27):** giao diện mới (font Be Vietnam Pro, icon SVG, hero gradient); thêm 10 bài ngữ pháp GĐ1 (chặng u2b, u2c); trang **Ngữ pháp theo chủ đề** `#/grammar` theo cây 17 chủ đề (xem mục 2b); deploy Vercel tại https://toeic-0-990.vercel.app (chạy `npx vercel deploy --prod` trong thư mục này).
 
@@ -83,7 +83,7 @@ Nguyên tắc: GĐ1 dạy mức cơ bản của mỗi chủ đề, GĐ2–5 dạ
 2. ~~Điều kiện & đảo ngữ~~ **ĐÃ XONG 2026-11-27**: s3-l1 (loại 0–3, hỗn hợp, unless/provided/in case/but for/otherwise), s3-l3 đảo ngữ điều kiện, s4-l1 đảo ngữ trạng từ phủ định (Not until, Only…, No sooner…than, Hardly…when), checkpoint cp-s4-u1
 3–7. ~~To V/V-ing, mạo từ, lượng từ, liên từ, cấu trúc khác~~ **ĐÃ XONG 2026-11-27**: GĐ3 chặng 2 (`data/stage3/unit2-ngu-phap-tc2-a.js`: s3-l4 To V/V-ing nâng cao, s3-l5 Mạo từ & lượng từ nâng cao; `-b.js`: s3-l6 Liên từ nâng cao + checkpoint `cp-s3-u2`), GĐ4 s4-l2 Cấu trúc nâng cao (`data/stage4/unit1-cau-truc-nang-cao.js`: whereby, of which/whom, as if, wish, It's time, would rather, it takes, the reason for, not so much…as)
 
-**II. Từ vựng – ngữ pháp (Part 5 cấp cao):** cặp tính từ cùng gốc khác nghĩa · trạng từ hay ra (still/yet/already, hardly/barely, nearly/almost, shortly/soon…) · collocation động từ + danh từ · nội/ngoại động từ dễ nhầm (rise/raise, lie/lay) · ~150 cụm giới từ đi kèm
+**II. ~~Từ vựng – ngữ pháp (Part 5 cấp cao)~~ ĐÃ XONG 2026-11-27:** GĐ4 chặng 2 (`data/stage4/unit2-tu-vung-p5-a.js`: s4-l3 Cặp từ dễ nhầm, s4-l4 Trạng từ hay gặp; `-b.js`: s4-l5 Collocation, s4-l6 ~150 cụm giới từ + checkpoint `cp-s4-u2`). Chủ đề 18 trong cây ngữ pháp; nhãn mới `cap-tu`, `trang-tu`, `collocation`.
 
 **III. Từ vựng:** GĐ2 lên ~1.200 · GĐ3–5 lên ~3.500 · phrasal verbs · paraphrase & đồng nghĩa
 
@@ -192,7 +192,7 @@ Dàn ý gốc 12 bài (u1–u3):
 
 **Giai đoạn 3 (tiếp):** u2 Ngữ pháp trung cấp 2: s3-l4 Bài 4 To V/V-ing nâng cao · s3-l5 Bài 5 Mạo từ & lượng từ nâng cao · s3-l6 Bài 6 Liên từ nâng cao (checkpoint `cp-s3-u2`).
 
-**Giai đoạn 4:** u1 Ngữ pháp nâng cao: s4-l1 Bài 1 Đảo ngữ (`data/stage4/stage4.js`) · s4-l2 Bài 2 Cấu trúc nâng cao (`data/stage4/unit1-cau-truc-nang-cao.js`); checkpoint `cp-s4-u1` (bài 1–2).
+**Giai đoạn 4:** u1 Ngữ pháp nâng cao: s4-l1 Bài 1 Đảo ngữ (`data/stage4/stage4.js`) · s4-l2 Bài 2 Cấu trúc nâng cao (`data/stage4/unit1-cau-truc-nang-cao.js`); checkpoint `cp-s4-u1` (bài 1–2). u2 Từ vựng – ngữ pháp Part 5 cấp cao: s4-l3 Bài 3 Cặp từ dễ nhầm · s4-l4 Bài 4 Trạng từ · s4-l5 Bài 5 Collocation · s4-l6 Bài 6 Giới từ đi kèm (checkpoint `cp-s4-u2`).
 
 **Khi deploy:** tăng số `?v=` trong mọi thẻ script/link của `index.html` để trình duyệt không trộn file cũ và mới. Nếu khởi động lỗi, trang hiện thông báo kèm nút Tải lại (xem script đầu `index.html`, `window.__booted`).
 
