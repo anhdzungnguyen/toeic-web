@@ -31,7 +31,7 @@ TOEIC.addTest({
 
 TOEIC.addTest({
   id: "cp-s1-u3", kind: "checkpoint", title: "Kiểm tra Chặng 5 – Từ vựng & làm quen câu hỏi",
-  desc: "Từ vựng văn phòng, câu hỏi Wh-, Part 1 và đọc thông báo ngắn (bài 20–22).",
+  desc: "Từ vựng văn phòng, câu hỏi Wh-, Part 1 và đọc thông báo ngắn (bài 21–23).",
   groups: [
     { id: "cp-s1-u3-g0", q: "Please call ___ 302 if the printer breaks.", c: ["extension", "applicant", "salary", "résumé"], a: 0, e: "call <b>extension</b> 302 = gọi số máy lẻ 302.", t: "tu-vung" },
     { id: "cp-s1-u3-g1", q: "All ___ must submit a résumé before the interview.", c: ["cabinets", "memos", "applicants", "supplies"], a: 2, e: "Người nộp sơ yếu lý lịch là <b>applicants</b> (ứng viên).", t: "tu-vung" },

@@ -1,7 +1,7 @@
 /* Giai đoạn 1 – Nền tảng (0 → 300) */
 TOEIC.addStage({
   id: 1, name: "Nền tảng", range: [0, 300], target: 300, gateTest: "mini1",
-  desc: "Dành cho người mất gốc: phát âm, ngữ pháp cơ bản, từ vựng văn phòng và làm quen các dạng câu hỏi TOEIC. Học xong 22 bài, làm Thi thử mini số 1 đạt từ 300 điểm ước lượng để lên Giai đoạn 2.",
+  desc: "Dành cho người mất gốc: phát âm, ngữ pháp cơ bản, từ vựng văn phòng và làm quen các dạng câu hỏi TOEIC. Học xong 23 bài, làm Thi thử mini số 1 đạt từ 300 điểm ước lượng để lên Giai đoạn 2.",
   units: [
     { id: "u1", title: "Chặng 1 – Phát âm", checkpoint: "cp-s1-u1" },
     { id: "u2", title: "Chặng 2 – Ngữ pháp nền", checkpoint: "cp-s1-u2" },

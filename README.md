@@ -25,7 +25,7 @@ Dữ liệu là các file `.js` nạp bằng thẻ `<script>` (không dùng fetc
 | `data/tests/full1.js` | Khung đề đầy đủ (chưa có câu hỏi; màn hình đề hiện bảng cấu trúc) |
 | `tools/` | `validate.js` (rà dữ liệu), `e2e.py` (kiểm thử trình duyệt). Không được `index.html` nạp |
 
-**Số liệu hiện có:** 40 bài học (GĐ1 22 bài · GĐ2 15 bài · GĐ3–5 mỗi GĐ 1 bài mẫu) · 678 từ vựng (GĐ1 ~480, GĐ2 ~170) · 479 câu hỏi · 7 bài kiểm tra chặng.
+**Số liệu hiện có:** 44 bài học (GĐ1 23 bài · GĐ2 17 bài · GĐ3 2 bài · GĐ4–5 mỗi GĐ 1 bài mẫu) · 726 từ vựng · 539 câu hỏi · 8 bài kiểm tra chặng.
 
 **Mới (2026-11-27):** giao diện mới (font Be Vietnam Pro, icon SVG, hero gradient); thêm 10 bài ngữ pháp GĐ1 (chặng u2b, u2c); trang **Ngữ pháp theo chủ đề** `#/grammar` theo cây 17 chủ đề (xem mục 2b); deploy Vercel tại https://toeic-0-990.vercel.app (chạy `npx vercel deploy --prod` trong thư mục này).
 
@@ -79,7 +79,7 @@ Nguyên tắc: GĐ1 dạy mức cơ bản của mỗi chủ đề, GĐ2–5 dạ
 ## 2c. VIỆC CÒN THIẾU (tổng hợp sau review 2026-11-27)
 
 **I. Ngữ pháp**
-1. Thì: quá khứ tiếp diễn · quá khứ hoàn thành tiếp diễn · tương lai tiếp diễn · tương lai hoàn thành tiếp diễn · hiện tại tiếp diễn cho lịch hẹn · hiện tại đơn cho lịch trình · be about to / be due to / be scheduled to · tương lai trong quá khứ (would, was going to) · động từ trạng thái không dùng tiếp diễn · lùi thì câu gián tiếp · bài tổng hợp chọn thì theo ngữ cảnh đoạn văn (Part 6)
+1. ~~Thì~~ **ĐÃ XONG 2026-11-27**: đủ 12 thì + các cách nói tương lai + động từ trạng thái + tương lai trong quá khứ + lùi thì + chọn thì theo ngữ cảnh Part 6 (s1-l23, s2-l16, s2-l17, s3-l2, checkpoint cp-s3-u1)
 2. Điều kiện & đảo ngữ: loại 0–3, hỗn hợp · unless / provided that / otherwise / but for · Should… / Had… / Were… · Only… / Not until… / Rarely, Seldom… · Hardly…when / No sooner…than · Not only does…but also
 3. To V / V-ing: stop / remember / forget / try · V + O + to V (ask, allow, encourage, remind) · prevent / discourage / prohibit sb from V-ing · be used to / used to / get used to · so as to / in order that · bị động của V-ing và to V
 4. Mạo từ: the + so sánh nhất / số thứ tự / danh từ duy nhất · không dùng mạo từ · mạo từ trong cụm cố định
@@ -164,8 +164,8 @@ TOEIC.addTest({ id: "mini1", kind: "mini", title: "Thi thử mini số 1", timin
 - u1 Phát âm: s1-l1..l3 (Bài 1–3)
 - u2 Ngữ pháp nền: s1-l4..l9 (Bài 4–9)
 - u2b Từ loại & các kiểu câu (`data/stage1/unit2b-tu-loai-cau.js`, checkpoint `cp-s1-u2b`): s1-l13 Tính từ, trạng từ & vị trí từ loại · s1-l14 Phủ định, câu hỏi, There is/are · s1-l15 Động từ khuyết thiếu · s1-l16 Lượng từ · s1-l17 So sánh (Bài 10–14)
-- u2c Động từ & mệnh đề (`data/stage1/unit2c-dong-tu-menh-de.js`, checkpoint `cp-s1-u2c`): s1-l18 Hiện tại hoàn thành · s1-l19 To V / V-ing · s1-l20 Bị động cơ bản · s1-l21 Liên từ · s1-l22 Đại từ quan hệ (Bài 15–19)
-- u3 Từ vựng & làm quen câu hỏi: s1-l10..l12 (Bài 20–22)
+- u2c Động từ & mệnh đề (`data/stage1/unit2c-dong-tu-menh-de.js`, checkpoint `cp-s1-u2c`): s1-l23 Quá khứ tiếp diễn & động từ trạng thái (Bài 15, order 0) · s1-l18 Hiện tại hoàn thành · s1-l19 To V / V-ing · s1-l20 Bị động cơ bản · s1-l21 Liên từ · s1-l22 Đại từ quan hệ (Bài 16–20)
+- u3 Từ vựng & làm quen câu hỏi: s1-l10..l12 (Bài 21–23)
 
 Dàn ý gốc 12 bài (u1–u3):
 - u1 Phát âm:
@@ -184,13 +184,15 @@ Dàn ý gốc 12 bài (u1–u3):
   - l11 Câu hỏi Wh- (nền cho Part 2)
   - l12 Part 1 + email ngắn Part 7
 
-**Dàn ý Giai đoạn 2 (15 bài)**
+**Dàn ý Giai đoạn 2 (17 bài)** – số “Bài N” trong tiêu đề theo thứ tự học, id giữ nguyên
 - u1 Chiến lược đề thi: s2-l1 Bài 1 Cấu trúc đề & cách tính điểm
-- u2 Ngữ pháp Part 5 cốt lõi (`data/stage2/unit2-ngu-phap-cot-loi.js`, checkpoint `cp-s2-u2`): s2-l2 Từ loại qua đuôi từ · s2-l3 Danh từ người/vật, -ed/-ing, danh từ ghép · s2-l4 Hòa hợp S–V · s2-l5 Thì nâng cao · s2-l6 Bị động nâng cao · s2-l7 Đại từ nâng cao
+- u2 Ngữ pháp Part 5 cốt lõi (`data/stage2/unit2-ngu-phap-cot-loi.js`, checkpoint `cp-s2-u2`): s2-l2 Từ loại qua đuôi từ · s2-l3 Danh từ người/vật, -ed/-ing, danh từ ghép · s2-l4 Hòa hợp S–V · s2-l5 Thì nâng cao · s2-l16 Tương lai tiếp diễn & cách nói tương lai · s2-l17 Hoàn thành tiếp diễn, tương lai trong quá khứ, lùi thì (`unit2b-thi-nang-cao.js`, order 4.1 / 4.2) · s2-l6 Bị động nâng cao · s2-l7 Đại từ nâng cao
 - u3 Ngữ pháp Part 5–6 mở rộng (`unit3-ngu-phap-mo-rong-a.js`: l8–l11, `-b.js`: l12–l15 + checkpoint `cp-s2-u3`): s2-l8 Giới từ đi kèm · s2-l9 Liên từ phụ thuộc & trạng từ nối · s2-l10 MĐQH nâng cao · s2-l11 Mệnh đề danh từ · s2-l12 Phân từ & rút gọn · s2-l13 Cấu trúc đặc biệt · s2-l14 So sánh nâng cao · s2-l15 Modal nâng cao & giả định
 - Còn thiếu: chặng chiến lược Part 1–4, Part 6, Part 7 đoạn đơn; đề mini2.
 
 **Từ vựng theo chủ đề:** `TOEIC.addVocab(stage, [...], "ma-chu-de")`, mã chủ đề ở `TOEIC.VOCAB_TOPICS` (data/format.js). Trang Từ vựng có bộ lọc chủ đề và nút thêm cả chủ đề vào ôn tập. Xem từ đã có: `node tools/listwords.js . [--topic]`.
+
+**Giai đoạn 3:** u1 Ngữ pháp trung cấp: s3-l1 Bài 1 Câu điều kiện · s3-l2 Bài 2 Chọn thì theo ngữ cảnh Part 5–6 (`data/stage3/unit1-thi-tong-hop.js`, checkpoint `cp-s3-u1`).
 
 **Mẫu ở các giai đoạn sau**
 - s2-l1 Cấu trúc đề & cách tính điểm

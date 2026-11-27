@@ -1,6 +1,6 @@
-/* Giai đoạn 1 · Chặng 5 – Từ vựng & làm quen câu hỏi (bài 20–22) */
+/* Giai đoạn 1 · Chặng 5 – Từ vựng & làm quen câu hỏi (bài 21–23) */
 TOEIC.addLesson({
-  id: "s1-l10", stage: 1, unit: "u3", order: 1, minutes: 20, title: "Bài 20. Từ vựng văn phòng & tuyển dụng",
+  id: "s1-l10", stage: 1, unit: "u3", order: 1, minutes: 20, title: "Bài 21. Từ vựng văn phòng & tuyển dụng",
   sections: [
     { h: "Vì sao học từ theo chủ đề?", html: "<p>Khoảng một nửa bài thi TOEIC xoay quanh môi trường công sở: văn phòng, tuyển dụng, cuộc họp, giao hàng, du lịch công tác. Học từ theo chủ đề và học <b>cả câu ví dụ</b> giúp bạn nhận ra từ nhanh hơn khi nghe và đọc.</p>" },
     { h: "Cách học hiệu quả", html: "<ol><li>Bấm 🔊 để nghe, rồi đọc to theo 2–3 lần.</li><li>Đọc câu ví dụ, che phần tiếng Việt và thử tự dịch.</li><li>Học xong bài, từ mới tự vào <b>lịch ôn tập</b>. Mỗi ngày mở mục 🃏 Flashcard để ôn các từ đến hạn: từ nhớ tốt sẽ giãn lịch ôn, từ hay quên sẽ được ôn lại sớm.</li></ol>" },
@@ -37,7 +37,7 @@ TOEIC.addLesson({
 });
 
 TOEIC.addLesson({
-  id: "s1-l11", stage: 1, unit: "u3", order: 2, minutes: 25, title: "Bài 21. Câu hỏi Wh- (nền tảng cho Part 2)",
+  id: "s1-l11", stage: 1, unit: "u3", order: 2, minutes: 25, title: "Bài 22. Câu hỏi Wh- (nền tảng cho Part 2)",
   sections: [
     { h: "Nghe thật kỹ từ để hỏi", html: "<p>Trong Part 2 bạn chỉ nghe một câu hỏi và 3 câu trả lời, không có chữ in trên đề. Từ để hỏi ở <b>đầu câu</b> quyết định loại đáp án:</p><table><tr><th>Từ hỏi</th><th>Hỏi về</th><th>Đáp án thường có</th></tr><tr><td>Who</td><td>người</td><td>tên, chức vụ, phòng ban: Ms. Lee / The manager</td></tr><tr><td>What / Which</td><td>sự vật, lựa chọn</td><td>danh từ, “the one…”</td></tr><tr><td>Where</td><td>nơi chốn</td><td>in / on / at / next to…</td></tr><tr><td>When</td><td>thời gian</td><td>at 3, on Monday, next week, after lunch</td></tr><tr><td>Why</td><td>lý do</td><td>Because… / To + V / Due to…</td></tr><tr><td>How</td><td>cách thức</td><td>By bus / By e-mail</td></tr><tr><td>How long / How often / How much</td><td>bao lâu / mức độ thường xuyên / bao nhiêu tiền</td><td>for two hours / twice a week / $50</td></tr></table>" },
     { h: "3 bẫy hay gặp", html: "<ol><li><b>Lặp từ hoặc âm giống câu hỏi</b>: hỏi về <i>charge</i> mà đáp án nhắc <i>charger</i> → thường sai.</li><li><b>Trả lời Yes/No cho câu hỏi Wh-</b> → luôn sai.</li><li><b>Trả lời đúng loại thông tin nhưng sai từ hỏi</b>: hỏi <i>When</i> mà đáp <i>At gate 12</i> (nơi chốn).</li></ol><p>Ngoài ra còn kiểu trả lời <b>gián tiếp</b> mà vẫn đúng: “I'm not sure.”, “Let me check.”, “Ask Mr. Kim.” Đáp án đúng ở Part 2 không phải lúc nào cũng trả lời thẳng vào câu hỏi.</p>" }
@@ -70,7 +70,7 @@ TOEIC.addLesson({
 });
 
 TOEIC.addLesson({
-  id: "s1-l12", stage: 1, unit: "u3", order: 3, minutes: 25, title: "Bài 22. Làm quen Part 1 & e-mail ngắn Part 7",
+  id: "s1-l12", stage: 1, unit: "u3", order: 3, minutes: 25, title: "Bài 23. Làm quen Part 1 & e-mail ngắn Part 7",
   sections: [
     { h: "Part 1 – Mô tả tranh", html: "<p>Bạn nhìn một bức tranh và nghe 4 câu mô tả (không in trên đề). Chọn câu đúng nhất.</p><ul><li><b>Trước khi nghe</b>: nhìn tranh, tự hỏi <i>ai? đang làm gì? đồ vật ở đâu?</i></li><li><b>Tranh có người</b>: tập trung vào động tác (hiện tại tiếp diễn): <i>He is holding a cup.</i></li><li><b>Tranh không có người</b>: loại ngay câu có người đang làm gì; chú ý dạng <i>has/have been + V3</i> (trạng thái): <i>Boxes have been stacked.</i> Dạng <i>is/are being + V3</i> nghĩa là “đang được ai đó làm” nên cần có người trong tranh.</li><li>Cẩn thận với câu nhắc đúng đồ vật nhưng sai động tác.</li></ul>" },
     { h: "Part 7 – E-mail ngắn", html: "<p>Đọc phần đầu <b>From / To / Subject</b> để biết ai viết cho ai, về việc gì. <b>Mục đích</b> của e-mail thường nằm ở 1–2 câu đầu. Câu hỏi chi tiết thì tìm <b>từ khóa</b> trong câu hỏi rồi dò trong bài. Đáp án đúng thường được diễn đạt lại bằng từ khác.</p>" }

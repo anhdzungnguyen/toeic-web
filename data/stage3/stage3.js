@@ -1,12 +1,12 @@
 /* Giai đoạn 3 – Tăng tốc (500 → 700). Hiện có khung + 1 bài mẫu. */
 TOEIC.addStage({
   id: 3, name: "Tăng tốc", range: [500, 700], target: 700, gateTest: null,
-  desc: "Ngữ pháp trung cấp (câu điều kiện, bị động, mệnh đề quan hệ, so sánh), đoạn kép Part 7 và câu hỏi kèm biểu đồ ở Part 3–4. (Đang soạn: hiện có 1 bài mẫu.)",
-  units: [{ id: "u1", title: "Chặng 1 – Ngữ pháp trung cấp" }]
+  desc: "Ngữ pháp trung cấp (câu điều kiện, bị động, mệnh đề quan hệ, so sánh), đoạn kép Part 7 và câu hỏi kèm biểu đồ ở Part 3–4. (Đang soạn: hiện có 2 bài.)",
+  units: [{ id: "u1", title: "Chặng 1 – Ngữ pháp trung cấp", checkpoint: "cp-s3-u1" }]
 });
 
 TOEIC.addLesson({
-  id: "s3-l1", stage: 3, unit: "u1", order: 1, minutes: 25, title: "Câu điều kiện",
+  id: "s3-l1", stage: 3, unit: "u1", order: 1, minutes: 25, title: "Bài 1. Câu điều kiện",
   sections: [
     { h: "Ba loại câu điều kiện", html: "<table><tr><th>Loại</th><th>Mệnh đề If</th><th>Mệnh đề chính</th><th>Dùng khi</th></tr><tr><td>1</td><td>If + hiện tại đơn</td><td>will / can + V</td><td>có thể xảy ra ở hiện tại, tương lai</td></tr><tr><td>2</td><td>If + quá khứ đơn (were)</td><td>would / could + V</td><td>không có thật ở hiện tại</td></tr><tr><td>3</td><td>If + had + V3</td><td>would have + V3</td><td>không có thật trong quá khứ</td></tr></table><p>Lưu ý: mệnh đề If <b>không</b> dùng will: <i>If it <s>will rain</s> rains…</i></p>" },
     { h: "Các từ thay cho If", html: "<ul><li><b>Unless</b> = If … not: <i>Unless you have a receipt, we cannot refund you.</i></li><li><b>Provided (that) / As long as</b> = miễn là.</li><li><b>Otherwise</b> = nếu không thì (đứng đầu câu sau).</li><li>Đảo ngữ (hay gặp ở Part 5 khó): <i>Should you need help…</i> = If you should need help…; <i>Had we known…</i> = If we had known…</li></ul>" }
