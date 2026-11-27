@@ -33,7 +33,7 @@
   // Xáo thứ tự lựa chọn theo id câu (cố định giữa các lần mở trang) để đáp án đúng không dồn vào một chữ cái.
   // Bỏ qua câu dưới 3 lựa chọn, câu chỉ gồm ký hiệu IPA và câu có lựa chọn dạng số (giờ, giá, ngày – đề thật xếp tăng dần).
   // Các tham chiếu (A)…(D) trong lời giải được đổi theo.
-  T.isNumChoice = c => /^\s*(\$|£|€|¥|at\s+\d|by\s+\d|on\s+\d|in\s+\d|\d)/i.test(String(c).replace(/<[^>]+>/g, ''));
+  T.isNumChoice = c => /^\s*(\$|£|€|¥|\[\d\]|at\s+\d|by\s+\d|on\s+\d|in\s+\d|\d)/i.test(String(c).replace(/<[^>]+>/g, ''));
   T.mix = function (q) {
     if (!Array.isArray(q.c) || q.c.length < 3 || q.c.every(x => /^\/.+\/$/.test(x)) || q.c.every(T.isNumChoice)) return;
     let h = 2166136261; for (const ch of q.uid) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) >>> 0;

@@ -25,7 +25,7 @@ Dữ liệu là các file `.js` nạp bằng thẻ `<script>` (không dùng fetc
 | `data/tests/full1.js` | Khung đề đầy đủ (chưa có câu hỏi; màn hình đề hiện bảng cấu trúc) |
 | `tools/` | `validate.js` (rà dữ liệu), `e2e.py` (kiểm thử trình duyệt). Không được `index.html` nạp |
 
-**Số liệu hiện có:** 59 bài học (GĐ1 23 · GĐ2 23 · GĐ3 6 · GĐ4 6 · GĐ5 1 bài mẫu) · 1.218 từ vựng (GĐ1 ~480, GĐ2 ~520) · 823 câu hỏi · 12 bài kiểm tra chặng · đề mini1, mini2. **GĐ1 và GĐ2 đã đủ bài + bài thi chuyển giai đoạn.**
+**Số liệu hiện có:** 59 bài học (GĐ1 23 · GĐ2 23 · GĐ3 6 · GĐ4 6 · GĐ5 1 bài mẫu) · 1.218 từ vựng · 1.001 câu hỏi · 12 bài kiểm tra chặng · đề mini1, mini2 · ngân hàng luyện Part: P1 25, P2 61, P3 14, P4 12, P5 292, P6 29, P7 19 nhóm (tính cả câu trong bài học). **GĐ1 và GĐ2 đã đủ bài + bài thi chuyển giai đoạn.**
 
 **Mới (2026-11-27):** giao diện mới (font Be Vietnam Pro, icon SVG, hero gradient); thêm 10 bài ngữ pháp GĐ1 (chặng u2b, u2c); trang **Ngữ pháp theo chủ đề** `#/grammar` theo cây 17 chủ đề (xem mục 2b); deploy Vercel tại https://toeic-0-990.vercel.app (chạy `npx vercel deploy --prod` trong thư mục này).
 
@@ -89,7 +89,7 @@ Nguyên tắc: GĐ1 dạy mức cơ bản của mỗi chủ đề, GĐ2–5 dạ
 
 **IV. Kỹ năng & chiến lược:** (2026-11-27: ĐÃ CÓ GĐ2 chặng 4 – s2-l18..l23 chiến lược Part 1, 2, 3–4, 5, 6, 7 + checkpoint `cp-s2-u4`; còn thiếu: dictation, shadowing, chiến lược nâng cao GĐ3–5) Part 1 chiến lược · Part 2 câu hỏi đuôi / đề nghị / trần thuật / trả lời gián tiếp · Part 3–4 hàm ý, biểu đồ, hội thoại 3 người · Part 6 chèn câu, đại từ trỏ ngược · Part 7 đoạn đôi/ba, NOT true, đồng nghĩa, phân bổ thời gian · dictation, shadowing
 
-**V. Ngân hàng câu & đề:** (2026-11-27: ĐÃ CÓ `data/tests/mini2.js` 50 câu = gateTest GĐ2 → GĐ3 ≥ 500) mỗi Part ≥ 10 nhóm · kiểm tra chặng GĐ3–5 · đề chuyển giai đoạn mini2 (≥ 500), GĐ3 (≥ 700), GĐ4 (≥ 850) · full1 đủ 200 câu · audio chất lượng cao nhiều giọng
+**V. Ngân hàng câu & đề:** (2026-11-27: ĐÃ CÓ `data/tests/mini2.js` 50 câu = gateTest GĐ2 → GĐ3 ≥ 500; ĐÃ CÓ ngân hàng Part `data/parts/bank-p12.js` (P1 12, P2 20), `bank-p34.js` (P3 10, P4 10), `bank-p67.js` (P6 10, P7 12), lvl 1–5 – mỗi Part đã ≥ 10 nhóm; lựa chọn vị trí [1]–[4] không bị xáo) mỗi Part ≥ 10 nhóm · kiểm tra chặng GĐ3–5 · đề chuyển giai đoạn mini2 (≥ 500), GĐ3 (≥ 700), GĐ4 (≥ 850) · full1 đủ 200 câu · audio chất lượng cao nhiều giọng
 
 **VI. Lỗi code: đã sửa ngày 2026-11-27** (ẩn mô tả tranh Part 1 khi thi/luyện, loại câu đề thi khỏi trang chủ đề, đồng hồ theo mốc kết thúc, trừ điểm đoán mò, audio đánh dấu khi thực sự phát + chia câu, SRS chỉ chấm khi đến hạn / 1 lần mỗi phiên / lưu mỗi thẻ / quên chỉ trừ EF 0,2, sao lưu JSON hỏng, id cố định cho mọi câu, làm lại bài xếp lớp không đổi giai đoạn, lọc HTML khi nhập file, gắn lại nhãn, giữ thứ tự lựa chọn dạng số, sửa hiển thị điện thoại).
 
