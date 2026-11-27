@@ -701,4 +701,5 @@
   window.addEventListener('beforeunload', e => { if (EX) { e.preventDefault(); e.returnValue = ''; } });
   window.addEventListener('hashchange', router);
   router();
+  window.__booted = true;
 })();

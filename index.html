@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=20261127c">
 <script>try{if(JSON.parse(localStorage.getItem('toeic990_v1')||'{}').settings.dark)document.documentElement.classList.add('dark')}catch(e){}</script>
 </head>
 <body>
@@ -27,42 +27,51 @@
   <a class="icon-btn" href="#/settings" title="Cài đặt" aria-label="Cài đặt"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></a>
 </div></header>
 <main id="app"><p class="muted">Đang tải…</p></main>
+<script>
+/* Nếu có lỗi khi khởi động, hiện thông báo thay vì kẹt ở “Đang tải…” */
+window.__bootErr = function (msg) {
+  var a = document.getElementById('app'); if (!a || window.__booted) return;
+  a.innerHTML = '<div class="card"><h2>⚠️ Không tải được trang</h2><p>Có thể trình duyệt đang giữ bản cũ của web. Hãy bấm <b>Tải lại</b> (hoặc nhấn Ctrl + F5). Tiến độ học của bạn không bị mất.</p><p class="small muted">Chi tiết lỗi: ' + String(msg).replace(/[<>&]/g, '') + '</p><button class="btn primary" onclick="location.reload(true)">↻ Tải lại</button></div>';
+};
+window.addEventListener('error', function (e) { window.__bootErr((e.message || 'lỗi tải file') + (e.filename ? ' – ' + e.filename.split('/').slice(-2).join('/') : '') + (e.target && e.target.src ? ' – ' + e.target.src : '')); }, true);
+window.addEventListener('load', function () { setTimeout(function () { if (!window.__booted) window.__bootErr('trang không khởi động được'); }, 1500); });
+</script>
 <footer class="foot">TOEIC 0 → 990 · Câu hỏi tự soạn, điểm hiển thị là ước lượng · Tiến độ lưu trên trình duyệt này</footer>
 <div id="toast" role="status"></div>
 <noscript>Hãy bật JavaScript để dùng trang web này.</noscript>
 
-<script src="js/core.js"></script>
-<script src="js/speech.js"></script>
-<script src="js/scenes.js"></script>
-<script src="data/format.js"></script>
-<script src="data/stage1/stage1.js"></script>
-<script src="data/stage1/unit1-phat-am.js"></script>
-<script src="data/stage1/unit2-ngu-phap.js"></script>
-<script src="data/stage1/unit2b-tu-loai-cau.js"></script>
-<script src="data/stage1/unit2c-dong-tu-menh-de.js"></script>
-<script src="data/stage1/unit3-tu-vung.js"></script>
-<script src="data/stage1/vocab-bank-1.js"></script>
-<script src="data/stage1/vocab-bank-2.js"></script>
-<script src="data/stage1/checkpoints.js"></script>
-<script src="data/stage2/stage2.js"></script>
-<script src="data/stage2/unit2-ngu-phap-cot-loi.js"></script>
-<script src="data/stage2/unit2b-thi-nang-cao.js"></script>
-<script src="data/stage2/unit3-ngu-phap-mo-rong-a.js"></script>
-<script src="data/stage2/unit3-ngu-phap-mo-rong-b.js"></script>
-<script src="data/stage3/stage3.js"></script>
-<script src="data/stage3/unit1-thi-tong-hop.js"></script>
-<script src="data/stage4/stage4.js"></script>
-<script src="data/stage5/stage5.js"></script>
-<script src="data/parts/part1.js"></script>
-<script src="data/parts/part2.js"></script>
-<script src="data/parts/part3.js"></script>
-<script src="data/parts/part4.js"></script>
-<script src="data/parts/part5.js"></script>
-<script src="data/parts/part6.js"></script>
-<script src="data/parts/part7.js"></script>
-<script src="data/tests/placement.js"></script>
-<script src="data/tests/mini1.js"></script>
-<script src="data/tests/full1.js"></script>
-<script src="js/app.js"></script>
+<script src="js/core.js?v=20261127c"></script>
+<script src="js/speech.js?v=20261127c"></script>
+<script src="js/scenes.js?v=20261127c"></script>
+<script src="data/format.js?v=20261127c"></script>
+<script src="data/stage1/stage1.js?v=20261127c"></script>
+<script src="data/stage1/unit1-phat-am.js?v=20261127c"></script>
+<script src="data/stage1/unit2-ngu-phap.js?v=20261127c"></script>
+<script src="data/stage1/unit2b-tu-loai-cau.js?v=20261127c"></script>
+<script src="data/stage1/unit2c-dong-tu-menh-de.js?v=20261127c"></script>
+<script src="data/stage1/unit3-tu-vung.js?v=20261127c"></script>
+<script src="data/stage1/vocab-bank-1.js?v=20261127c"></script>
+<script src="data/stage1/vocab-bank-2.js?v=20261127c"></script>
+<script src="data/stage1/checkpoints.js?v=20261127c"></script>
+<script src="data/stage2/stage2.js?v=20261127c"></script>
+<script src="data/stage2/unit2-ngu-phap-cot-loi.js?v=20261127c"></script>
+<script src="data/stage2/unit2b-thi-nang-cao.js?v=20261127c"></script>
+<script src="data/stage2/unit3-ngu-phap-mo-rong-a.js?v=20261127c"></script>
+<script src="data/stage2/unit3-ngu-phap-mo-rong-b.js?v=20261127c"></script>
+<script src="data/stage3/stage3.js?v=20261127c"></script>
+<script src="data/stage3/unit1-thi-tong-hop.js?v=20261127c"></script>
+<script src="data/stage4/stage4.js?v=20261127c"></script>
+<script src="data/stage5/stage5.js?v=20261127c"></script>
+<script src="data/parts/part1.js?v=20261127c"></script>
+<script src="data/parts/part2.js?v=20261127c"></script>
+<script src="data/parts/part3.js?v=20261127c"></script>
+<script src="data/parts/part4.js?v=20261127c"></script>
+<script src="data/parts/part5.js?v=20261127c"></script>
+<script src="data/parts/part6.js?v=20261127c"></script>
+<script src="data/parts/part7.js?v=20261127c"></script>
+<script src="data/tests/placement.js?v=20261127c"></script>
+<script src="data/tests/mini1.js?v=20261127c"></script>
+<script src="data/tests/full1.js?v=20261127c"></script>
+<script src="js/app.js?v=20261127c"></script>
 </body>
 </html>

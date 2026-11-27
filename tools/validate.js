@@ -3,7 +3,7 @@
 const fs = require('fs'), path = require('path'), vm = require('vm');
 const root = process.argv[2];
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-const srcs = [...html.matchAll(/<script src="([^"]+)"/g)].map(m => m[1]).filter(s => !s.endsWith('app.js'));
+const srcs = [...html.matchAll(/<script src="([^"]+)"/g)].map(m => m[1].split('?')[0]).filter(s => !s.endsWith('app.js'));
 const warns = [];
 const ctx = { window: {}, console: { warn: (...a) => warns.push(a.join(' ')), log: console.log }, localStorage: { getItem: () => null, setItem() {} } };
 ctx.window = ctx; vm.createContext(ctx);
