@@ -25,7 +25,7 @@ Dữ liệu là các file `.js` nạp bằng thẻ `<script>` (không dùng fetc
 | `data/tests/full1.js` | Khung đề đầy đủ (chưa có câu hỏi; màn hình đề hiện bảng cấu trúc) |
 | `tools/` | `validate.js` (rà dữ liệu), `e2e.py` (kiểm thử trình duyệt). Không được `index.html` nạp |
 
-**Số liệu hiện có:** 53 bài học (GĐ1 23 · GĐ2 17 · GĐ3 6 · GĐ4 6 · GĐ5 1 bài mẫu) · 842 từ vựng · 690 câu hỏi · 11 bài kiểm tra chặng. Ngữ pháp (mục I) và từ vựng – ngữ pháp Part 5 (mục II) đã đủ.
+**Số liệu hiện có:** 59 bài học (GĐ1 23 · GĐ2 23 · GĐ3 6 · GĐ4 6 · GĐ5 1 bài mẫu) · 1.218 từ vựng (GĐ1 ~480, GĐ2 ~520) · 823 câu hỏi · 12 bài kiểm tra chặng · đề mini1, mini2. **GĐ1 và GĐ2 đã đủ bài + bài thi chuyển giai đoạn.**
 
 **Mới (2026-11-27):** giao diện mới (font Be Vietnam Pro, icon SVG, hero gradient); thêm 10 bài ngữ pháp GĐ1 (chặng u2b, u2c); trang **Ngữ pháp theo chủ đề** `#/grammar` theo cây 17 chủ đề (xem mục 2b); deploy Vercel tại https://toeic-0-990.vercel.app (chạy `npx vercel deploy --prod` trong thư mục này).
 
@@ -85,11 +85,11 @@ Nguyên tắc: GĐ1 dạy mức cơ bản của mỗi chủ đề, GĐ2–5 dạ
 
 **II. ~~Từ vựng – ngữ pháp (Part 5 cấp cao)~~ ĐÃ XONG 2026-11-27:** GĐ4 chặng 2 (`data/stage4/unit2-tu-vung-p5-a.js`: s4-l3 Cặp từ dễ nhầm, s4-l4 Trạng từ hay gặp; `-b.js`: s4-l5 Collocation, s4-l6 ~150 cụm giới từ + checkpoint `cp-s4-u2`). Chủ đề 18 trong cây ngữ pháp; nhãn mới `cap-tu`, `trang-tu`, `collocation`.
 
-**III. Từ vựng:** GĐ2 lên ~1.200 · GĐ3–5 lên ~3.500 · phrasal verbs · paraphrase & đồng nghĩa
+**III. Từ vựng:** (2026-11-27: thêm `data/stage2/vocab-bank-1.js` 304 từ GĐ2 theo 16 chủ đề, có phrasal verbs) · GĐ2 lên ~1.200 · GĐ3–5 lên ~3.500 · phrasal verbs · paraphrase & đồng nghĩa
 
-**IV. Kỹ năng & chiến lược:** Part 1 chiến lược · Part 2 câu hỏi đuôi / đề nghị / trần thuật / trả lời gián tiếp · Part 3–4 hàm ý, biểu đồ, hội thoại 3 người · Part 6 chèn câu, đại từ trỏ ngược · Part 7 đoạn đôi/ba, NOT true, đồng nghĩa, phân bổ thời gian · dictation, shadowing
+**IV. Kỹ năng & chiến lược:** (2026-11-27: ĐÃ CÓ GĐ2 chặng 4 – s2-l18..l23 chiến lược Part 1, 2, 3–4, 5, 6, 7 + checkpoint `cp-s2-u4`; còn thiếu: dictation, shadowing, chiến lược nâng cao GĐ3–5) Part 1 chiến lược · Part 2 câu hỏi đuôi / đề nghị / trần thuật / trả lời gián tiếp · Part 3–4 hàm ý, biểu đồ, hội thoại 3 người · Part 6 chèn câu, đại từ trỏ ngược · Part 7 đoạn đôi/ba, NOT true, đồng nghĩa, phân bổ thời gian · dictation, shadowing
 
-**V. Ngân hàng câu & đề:** mỗi Part ≥ 10 nhóm · kiểm tra chặng GĐ3–5 · đề chuyển giai đoạn mini2 (≥ 500), GĐ3 (≥ 700), GĐ4 (≥ 850) · full1 đủ 200 câu · audio chất lượng cao nhiều giọng
+**V. Ngân hàng câu & đề:** (2026-11-27: ĐÃ CÓ `data/tests/mini2.js` 50 câu = gateTest GĐ2 → GĐ3 ≥ 500) mỗi Part ≥ 10 nhóm · kiểm tra chặng GĐ3–5 · đề chuyển giai đoạn mini2 (≥ 500), GĐ3 (≥ 700), GĐ4 (≥ 850) · full1 đủ 200 câu · audio chất lượng cao nhiều giọng
 
 **VI. Lỗi code: đã sửa ngày 2026-11-27** (ẩn mô tả tranh Part 1 khi thi/luyện, loại câu đề thi khỏi trang chủ đề, đồng hồ theo mốc kết thúc, trừ điểm đoán mò, audio đánh dấu khi thực sự phát + chia câu, SRS chỉ chấm khi đến hạn / 1 lần mỗi phiên / lưu mỗi thẻ / quên chỉ trừ EF 0,2, sao lưu JSON hỏng, id cố định cho mọi câu, làm lại bài xếp lớp không đổi giai đoạn, lọc HTML khi nhập file, gắn lại nhãn, giữ thứ tự lựa chọn dạng số, sửa hiển thị điện thoại).
 
@@ -180,11 +180,11 @@ Dàn ý gốc 12 bài (u1–u3):
   - l11 Câu hỏi Wh- (nền cho Part 2)
   - l12 Part 1 + email ngắn Part 7
 
-**Dàn ý Giai đoạn 2 (17 bài)** – số “Bài N” trong tiêu đề theo thứ tự học, id giữ nguyên
+**Dàn ý Giai đoạn 2 (23 bài)** – số “Bài N” trong tiêu đề theo thứ tự học, id giữ nguyên
 - u1 Chiến lược đề thi: s2-l1 Bài 1 Cấu trúc đề & cách tính điểm
 - u2 Ngữ pháp Part 5 cốt lõi (`data/stage2/unit2-ngu-phap-cot-loi.js`, checkpoint `cp-s2-u2`): s2-l2 Từ loại qua đuôi từ · s2-l3 Danh từ người/vật, -ed/-ing, danh từ ghép · s2-l4 Hòa hợp S–V · s2-l5 Thì nâng cao · s2-l16 Tương lai tiếp diễn & cách nói tương lai · s2-l17 Hoàn thành tiếp diễn, tương lai trong quá khứ, lùi thì (`unit2b-thi-nang-cao.js`, order 4.1 / 4.2) · s2-l6 Bị động nâng cao · s2-l7 Đại từ nâng cao
 - u3 Ngữ pháp Part 5–6 mở rộng (`unit3-ngu-phap-mo-rong-a.js`: l8–l11, `-b.js`: l12–l15 + checkpoint `cp-s2-u3`): s2-l8 Giới từ đi kèm · s2-l9 Liên từ phụ thuộc & trạng từ nối · s2-l10 MĐQH nâng cao · s2-l11 Mệnh đề danh từ · s2-l12 Phân từ & rút gọn · s2-l13 Cấu trúc đặc biệt · s2-l14 So sánh nâng cao · s2-l15 Modal nâng cao & giả định
-- Còn thiếu: chặng chiến lược Part 1–4, Part 6, Part 7 đoạn đơn; đề mini2.
+- u4 Chiến lược từng Part (`unit4-chien-luoc-nghe.js`: s2-l18 Part 1, s2-l19 Part 2, s2-l20 Part 3–4; `unit4-chien-luoc-doc.js`: s2-l21 Part 5, s2-l22 Part 6, s2-l23 Part 7 + checkpoint `cp-s2-u4`). gateTest GĐ2 = `mini2`.
 
 **Từ vựng theo chủ đề:** `TOEIC.addVocab(stage, [...], "ma-chu-de")`, mã chủ đề ở `TOEIC.VOCAB_TOPICS` (data/format.js). Trang Từ vựng có bộ lọc chủ đề và nút thêm cả chủ đề vào ôn tập. Xem từ đã có: `node tools/listwords.js . [--topic]`.
 

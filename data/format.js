@@ -49,13 +49,13 @@ TOEIC.TAGS = {
   "nghe-chi-tiet": { n: "Nghe chi tiết", l: "s1-l11" },
   "y-chinh": { n: "Ý chính / mục đích", l: "s1-l12" },
   "suy-luan": { n: "Suy luận", l: "s1-l12" },
-  "y-dinh": { n: "Ý định người nói/viết", l: "s1-l12" },
+  "y-dinh": { n: "Ý định người nói/viết (hàm ý)", l: "s2-l20" },
   "paraphrase": { n: "Diễn đạt lại (paraphrase)", l: "s5-l1" },
-  "bieu-do": { n: "Câu hỏi kèm biểu đồ/bảng", l: "s2-l1" },
-  "chen-cau": { n: "Chèn câu", l: "s2-l1" },
-  "doan-van": { n: "Điền đoạn văn", l: "s2-l1" },
+  "bieu-do": { n: "Câu hỏi kèm biểu đồ/bảng", l: "s2-l20" },
+  "chen-cau": { n: "Chèn câu", l: "s2-l22" },
+  "doan-van": { n: "Điền đoạn văn", l: "s2-l22" },
   "doc-hieu": { n: "Đọc hiểu chi tiết", l: "s1-l12" },
-  "lien-ket": { n: "Liên kết nhiều đoạn", l: "s2-l1" }
+  "lien-ket": { n: "Liên kết nhiều đoạn", l: "s2-l23" }
 };
 
 /* Cây chủ đề ngữ pháp cho mục tiêu 990 (Part 5, 6, một phần Part 7).

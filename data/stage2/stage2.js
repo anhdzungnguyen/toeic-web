@@ -1,11 +1,12 @@
 /* Giai đoạn 2 – Làm quen đề (300 → 500). Hiện có khung + 2 bài mẫu. */
 TOEIC.addStage({
-  id: 2, name: "Làm quen đề thi", range: [300, 500], target: 500, gateTest: null,
+  id: 2, name: "Làm quen đề thi", range: [300, 500], target: 500, gateTest: "mini2",
   desc: "Nắm cấu trúc đề, chiến lược từng Part và toàn bộ ngữ pháp Part 5–6 ở mức trung cấp: từ loại, hòa hợp chủ ngữ – động từ, thì nâng cao, bị động, đại từ, giới từ, liên từ & trạng từ nối, mệnh đề quan hệ, mệnh đề danh từ, rút gọn mệnh đề, cấu trúc đặc biệt, so sánh và giả định.",
   units: [
     { id: "u1", title: "Chặng 1 – Chiến lược đề thi" },
     { id: "u2", title: "Chặng 2 – Ngữ pháp Part 5 cốt lõi", checkpoint: "cp-s2-u2" },
-    { id: "u3", title: "Chặng 3 – Ngữ pháp Part 5–6 mở rộng", checkpoint: "cp-s2-u3" }
+    { id: "u3", title: "Chặng 3 – Ngữ pháp Part 5–6 mở rộng", checkpoint: "cp-s2-u3" },
+    { id: "u4", title: "Chặng 4 – Chiến lược từng Part", checkpoint: "cp-s2-u4" }
   ]
 });
 
