@@ -1,0 +1,237 @@
+/* Giai đoạn 1 · Chặng 4 – Động từ & mệnh đề (bài 15–19) */
+TOEIC.addLesson({
+  id: "s1-l18", stage: 1, unit: "u2c", order: 1, minutes: 25, title: "Bài 15. Thì hiện tại hoàn thành",
+  sections: [
+    { h: "Công thức: have / has + V3", html: "<p><b>S + have / has + V3 (quá khứ phân từ)</b>. Chủ ngữ là he, she, it hoặc danh từ số ít thì dùng <b>has</b>; còn lại dùng <b>have</b>.</p><ul><li>Khẳng định: <i>The company <b>has hired</b> two new accountants.</i></li><li>Phủ định: <b>have not (haven't) / has not (hasn't) + V3</b>: <i>We <b>haven't received</b> the payment.</i></li><li>Câu hỏi: đảo have/has lên đầu: <i><b>Has</b> Ms. Lee <b>signed</b> the form?</i> – <i>Yes, she has. / No, she hasn't.</i></li></ul><p>Động từ có quy tắc: V3 = V-ed (hire → hired). Động từ bất quy tắc phải học thuộc cột 3 (xem bảng bên dưới).</p>" },
+    { h: "Khi nào dùng hiện tại hoàn thành?", html: "<ul><li><b>Kinh nghiệm</b> (đã từng / chưa từng, không nói rõ lúc nào): <i>Have you <b>ever</b> worked abroad?</i> <i>I have <b>never</b> met the CEO.</i></li><li><b>Kết quả còn ở hiện tại</b>: <i>I have lost my ID card.</i> (bây giờ vẫn chưa tìm thấy) – <i>The shipment has <b>just</b> arrived.</i></li><li><b>Việc bắt đầu trong quá khứ, kéo dài đến bây giờ</b>: <i>She has worked here <b>since</b> 2020 / <b>for</b> five years.</i></li></ul><p><b>Dấu hiệu nhận biết:</b> already (rồi), yet (chưa – dùng trong câu phủ định và câu hỏi, đứng cuối câu), just (vừa mới), ever (đã từng), never (chưa bao giờ), <b>since</b> + mốc thời gian (since Monday, since 2019), <b>for</b> + khoảng thời gian (for two years), recently / lately (gần đây), <b>so far</b> / up to now (tính đến nay), this week / this year (khi khoảng thời gian chưa kết thúc).</p>" },
+    { h: "Hiện tại hoàn thành hay quá khứ đơn?", html: "<table><tr><th></th><th>Hiện tại hoàn thành</th><th>Quá khứ đơn</th></tr><tr><td>Thời điểm</td><td>Không nói rõ / còn liên quan đến hiện tại</td><td>Thời điểm cụ thể, đã kết thúc</td></tr><tr><td>Dấu hiệu</td><td>already, yet, just, ever, never, since, for, so far, recently</td><td><b>yesterday, ... ago, last week/month/year, in 2019</b></td></tr><tr><td>Ví dụ</td><td>We <b>have finished</b> the audit.</td><td>We <b>finished</b> the audit <b>last Friday</b>.</td></tr></table><p>Quy tắc vàng: hễ thấy <b>yesterday / ago / last ...</b> thì <b>không</b> dùng hiện tại hoàn thành. Sai: <i>I have sent it yesterday.</i> → Đúng: <i>I <b>sent</b> it yesterday.</i></p><p><b>20 động từ bất quy tắc hay gặp trong TOEIC</b> (V1 – V2 – V3):</p><table><tr><th>V1</th><th>V2</th><th>V3</th><th>Nghĩa</th></tr><tr><td>be</td><td>was / were</td><td>been</td><td>thì, là, ở</td></tr><tr><td>do</td><td>did</td><td>done</td><td>làm</td></tr><tr><td>go</td><td>went</td><td>gone</td><td>đi</td></tr><tr><td>make</td><td>made</td><td>made</td><td>làm, tạo ra</td></tr><tr><td>take</td><td>took</td><td>taken</td><td>lấy, mất (thời gian)</td></tr><tr><td>give</td><td>gave</td><td>given</td><td>đưa, cho</td></tr><tr><td>send</td><td>sent</td><td>sent</td><td>gửi</td></tr><tr><td>buy</td><td>bought</td><td>bought</td><td>mua</td></tr><tr><td>pay</td><td>paid</td><td>paid</td><td>trả tiền</td></tr><tr><td>meet</td><td>met</td><td>met</td><td>gặp</td></tr><tr><td>write</td><td>wrote</td><td>written</td><td>viết</td></tr><tr><td>speak</td><td>spoke</td><td>spoken</td><td>nói</td></tr><tr><td>choose</td><td>chose</td><td>chosen</td><td>chọn</td></tr><tr><td>begin</td><td>began</td><td>begun</td><td>bắt đầu</td></tr><tr><td>grow</td><td>grew</td><td>grown</td><td>tăng trưởng</td></tr><tr><td>leave</td><td>left</td><td>left</td><td>rời đi, để lại</td></tr><tr><td>sell</td><td>sold</td><td>sold</td><td>bán</td></tr><tr><td>build</td><td>built</td><td>built</td><td>xây dựng</td></tr><tr><td>bring</td><td>brought</td><td>brought</td><td>mang đến</td></tr><tr><td>spend</td><td>spent</td><td>spent</td><td>tiêu, dành (thời gian)</td></tr><tr><td>hold</td><td>held</td><td>held</td><td>tổ chức (cuộc họp)</td></tr><tr><td>rise</td><td>rose</td><td>risen</td><td>tăng lên</td></tr></table>" },
+    { h: "Mẹo làm bài TOEIC", html: "<ul><li>Quét câu tìm <b>dấu hiệu thời gian</b> trước: since / for / so far / yet / already → hiện tại hoàn thành; yesterday / ago / last → quá khứ đơn.</li><li>Sau <b>have / has</b> chỗ trống phải là <b>V3</b>: has <i>sent</i>, have <i>been</i>. Các lựa chọn “send / sending / sends” đều loại.</li><li><b>since</b> + mốc (since May), <b>for</b> + khoảng (for three months). Đề rất hay bắt chọn giữa hai từ này.</li><li>Trong Part 2, câu hỏi “Have you ... yet?” thường được trả lời gián tiếp: <i>Not yet.</i> / <i>I'm working on it now.</i> / <i>I sent it this morning.</i></li></ul>" }
+  ],
+  examples: [
+    { en: "Ms. Chen <b>has worked</b> in the HR department <b>since</b> 2019.", vi: "Cô Chen đã làm ở phòng nhân sự từ năm 2019." },
+    { en: "We <b>have</b> <b>already</b> <b>interviewed</b> five candidates for the position.", vi: "Chúng tôi đã phỏng vấn năm ứng viên cho vị trí này rồi." },
+    { en: "<b>Have</b> you <b>received</b> the payment from the client <b>yet</b>?", vi: "Bạn đã nhận được khoản thanh toán của khách hàng chưa?" },
+    { en: "Our sales <b>have risen</b> by 15 percent <b>so far</b> this year.", vi: "Tính đến nay trong năm, doanh số của chúng tôi đã tăng 15%." },
+    { en: "The new director <b>has</b> <b>just</b> <b>arrived</b> at the head office.", vi: "Giám đốc mới vừa đến trụ sở." },
+    { en: "We <b>hired</b> three new engineers <b>last month</b>.", vi: "Tháng trước chúng tôi đã tuyển ba kỹ sư mới. (có “last month” → quá khứ đơn)" }
+  ],
+  vocab: [
+    "candidate|n|/ˈkændɪdət/|ứng viên|applicant|We have interviewed three candidates so far.|Đến nay chúng tôi đã phỏng vấn ba ứng viên.",
+    "qualified|adj|/ˈkwɒlɪfaɪd/|đủ năng lực, đủ tiêu chuẩn|eligible|She is highly qualified for the job.|Cô ấy rất đủ năng lực cho công việc này.",
+    "recruit|v|/rɪˈkruːt/|tuyển dụng|hire|The firm has recruited ten graduates this year.|Năm nay công ty đã tuyển mười sinh viên mới tốt nghiệp.",
+    "promote|v|/prəˈməʊt/|thăng chức; quảng bá|advance|Mr. Ortiz has been promoted to sales manager.|Ông Ortiz đã được thăng chức lên trưởng phòng kinh doanh.",
+    "achieve|v|/əˈtʃiːv/|đạt được|reach|The team has achieved all of its goals.|Nhóm đã đạt được tất cả mục tiêu.",
+    "target|n|/ˈtɑːɡɪt/|chỉ tiêu, mục tiêu|goal|We have already met our sales target.|Chúng tôi đã đạt chỉ tiêu doanh số rồi.",
+    "so far|adv|/ˌsəʊ ˈfɑː(r)/|cho đến nay|up to now|So far, everything has gone well.|Cho đến nay mọi việc đều suôn sẻ.",
+    "negotiate|v|/nɪˈɡəʊʃieɪt/|đàm phán, thương lượng|bargain|She has negotiated a better deal with the supplier.|Cô ấy đã thương lượng được thỏa thuận tốt hơn với nhà cung cấp.",
+    "implement|v|/ˈɪmplɪment/|triển khai, thực hiện|carry out|The company has implemented a new hiring process.|Công ty đã triển khai quy trình tuyển dụng mới.",
+    "expertise|n|/ˌekspɜːˈtiːz/|chuyên môn|skill|We need someone with expertise in accounting.|Chúng tôi cần người có chuyên môn về kế toán.",
+    "personnel|n|/ˌpɜːsəˈnel/|nhân sự, toàn bộ nhân viên|workforce|Only authorized personnel may enter this area.|Chỉ nhân viên được phép mới được vào khu vực này.",
+    "workload|n|/ˈwɜːkləʊd/|khối lượng công việc|—|My workload has increased since May.|Khối lượng công việc của tôi đã tăng từ tháng Năm."
+  ],
+  exercises: [
+    { q: "Ms. Chen ___ in the marketing department since 2019.", c: ["works", "worked", "has worked", "is working"], a: 2, e: "“since 2019” = từ 2019 đến nay → hiện tại hoàn thành: <b>has worked</b>. “worked” là quá khứ đơn, không đi với since.", t: "hoan-thanh" },
+    { q: "We ___ the new candidates yet.", c: ["haven't interviewed", "didn't interview", "don't interview", "weren't interviewed"], a: 0, e: "“yet” ở cuối câu phủ định → hiện tại hoàn thành: <b>haven't interviewed</b>. “weren't interviewed” là bị động, sai nghĩa vì “We” là người phỏng vấn.", t: "hoan-thanh" },
+    { q: "The company ___ its sales target last quarter.", c: ["has achieved", "achieves", "achieved", "has been achieved"], a: 2, e: "“last quarter” là thời điểm đã kết thúc → quá khứ đơn: <b>achieved</b>. Có “last” thì không dùng hiện tại hoàn thành.", t: "thi" },
+    { p: 5, lvl: 1, q: "Mr. Davis has ___ the report to all managers.", c: ["send", "sent", "sending", "sends"], a: 1, e: "Sau “has” cần V3. send – sent – <b>sent</b>.", t: "hoan-thanh" },
+    { p: 5, lvl: 1, q: "So far, the HR team ___ twelve new staff members this year.", c: ["has recruited", "recruited", "recruit", "recruiting"], a: 0, e: "“So far” (tính đến nay) và “this year” (năm chưa hết) → hiện tại hoàn thành: <b>has recruited</b>.", t: "hoan-thanh" },
+    { q: "Have you ever ___ to our headquarters in Seoul?", c: ["be", "was", "been", "being"], a: 2, e: "Have + V3; be – was/were – <b>been</b>. “Have you ever been to …?” = Bạn đã từng đến … chưa?", t: "hoan-thanh" },
+    { q: "The training session has ___ started, so please take your seats quickly.", c: ["yet", "ever", "just", "ago"], a: 2, e: "<b>just</b> = vừa mới, đứng giữa has và V3. “yet” chỉ dùng trong câu phủ định/câu hỏi; “ago” đi với quá khứ đơn; “ever” dùng trong câu hỏi.", t: "hoan-thanh" },
+    { p: 5, lvl: 1, q: "Our firm has been in business ___ more than twenty years.", c: ["since", "for", "ago", "during"], a: 1, e: "“more than twenty years” là một khoảng thời gian → <b>for</b>. “since” đi với mốc thời gian (since 2005).", t: "hoan-thanh" },
+    { p: 2, say: "Have you finished the budget report yet?", c: ["Yes, I sent it to you an hour ago.", "The budget is too high.", "He reported it yesterday."], a: 0, e: "Câu hỏi đã làm xong chưa → trả lời <b>Yes, I sent it to you an hour ago</b>. Hai câu còn lại chỉ lặp lại từ “budget”, “report” để gây bẫy.", t: "hoi-dap" },
+    { say: "The manager has just approved the new hiring plan.", q: "Nghe và chọn câu bạn nghe được.", c: ["The manager has just approved the new hiring plan.", "The manager just approved the new hiring plan.", "The manager has not approved the new hiring plan.", "The manager will approve the new hiring plan."], a: 0, e: "Câu nghe được: “The manager <b>has just approved</b> the new hiring plan.” – Quản lý vừa phê duyệt kế hoạch tuyển dụng mới. Chú ý âm “has” đọc lướt rất nhẹ /həz/.", t: "hoan-thanh" }
+  ]
+});
+
+TOEIC.addLesson({
+  id: "s1-l19", stage: 1, unit: "u2c", order: 2, minutes: 25, title: "Bài 16. To V và V-ing",
+  sections: [
+    { h: "Động từ + to V", html: "<p>Một số động từ luôn đi với <b>to + V nguyên mẫu</b>. Phần lớn chúng nói về <b>ý định, kế hoạch, mong muốn</b> hướng tới tương lai:</p><table><tr><th>Động từ</th><th>Nghĩa</th><th>Ví dụ</th></tr><tr><td>want / would like</td><td>muốn</td><td>I want <b>to join</b> the workshop.</td></tr><tr><td>plan</td><td>dự định</td><td>We plan <b>to open</b> a new branch.</td></tr><tr><td>decide</td><td>quyết định</td><td>They decided <b>to cancel</b> the event.</td></tr><tr><td>agree</td><td>đồng ý</td><td>She agreed <b>to give</b> a speech.</td></tr><tr><td>hope / expect</td><td>hy vọng / dự kiến</td><td>We expect <b>to finish</b> by May.</td></tr><tr><td>need</td><td>cần</td><td>You need <b>to register</b> online.</td></tr><tr><td>offer</td><td>đề nghị (làm giúp)</td><td>He offered <b>to drive</b> the guests.</td></tr><tr><td>refuse</td><td>từ chối</td><td>The vendor refused <b>to lower</b> the price.</td></tr></table>" },
+    { h: "Động từ + V-ing và giới từ + V-ing", html: "<p>Một số động từ luôn đi với <b>V-ing</b>:</p><ul><li><b>enjoy</b> (thích), <b>finish</b> (làm xong), <b>avoid</b> (tránh), <b>consider</b> (cân nhắc), <b>suggest / recommend</b> (đề nghị, khuyên), <b>mind</b> (phiền): <i>Would you mind <b>closing</b> the door?</i> – <i>We are considering <b>holding</b> the seminar online.</i></li></ul><p><b>Sau giới từ luôn dùng V-ing</b> (không bao giờ dùng V nguyên mẫu):</p><ul><li><b>interested in</b> + V-ing: <i>She is interested in <b>joining</b> our team.</i></li><li><b>look forward to</b> + V-ing (chữ <i>to</i> ở đây là giới từ!): <i>We look forward to <b>meeting</b> you.</i></li><li><b>before / after / by / without</b> + V-ing: <i>Please read the agenda <b>before attending</b>.</i> – <i>You can register <b>by filling out</b> this form.</i></li><li><b>Thank you for</b> + V-ing: <i>Thank you for <b>coming</b>.</i></li></ul>" },
+    { h: "To V chỉ mục đích (để làm gì)", html: "<p><b>to V / in order to V</b> = <b>để</b> làm gì: <i>Many people arrived early <b>(in order) to get</b> good seats.</i></p><p>Không viết <i>for get</i> hay <i>for getting</i> khi nói mục đích của một người. <i>for + danh từ</i> thì được: <i>He came here <b>for</b> the meeting.</i></p><table><tr><th>Sau cái gì?</th><th>Dùng</th></tr><tr><td>want, plan, decide, agree, hope, need, expect, offer, refuse</td><td><b>to V</b></td></tr><tr><td>enjoy, finish, avoid, consider, suggest, recommend, mind</td><td><b>V-ing</b></td></tr><tr><td>giới từ (in, on, for, by, before, after, look forward to)</td><td><b>V-ing</b></td></tr><tr><td>mục đích “để”</td><td><b>to V / in order to V</b></td></tr></table>" },
+    { h: "Mẹo làm bài TOEIC", html: "<ul><li>Nhìn <b>từ ngay trước chỗ trống</b>: là động từ nào? là giới từ không? Nếu là giới từ → chọn ngay V-ing.</li><li>Bẫy kinh điển: <b>look forward to + V-ing</b>, không phải “to see”. Tương tự: <i>be committed to, be used to</i> + V-ing (sẽ học sau).</li><li>Học theo cụm ngắn: “decide to”, “agree to”, “avoid doing”, “consider doing” để phản xạ nhanh.</li><li>Đầu câu có chỗ trống và sau đó là dấu phẩy + mệnh đề chính, ví dụ “___ the deadline, …”, thường cần <b>To V</b> (mục đích): <i>To meet the deadline, we worked late.</i></li></ul>" }
+  ],
+  examples: [
+    { en: "We <b>plan to hold</b> the annual seminar in Da Nang.", vi: "Chúng tôi dự định tổ chức hội thảo thường niên ở Đà Nẵng." },
+    { en: "The keynote speaker <b>agreed to stay</b> for the question session.", vi: "Diễn giả chính đã đồng ý ở lại cho phần hỏi đáp." },
+    { en: "Would you <b>mind sending</b> me the agenda?", vi: "Bạn có phiền gửi cho tôi chương trình họp không?" },
+    { en: "We <b>look forward to seeing</b> you at the workshop.", vi: "Chúng tôi rất mong được gặp bạn tại buổi hội thảo chuyên đề." },
+    { en: "Please read the guidelines <b>before registering</b> for the event.", vi: "Vui lòng đọc hướng dẫn trước khi đăng ký tham gia sự kiện." },
+    { en: "Many attendees arrived early <b>in order to get</b> good seats.", vi: "Nhiều người tham dự đã đến sớm để có chỗ ngồi tốt." }
+  ],
+  vocab: [
+    "agenda|n|/əˈdʒendə/|chương trình nghị sự, chương trình họp|program|The first item on the agenda is the budget.|Mục đầu tiên trong chương trình họp là ngân sách.",
+    "attendee|n|/əˌtenˈdiː/|người tham dự|participant|All attendees will receive a name badge.|Tất cả người tham dự sẽ nhận thẻ tên.",
+    "venue|n|/ˈvenjuː/|địa điểm (tổ chức sự kiện)|site|The venue can hold 500 people.|Địa điểm có sức chứa 500 người.",
+    "register|v|/ˈredʒɪstə(r)/|đăng ký|sign up|You need to register before May 10.|Bạn cần đăng ký trước ngày 10 tháng Năm.",
+    "participate|v|/pɑːˈtɪsɪpeɪt/|tham gia|take part|Everyone is encouraged to participate in the discussion.|Mọi người được khuyến khích tham gia thảo luận.",
+    "organize|v|/ˈɔːɡənaɪz/|tổ chức|arrange|Ms. Ito offered to organize the farewell party.|Cô Ito đề nghị tổ chức tiệc chia tay.",
+    "keynote speaker|n|/ˈkiːnəʊt ˈspiːkə(r)/|diễn giả chính|main speaker|The keynote speaker will talk about leadership.|Diễn giả chính sẽ nói về khả năng lãnh đạo.",
+    "refreshments|n|/rɪˈfreʃmənts/|đồ ăn nhẹ và nước uống|snacks|Refreshments will be served during the break.|Đồ ăn nhẹ sẽ được phục vụ trong giờ giải lao.",
+    "workshop|n|/ˈwɜːkʃɒp/|buổi hội thảo chuyên đề, lớp thực hành|training session|The sales workshop lasts three hours.|Buổi hội thảo về bán hàng kéo dài ba tiếng.",
+    "seminar|n|/ˈsemɪnɑː(r)/|hội thảo|conference|She is interested in attending the finance seminar.|Cô ấy muốn tham dự hội thảo về tài chính.",
+    "look forward to|phr v|/lʊk ˈfɔːwəd tə/|mong đợi (+ V-ing)|anticipate|I look forward to working with you.|Tôi rất mong được làm việc với bạn.",
+    "sign up|phr v|/saɪn ˈʌp/|đăng ký (tham gia)|enroll|Twenty people have signed up for the tour.|Hai mươi người đã đăng ký chuyến tham quan."
+  ],
+  exercises: [
+    { q: "The director decided ___ the annual event in Da Nang.", c: ["hold", "to hold", "holding", "held"], a: 1, e: "decide + <b>to V</b> → decided <b>to hold</b>.", t: "to-v-ving" },
+    { q: "Would you mind ___ the agenda to all attendees?", c: ["send", "to send", "sending", "sent"], a: 2, e: "mind + <b>V-ing</b> → Would you mind <b>sending</b> …?", t: "to-v-ving" },
+    { q: "We are looking forward to ___ you at the seminar.", c: ["see", "seeing", "to see", "saw"], a: 1, e: "Trong “look forward to”, “to” là giới từ → theo sau là V-ing: <b>seeing</b>. “to see” là bẫy hay gặp.", t: "to-v-ving" },
+    { p: 5, lvl: 1, q: "Ms. Patel is interested in ___ the leadership workshop next month.", c: ["attend", "to attend", "attending", "attended"], a: 2, e: "Sau giới từ “in” dùng V-ing → <b>attending</b>.", t: "to-v-ving" },
+    { p: 5, lvl: 1, q: "Please read the guidelines carefully before ___ for the event.", c: ["register", "registering", "to register", "registered"], a: 1, e: "“before” ở đây là giới từ, theo sau là V-ing → <b>registering</b>.", t: "to-v-ving" },
+    { q: "The organizers have agreed ___ refreshments during the break.", c: ["providing", "provide", "to provide", "provided"], a: 2, e: "agree + <b>to V</b> → agreed <b>to provide</b>.", t: "to-v-ving" },
+    { p: 5, lvl: 1, q: "Mr. Lopez suggested ___ the keynote speech to the morning.", c: ["move", "to move", "moving", "moved"], a: 2, e: "suggest + <b>V-ing</b> → suggested <b>moving</b>. Không nói “suggest to move”.", t: "to-v-ving" },
+    { q: "Many staff members came early ___ get good seats.", c: ["in order to", "so that", "because", "for"], a: 0, e: "Chỉ mục đích “để” + V nguyên mẫu → <b>in order to</b> get. “so that”, “because” phải đi với mệnh đề có chủ ngữ; “for get” sai.", t: "to-v-ving" },
+    { q: "The company tries to avoid ___ large events in December.", c: ["schedule", "to schedule", "scheduling", "scheduled"], a: 2, e: "avoid + <b>V-ing</b> → avoid <b>scheduling</b>.", t: "to-v-ving" },
+    { p: 2, say: "Would you like to sign up for the sales workshop?", c: ["Yes, I'd love to.", "The sign is on the wall.", "I work in the shop downstairs."], a: 0, e: "Lời mời “Would you like to …?” → đáp lại <b>Yes, I'd love to.</b> Hai câu còn lại là bẫy âm giống: sign – sign up, shop – workshop.", t: "hoi-dap" }
+  ]
+});
+
+TOEIC.addLesson({
+  id: "s1-l20", stage: 1, unit: "u2c", order: 3, minutes: 25, title: "Bài 17. Câu bị động cơ bản",
+  sections: [
+    { h: "Chủ động và bị động", html: "<p><b>Chủ động</b>: chủ ngữ tự làm hành động: <i>The workers <b>pack</b> the boxes.</i></p><p><b>Bị động</b>: chủ ngữ <b>chịu</b> tác động của hành động: <i>The boxes <b>are packed</b> (by the workers).</i></p><p>Công thức chung: <b>be + V3</b>. Chỉ cần chia <b>be</b> theo thì, còn V3 giữ nguyên. Người/vật thực hiện hành động (nếu cần nói) đặt sau <b>by</b>.</p><p>Chỉ động từ <b>có tân ngữ</b> mới đổi sang bị động được. Các động từ như arrive, happen, occur không có dạng bị động.</p>" },
+    { h: "Bị động ở các thì thường gặp", html: "<table><tr><th>Thì</th><th>Công thức</th><th>Ví dụ</th></tr><tr><td>Hiện tại đơn</td><td>am / is / are + V3</td><td>The parts <b>are made</b> in Thailand.</td></tr><tr><td>Quá khứ đơn</td><td>was / were + V3</td><td>The machine <b>was installed</b> last week.</td></tr><tr><td>Tương lai</td><td>will be + V3</td><td>Your order <b>will be shipped</b> tomorrow.</td></tr><tr><td>Động từ khuyết thiếu</td><td>can / must / should + be + V3</td><td>Helmets <b>must be worn</b> at all times.</td></tr><tr><td>Hiện tại tiếp diễn</td><td>am / is / are + <b>being</b> + V3</td><td>The road <b>is being repaired</b>.</td></tr><tr><td>Hiện tại hoàn thành</td><td>have / has + <b>been</b> + V3</td><td>The shipment <b>has been delayed</b>.</td></tr></table><p><b>Quan trọng cho Part 1:</b> <i>is/are being + V3</i> nghĩa là <b>đang được làm</b> – trong tranh phải có người đang làm việc đó. Ví dụ <i>The shelves are being stocked</i> → phải thấy có người đang xếp hàng lên kệ. Nếu tranh chỉ có đồ vật, không có người, câu “is being + V3” thường <b>sai</b>.</p>" },
+    { h: "Khi nào TOEIC dùng bị động?", html: "<ul><li>Khi <b>không cần biết / không quan trọng</b> ai làm: <i>The office <b>will be closed</b> on Monday.</i></li><li>Trong <b>thông báo, biển báo, e-mail</b> trang trọng: <i>Visitors <b>are required</b> to sign in.</i> – <i>Refreshments <b>will be served</b> at noon.</i> – <i>All packages <b>must be inspected</b>.</i></li><li>Khi muốn nhấn mạnh <b>vật/kết quả</b> hơn là người làm: <i>Over 2,000 units <b>were produced</b> last month.</i></li></ul>" },
+    { h: "Mẹo làm bài TOEIC", html: "<ul><li><b>Cách phân biệt chủ động / bị động trong Part 5:</b> nhìn ngay <b>sau chỗ trống</b>. Có <b>tân ngữ</b> (danh từ) → chủ động; <b>không có</b> tân ngữ (sau đó là giới từ, by, trạng từ, dấu chấm) → bị động. <i>The manager ___ the report.</i> → chủ động. <i>The report ___ by the manager.</i> → bị động.</li><li>Xét <b>nghĩa của chủ ngữ</b>: vật (shipment, order, room) thường không tự làm được → bị động.</li><li>Sau <b>will / can / must</b> là <b>be + V3</b>, không phải “be + V-ing” hay V3 trơn.</li><li>Có “<b>by</b> + người” ngay sau chỗ trống → gần như chắc chắn bị động.</li></ul>" }
+  ],
+  examples: [
+    { en: "All shipments <b>are inspected</b> before they leave the warehouse.", vi: "Mọi lô hàng đều được kiểm tra trước khi rời kho." },
+    { en: "The new assembly line <b>was installed</b> last month.", vi: "Dây chuyền lắp ráp mới đã được lắp đặt tháng trước." },
+    { en: "Your order <b>will be delivered</b> within three business days.", vi: "Đơn hàng của bạn sẽ được giao trong vòng ba ngày làm việc." },
+    { en: "Safety glasses <b>must be worn</b> in the factory.", vi: "Phải đeo kính bảo hộ trong nhà máy." },
+    { en: "The loading dock <b>is being repaired</b> right now.", vi: "Khu bốc dỡ hàng đang được sửa chữa." },
+    { en: "The engines <b>are assembled by</b> skilled technicians.", vi: "Các động cơ được lắp ráp bởi những kỹ thuật viên lành nghề." }
+  ],
+  vocab: [
+    "warehouse|n|/ˈweəhaʊs/|nhà kho|storehouse|The goods are stored in a warehouse near the port.|Hàng hóa được cất trong một nhà kho gần cảng.",
+    "shipment|n|/ˈʃɪpmənt/|lô hàng, chuyến hàng|delivery|The shipment was sent by sea.|Lô hàng đã được gửi bằng đường biển.",
+    "inventory|n|/ˈɪnvəntri/|hàng tồn kho; việc kiểm kê|stock|Inventory is checked every Friday.|Hàng tồn kho được kiểm vào mỗi thứ Sáu.",
+    "assemble|v|/əˈsembl/|lắp ráp|put together|The chairs are assembled by hand.|Những chiếc ghế được lắp ráp bằng tay.",
+    "manufacture|v|/ˌmænjuˈfæktʃə(r)/|sản xuất (quy mô lớn)|produce|These tablets are manufactured in Korea.|Những máy tính bảng này được sản xuất tại Hàn Quốc.",
+    "inspect|v|/ɪnˈspekt/|kiểm tra, thanh tra|check|Every machine is inspected once a year.|Mỗi máy được kiểm tra mỗi năm một lần.",
+    "supplier|n|/səˈplaɪə(r)/|nhà cung cấp|provider|We are looking for a new paper supplier.|Chúng tôi đang tìm một nhà cung cấp giấy mới.",
+    "distribute|v|/dɪˈstrɪbjuːt/|phân phối, phát|hand out|The products are distributed to stores nationwide.|Sản phẩm được phân phối đến các cửa hàng trên toàn quốc.",
+    "freight|n|/freɪt/|hàng hóa vận chuyển; cước vận chuyển|cargo|Freight charges are included in the price.|Cước vận chuyển đã bao gồm trong giá.",
+    "assembly line|n|/əˈsembli laɪn/|dây chuyền lắp ráp|production line|A new assembly line was installed in May.|Một dây chuyền lắp ráp mới được lắp đặt vào tháng Năm.",
+    "container|n|/kənˈteɪnə(r)/|thùng chứa; công-te-nơ|box|The containers are being loaded onto the ship.|Các công-te-nơ đang được chất lên tàu.",
+    "dispatch|v|/dɪˈspætʃ/|gửi đi, điều đi|send out|Orders are dispatched within 24 hours.|Đơn hàng được gửi đi trong vòng 24 giờ."
+  ],
+  exercises: [
+    { q: "All shipments ___ before they leave the warehouse.", c: ["inspect", "are inspected", "inspecting", "are inspecting"], a: 1, e: "Lô hàng không tự kiểm tra, và sau chỗ trống không có tân ngữ → bị động hiện tại: <b>are inspected</b>.", t: "bi-dong" },
+    { q: "The new assembly line ___ last month.", c: ["installed", "was installed", "is installed", "installs"], a: 1, e: "Dây chuyền được lắp đặt (bị động) + “last month” → quá khứ: <b>was installed</b>.", t: "bi-dong" },
+    { q: "Most of the machine parts ___ by a supplier in Thailand.", c: ["make", "are made", "making", "are making"], a: 1, e: "Có “by a supplier” và không có tân ngữ sau chỗ trống → bị động: <b>are made</b>.", t: "bi-dong" },
+    { p: 5, lvl: 1, q: "Your order will ___ to your office by Friday.", c: ["deliver", "delivered", "be delivered", "be delivering"], a: 2, e: "Đơn hàng được giao → bị động; sau will là <b>be + V3</b>: will <b>be delivered</b>.", t: "bi-dong" },
+    { p: 5, lvl: 1, q: "Mr. Ito ___ the inventory every Monday morning.", c: ["checks", "is checked", "was checked", "be checked"], a: 0, e: "Sau chỗ trống có tân ngữ “the inventory”, và Mr. Ito là người tự làm → chủ động: <b>checks</b>.", t: "bi-dong" },
+    { p: 5, lvl: 1, q: "Safety glasses must ___ at all times in the factory.", c: ["wear", "be worn", "wore", "be wearing"], a: 1, e: "Kính được đeo → bị động; sau must là <b>be + V3</b>; wear – wore – worn → <b>be worn</b>.", t: "bi-dong" },
+    { q: "The monthly freight report was prepared ___ the logistics manager.", c: ["by", "from", "with", "of"], a: 0, e: "Trong câu bị động, người thực hiện hành động đứng sau <b>by</b>.", t: "bi-dong" },
+    { q: "Sorry, you can't use the loading dock now. It ___ at the moment.", c: ["is repaired", "is being repaired", "repairs", "is repairing"], a: 1, e: "“at the moment” → đang diễn ra; khu bốc dỡ được sửa → bị động tiếp diễn: <b>is being repaired</b>. “is repairing” là chủ động, sai nghĩa.", t: "bi-dong" },
+    { say: "A truck is being loaded with boxes.", q: "Nghe câu mô tả tranh và chọn nghĩa đúng.", c: ["Một chiếc xe tải đang được chất các thùng hàng lên.", "Một chiếc xe tải đã chất đầy thùng hàng.", "Một người đang lái chiếc xe tải chở hàng.", "Các thùng hàng đang được mở ra."], a: 0, e: "“is <b>being loaded</b>” = <b>đang được</b> chất hàng – trong tranh phải có người đang chất thùng lên xe. Đây là mẫu câu rất hay gặp ở Part 1.", t: "bi-dong" },
+    { p: 2, say: "When will the new equipment be delivered?", c: ["By the end of the week.", "Yes, it was delivered.", "To the warehouse manager."], a: 0, e: "Câu hỏi When → cần thời gian: <b>By the end of the week</b>. Câu hỏi Wh- không trả lời bằng Yes; “To the warehouse manager” trả lời cho câu hỏi Who/Where.", t: "hoi-dap" }
+  ]
+});
+
+TOEIC.addLesson({
+  id: "s1-l21", stage: 1, unit: "u2c", order: 4, minutes: 25, title: "Bài 18. Liên từ",
+  sections: [
+    { h: "Liên từ nối hai ý: and, but, or, so", html: "<ul><li><b>and</b> (và) – thêm ý: <i>We checked the invoices <b>and</b> paid the suppliers.</i></li><li><b>but</b> (nhưng) – trái ngược: <i>Sales rose, <b>but</b> profits fell.</i></li><li><b>or</b> (hoặc) – lựa chọn: <i>You can pay now <b>or</b> next week.</i></li><li><b>so</b> (vì vậy) – kết quả: <i>The budget was cut, <b>so</b> we canceled the trip.</i></li></ul><p>Cặp liên từ (phải đi đúng đôi):</p><table><tr><th>Cặp</th><th>Nghĩa</th><th>Ví dụ</th></tr><tr><td><b>both</b> A <b>and</b> B</td><td>cả A và B</td><td>both the CEO <b>and</b> the CFO</td></tr><tr><td><b>either</b> A <b>or</b> B</td><td>hoặc A hoặc B</td><td>either by cash <b>or</b> by card</td></tr><tr><td><b>neither</b> A <b>nor</b> B</td><td>không A cũng không B</td><td>neither cheap <b>nor</b> fast</td></tr><tr><td><b>not only</b> A <b>but also</b> B</td><td>không những A mà còn B</td><td>not only fast <b>but also</b> safe</td></tr></table>" },
+    { h: "because / because of – although / despite", html: "<p>Đây là cặp bẫy số một của Part 5. Quy tắc: <b>liên từ + mệnh đề (S + V)</b>, <b>giới từ + danh từ / V-ing</b>.</p><table><tr><th>Nghĩa</th><th>+ mệnh đề (S + V)</th><th>+ danh từ / V-ing</th></tr><tr><td>vì</td><td><b>because</b>, since, as</td><td><b>because of</b>, due to</td></tr><tr><td>mặc dù</td><td><b>although</b>, though, even though</td><td><b>despite</b>, in spite of</td></tr></table><ul><li><i><b>Because</b> the auditor was late, the meeting started at ten.</i></li><li><i><b>Because of</b> the heavy rain, the meeting started at ten.</i></li><li><i><b>Although</b> costs increased, we made a profit.</i></li><li><i><b>Despite</b> the high costs, we made a profit.</i></li></ul>" },
+    { h: "Liên từ thời gian và điều kiện", html: "<p><b>when</b> (khi), <b>while</b> (trong khi), <b>before</b> (trước khi), <b>after</b> (sau khi), <b>until</b> (cho đến khi), <b>as soon as</b> (ngay khi), <b>if</b> (nếu) + mệnh đề.</p><p><b>Quy tắc quan trọng:</b> khi nói về tương lai, mệnh đề sau các từ này dùng <b>hiện tại đơn</b>, <b>không</b> dùng will:</p><ul><li><i>I will call you <b>as soon as</b> the report <b>arrives</b>.</i> (không nói “will arrive”)</li><li><i>We won't sign the contract <b>until</b> the lawyer <b>reviews</b> it.</i></li><li><i><b>If</b> the budget <b>is</b> approved, we will hire two more people.</i></li></ul><p><b>while</b> hay đi với tiếp diễn: <i>The phone rang <b>while</b> I was preparing the payroll.</i></p>" },
+    { h: "Mẹo làm bài TOEIC", html: "<ul><li>Khi 4 lựa chọn có cả liên từ lẫn giới từ (because / because of / although / despite), hãy <b>nhìn phần sau chỗ trống</b>: có động từ chia → liên từ; chỉ có cụm danh từ → giới từ.</li><li>Sau đó mới xét <b>nghĩa</b>: nguyên nhân (because) hay trái ngược (although)?</li><li>Thấy <b>either / neither / both / not only</b> trong câu → tìm ngay từ đi cặp: or / nor / and / but also.</li><li>Sau <b>when, before, after, until, as soon as, if</b> nói về tương lai → chọn <b>hiện tại đơn</b>, loại “will + V”.</li></ul>" }
+  ],
+  examples: [
+    { en: "The meeting was canceled <b>because</b> the director was sick.", vi: "Cuộc họp bị hủy vì giám đốc bị ốm." },
+    { en: "<b>Despite</b> the high cost, the company decided to invest in new software.", vi: "Mặc dù chi phí cao, công ty vẫn quyết định đầu tư vào phần mềm mới." },
+    { en: "<b>Although</b> sales increased, our profit went down.", vi: "Mặc dù doanh số tăng, lợi nhuận của chúng tôi lại giảm." },
+    { en: "Please call me <b>as soon as</b> the auditor <b>arrives</b>.", vi: "Vui lòng gọi cho tôi ngay khi kiểm toán viên đến." },
+    { en: "Expense reports can be submitted <b>either</b> online <b>or</b> in person.", vi: "Báo cáo chi phí có thể được nộp trực tuyến hoặc trực tiếp." },
+    { en: "The new system is <b>not only</b> cheaper <b>but also</b> faster.", vi: "Hệ thống mới không những rẻ hơn mà còn nhanh hơn." }
+  ],
+  vocab: [
+    "accountant|n|/əˈkaʊntənt/|kế toán viên|bookkeeper|The accountant checks the figures every month.|Kế toán viên kiểm tra số liệu hằng tháng.",
+    "expense|n|/ɪkˈspens/|chi phí, khoản chi|cost|Travel expenses will be paid by the company.|Chi phí đi lại sẽ do công ty chi trả.",
+    "profit|n|/ˈprɒfɪt/|lợi nhuận|earnings|Although sales fell, profit rose slightly.|Mặc dù doanh số giảm, lợi nhuận vẫn tăng nhẹ.",
+    "invest|v|/ɪnˈvest/|đầu tư|put money into|We plan to invest in new machines.|Chúng tôi dự định đầu tư vào máy móc mới.",
+    "fiscal year|n|/ˈfɪskl jɪə(r)/|năm tài chính|financial year|Our fiscal year ends in March.|Năm tài chính của chúng tôi kết thúc vào tháng Ba.",
+    "audit|n|/ˈɔːdɪt/|cuộc kiểm toán|inspection|The annual audit will start next week.|Cuộc kiểm toán thường niên sẽ bắt đầu vào tuần tới.",
+    "payroll|n|/ˈpeɪrəʊl/|bảng lương; việc trả lương|—|Payroll is processed on the 25th of each month.|Lương được xử lý vào ngày 25 hằng tháng.",
+    "quarterly|adj|/ˈkwɔːtəli/|hằng quý|—|The quarterly results were better than expected.|Kết quả kinh doanh quý tốt hơn dự kiến.",
+    "estimate|n|/ˈestɪmət/|bản ước tính, báo giá sơ bộ|quote|Please send us a cost estimate by Friday.|Vui lòng gửi cho chúng tôi bản ước tính chi phí trước thứ Sáu.",
+    "financial|adj|/faɪˈnænʃl/|thuộc về tài chính|monetary|The financial report shows a small loss.|Báo cáo tài chính cho thấy một khoản lỗ nhỏ.",
+    "earnings|n|/ˈɜːnɪŋz/|thu nhập, lợi nhuận|income|The company's earnings doubled this year.|Thu nhập của công ty tăng gấp đôi trong năm nay.",
+    "funding|n|/ˈfʌndɪŋ/|nguồn vốn, kinh phí|financing|The project was stopped because of a lack of funding.|Dự án bị dừng vì thiếu kinh phí."
+  ],
+  exercises: [
+    { q: "The meeting was canceled ___ the director was sick.", c: ["because", "because of", "despite", "although"], a: 0, e: "Sau chỗ trống là mệnh đề “the director was sick” (có S + V), nghĩa nguyên nhân → liên từ <b>because</b>. “because of” chỉ đi với danh từ.", t: "lien-tu" },
+    { q: "The product launch was postponed ___ the heavy rain.", c: ["because", "although", "because of", "so"], a: 2, e: "Sau chỗ trống chỉ có cụm danh từ “the heavy rain” → giới từ <b>because of</b>.", t: "lien-tu" },
+    { q: "___ the profit was lower than expected, the shareholders were satisfied.", c: ["Although", "Despite", "Because of", "But"], a: 0, e: "Sau chỗ trống là mệnh đề, nghĩa trái ngược (lợi nhuận thấp nhưng vẫn hài lòng) → <b>Although</b>. “Despite”, “Because of” chỉ đi với danh từ; “But” không đứng đầu mệnh đề phụ như vậy.", t: "lien-tu" },
+    { p: 5, lvl: 1, q: "___ the high cost, the company decided to invest in new software.", c: ["Although", "Despite", "Because", "So"], a: 1, e: "Sau chỗ trống là cụm danh từ “the high cost”, nghĩa trái ngược → giới từ <b>Despite</b>. “Although”, “Because” cần mệnh đề.", t: "lien-tu" },
+    { p: 5, lvl: 1, q: "Please call me as soon as the auditor ___.", c: ["arrive", "will arrive", "arrives", "arrived"], a: 2, e: "Sau “as soon as” nói về tương lai dùng hiện tại đơn, không dùng will. Chủ ngữ số ít → <b>arrives</b>.", t: "lien-tu" },
+    { q: "We will not sign the contract ___ the lawyer reviews it.", c: ["until", "during", "despite", "so"], a: 0, e: "<b>until</b> = cho đến khi, đi với mệnh đề. “during”, “despite” là giới từ, không đi với mệnh đề “the lawyer reviews it”.", t: "lien-tu" },
+    { q: "The budget was too small, ___ we had to cancel the trip.", c: ["so", "but", "or", "because of"], a: 0, e: "Ý sau là kết quả của ý trước (ngân sách nhỏ → phải hủy chuyến đi) → <b>so</b>.", t: "lien-tu" },
+    { p: 5, lvl: 1, q: "Neither the manager ___ his assistant attended the audit.", c: ["or", "nor", "and", "but"], a: 1, e: "Cặp <b>neither … nor</b> = không … cũng không.", t: "lien-tu" },
+    { q: "The new accounting software is not only cheap ___ easy to use.", c: ["and also", "but also", "or", "so"], a: 1, e: "Cặp <b>not only … but also</b> = không những … mà còn.", t: "lien-tu" },
+    { say: "Although sales increased, our profit went down.", q: "Nghe và chọn ý đúng với câu bạn nghe.", c: ["Doanh số tăng nhưng lợi nhuận giảm.", "Doanh số tăng nên lợi nhuận cũng tăng.", "Doanh số giảm và lợi nhuận cũng giảm.", "Doanh số giảm nhưng lợi nhuận tăng."], a: 0, e: "“<b>Although</b> sales increased, our profit went down.” → <b>Doanh số tăng nhưng lợi nhuận giảm</b>. Although báo hiệu hai ý trái ngược.", t: "lien-tu" }
+  ]
+});
+
+TOEIC.addLesson({
+  id: "s1-l22", stage: 1, unit: "u2c", order: 5, minutes: 25, title: "Bài 19. Đại từ quan hệ who, which, that, whose",
+  sections: [
+    { h: "Mệnh đề quan hệ là gì?", html: "<p>Mệnh đề quan hệ dùng để <b>bổ nghĩa cho danh từ đứng ngay trước nó</b>, giúp nói rõ “người nào, cái nào”. Nó giống chữ “<b>mà</b>” trong tiếng Việt.</p><p><i>The consultant is very experienced.</i> + <i>We hired <u>him</u> last month.</i><br>→ <i>The consultant <b>who</b> we hired last month is very experienced.</i> (Người tư vấn <b>mà</b> chúng tôi thuê tháng trước rất có kinh nghiệm.)</p><p>Đại từ quan hệ luôn đứng <b>ngay sau danh từ</b> mà nó bổ nghĩa: <b>danh từ + who/which/that + …</b></p>" },
+    { h: "Chọn đại từ quan hệ nào?", html: "<table><tr><th>Đại từ</th><th>Thay cho</th><th>Theo sau là</th><th>Ví dụ</th></tr><tr><td><b>who</b></td><td>người</td><td>động từ hoặc S + V</td><td>the intern <b>who</b> joined last week</td></tr><tr><td><b>which</b></td><td>vật, sự việc</td><td>động từ hoặc S + V</td><td>the report <b>which</b> shows our costs</td></tr><tr><td><b>that</b></td><td>người hoặc vật</td><td>động từ hoặc S + V</td><td>the policy <b>that</b> we discussed</td></tr><tr><td><b>whose</b></td><td>của người/vật đó (sở hữu)</td><td><b>danh từ</b></td><td>the employee <b>whose</b> idea won</td></tr><tr><td><b>where</b></td><td>nơi chốn</td><td>mệnh đề đầy đủ S + V</td><td>the hotel <b>where</b> the party was held</td></tr></table><ul><li><b>that</b> <b>không</b> dùng sau dấu phẩy: <i>Ms. Rivera, <b>who</b> leads our team, …</i> (không viết “, that”).</li><li><b>whose + danh từ</b>: <i>a company <b>whose</b> profits doubled</i> = công ty <b>mà lợi nhuận của nó</b> tăng gấp đôi.</li></ul>" },
+    { h: "Vị trí và sự hòa hợp động từ", html: "<p>Mệnh đề quan hệ có thể chen vào giữa chủ ngữ và động từ chính. Hãy tìm đúng <b>chủ ngữ chính</b> để chia động từ:</p><ul><li><i>The <b>employees</b> who work in the warehouse <b>are</b> invited.</i> (chủ ngữ chính: employees → are)</li><li><i>The <b>report</b> that the accountants prepared <b>is</b> on your desk.</i> (chủ ngữ chính: report → is)</li></ul><p>Động từ <b>trong</b> mệnh đề quan hệ chia theo danh từ đứng trước who/which/that: <i>an intern who <b>works</b></i>, <i>interns who <b>work</b></i>.</p>" },
+    { h: "Mẹo làm bài TOEIC", html: "<ul><li>Bước 1: nhìn <b>danh từ trước chỗ trống</b> là người hay vật → who hay which.</li><li>Bước 2: nhìn <b>từ sau chỗ trống</b>: nếu là danh từ không có mạo từ (team, idea, résumé) rồi đến động từ → <b>whose</b>.</li><li>Nếu sau chỗ trống là một câu hoàn chỉnh (đủ S + V + O) và danh từ trước là nơi chốn → <b>where</b>.</li><li>Có dấu phẩy trước chỗ trống → loại <b>that</b>.</li><li>Đại từ nhân xưng (he, she, they) <b>không</b> nối được hai mệnh đề, nên loại ngay khi chỗ trống nằm giữa danh từ và động từ.</li></ul>" }
+  ],
+  examples: [
+    { en: "The consultant <b>who</b> we hired last month is very experienced.", vi: "Người tư vấn mà chúng tôi thuê tháng trước rất có kinh nghiệm." },
+    { en: "This is the report <b>which</b> shows our quarterly costs.", vi: "Đây là bản báo cáo thể hiện chi phí hằng quý của chúng ta." },
+    { en: "We need an executive <b>whose</b> English is excellent.", vi: "Chúng tôi cần một giám đốc điều hành có tiếng Anh xuất sắc." },
+    { en: "The hotel <b>where</b> the award ceremony was held is near the airport.", vi: "Khách sạn nơi tổ chức lễ trao giải ở gần sân bay." },
+    { en: "Interns <b>that</b> complete the program will receive a certificate.", vi: "Các thực tập sinh hoàn thành chương trình sẽ nhận được chứng chỉ." },
+    { en: "Mr. Hale, <b>who</b> founded the company, will speak at the dinner.", vi: "Ông Hale, người sáng lập công ty, sẽ phát biểu tại bữa tối." }
+  ],
+  vocab: [
+    "shareholder|n|/ˈʃeəhəʊldə(r)/|cổ đông|stockholder|The shareholders who attended the meeting approved the plan.|Các cổ đông dự họp đã thông qua kế hoạch.",
+    "vendor|n|/ˈvendə(r)/|nhà cung cấp, người bán|seller|We have chosen a vendor whose prices are reasonable.|Chúng tôi đã chọn một nhà cung cấp có giá hợp lý.",
+    "contractor|n|/kənˈtræktə(r)/|nhà thầu|builder|The contractor who built our warehouse did a great job.|Nhà thầu xây nhà kho cho chúng tôi đã làm rất tốt.",
+    "consultant|n|/kənˈsʌltənt/|chuyên gia tư vấn|adviser|We hired a consultant to improve our sales process.|Chúng tôi thuê một chuyên gia tư vấn để cải thiện quy trình bán hàng.",
+    "intern|n|/ˈɪntɜːn/|thực tập sinh|trainee|The intern who joined last week works in accounting.|Thực tập sinh mới vào tuần trước làm ở phòng kế toán.",
+    "executive|n|/ɪɡˈzekjətɪv/|giám đốc điều hành, lãnh đạo cấp cao|senior manager|Several executives will attend the dinner.|Một số lãnh đạo cấp cao sẽ dự bữa tối.",
+    "mentor|n|/ˈmentɔː(r)/|người hướng dẫn, người kèm cặp|coach|Each new employee is given a mentor.|Mỗi nhân viên mới được giao một người hướng dẫn.",
+    "coordinator|n|/kəʊˈɔːdɪneɪtə(r)/|điều phối viên|organizer|Please contact the event coordinator for details.|Vui lòng liên hệ điều phối viên sự kiện để biết chi tiết.",
+    "subsidiary|n|/səbˈsɪdiəri/|công ty con|affiliate|The firm has a subsidiary that sells software.|Công ty có một công ty con chuyên bán phần mềm.",
+    "guideline|n|/ˈɡaɪdlaɪn/|hướng dẫn, quy định|rule|Please follow the safety guidelines.|Vui lòng tuân theo các hướng dẫn an toàn.",
+    "award|n|/əˈwɔːd/|giải thưởng|prize|The award goes to the team that sold the most.|Giải thưởng thuộc về nhóm bán được nhiều nhất.",
+    "nominate|v|/ˈnɒmɪneɪt/|đề cử|propose|She was nominated for Employee of the Year.|Cô ấy được đề cử Nhân viên của năm."
+  ],
+  exercises: [
+    { q: "The consultant ___ we hired last month is very experienced.", c: ["who", "which", "whose", "where"], a: 0, e: "“The consultant” là người → <b>who</b>. “which” dùng cho vật; “whose” phải theo sau là danh từ.", t: "quan-he" },
+    { q: "This is the report ___ shows our quarterly sales figures.", c: ["who", "which", "whose", "where"], a: 1, e: "“the report” là vật → <b>which</b>.", t: "quan-he" },
+    { q: "We are looking for an executive ___ English is excellent.", c: ["who", "which", "whose", "that"], a: 2, e: "Sau chỗ trống là danh từ “English” rồi đến động từ “is” → sở hữu: <b>whose</b> English (tiếng Anh của người đó).", t: "quan-he" },
+    { p: 5, lvl: 1, q: "The hotel ___ the award ceremony was held is near the airport.", c: ["which", "where", "who", "whose"], a: 1, e: "Danh từ trước là nơi chốn và sau chỗ trống là mệnh đề đầy đủ “the award ceremony was held” → <b>where</b>.", t: "quan-he" },
+    { p: 5, lvl: 1, q: "Interns ___ complete the program will receive a certificate.", c: ["who", "which", "whose", "they"], a: 0, e: "“Interns” là người, sau chỗ trống là động từ → <b>who</b>. “they” là đại từ nhân xưng, không nối được hai mệnh đề.", t: "quan-he" },
+    { q: "The company ___ supplies our office paper has raised its prices.", c: ["which", "whose", "where", "what"], a: 0, e: "“The company” là vật (tổ chức), sau chỗ trống là động từ “supplies” → <b>which</b>. “what” không đứng sau danh từ.", t: "quan-he" },
+    { p: 5, lvl: 1, q: "Ms. Rivera, ___ team won the sales award, will give a short speech.", c: ["who", "whose", "which", "that"], a: 1, e: "Sau chỗ trống là danh từ “team” → <b>whose</b> team (nhóm của cô ấy). “that” không dùng sau dấu phẩy.", t: "quan-he" },
+    { q: "The guidelines ___ the HR department sent are on the company website.", c: ["that", "who", "whose", "where"], a: 0, e: "“The guidelines” là vật → <b>that</b> (hoặc which). “who” chỉ dùng cho người; “where” cần câu đầy đủ, nhưng “the HR department sent” còn thiếu tân ngữ.", t: "quan-he" },
+    { say: "The intern who joined last week works in accounting.", q: "Nghe và chọn câu bạn nghe được.", c: ["The intern who joined last week works in accounting.", "The intern joined last week and works in accounting.", "The interns who joined last week work in accounting.", "The intern who joins next week will work in accounting."], a: 0, e: "Câu nghe được: “The intern <b>who joined last week</b> works in accounting.” – Thực tập sinh vào tuần trước làm ở phòng kế toán. Mệnh đề “who joined last week” đứng ngay sau danh từ “intern”.", t: "quan-he" },
+    { p: 2, say: "Who's the woman talking to the director?", c: ["She's our new financial consultant.", "Yes, she talks a lot.", "In the director's office."], a: 0, e: "Câu hỏi Who → cần người/chức danh: <b>She's our new financial consultant</b>. Câu Wh- không trả lời Yes; “In the director's office” trả lời Where.", t: "hoi-dap" }
+  ]
+});
+
+TOEIC.addTest({
+  id: "cp-s1-u2c", kind: "checkpoint", title: "Kiểm tra Chặng 4 – Động từ & mệnh đề",
+  desc: "Ôn lại thì hiện tại hoàn thành, to V và V-ing, câu bị động, liên từ và đại từ quan hệ (bài 15–19).",
+  groups: [
+    { q: "Our team ___ three new clients since January.", c: ["has gained", "gained", "gains", "is gaining"], a: 0, e: "“since January” → hiện tại hoàn thành: <b>has gained</b>.", t: "hoan-thanh" },
+    { q: "The shareholders' meeting ___ two weeks ago.", c: ["has taken place", "took place", "takes place", "has been taken place"], a: 1, e: "“two weeks ago” → quá khứ đơn: <b>took place</b>. Có “ago” thì không dùng hiện tại hoàn thành.", t: "thi" },
+    { q: "The finance director refused ___ the budget for the trip.", c: ["increase", "increasing", "to increase", "increased"], a: 2, e: "refuse + <b>to V</b> → refused <b>to increase</b>.", t: "to-v-ving" },
+    { q: "Thank you for ___ our annual conference.", c: ["attend", "attending", "to attend", "attended"], a: 1, e: "Sau giới từ “for” dùng V-ing → <b>attending</b>.", t: "to-v-ving" },
+    { q: "The invoices ___ by the accounting department every Friday.", c: ["process", "are processed", "are processing", "processing"], a: 1, e: "Có “by the accounting department”, hóa đơn không tự xử lý → bị động hiện tại: <b>are processed</b>.", t: "bi-dong" },
+    { say: "The chairs are being arranged in rows.", q: "Nghe câu mô tả tranh và chọn nghĩa đúng.", c: ["Những chiếc ghế đang được xếp thành hàng.", "Những chiếc ghế đã được xếp xong thành hàng.", "Mọi người đang ngồi thành hàng trên ghế.", "Những chiếc ghế đang được mang ra ngoài."], a: 0, e: "“are <b>being arranged</b>” = <b>đang được</b> sắp xếp – có người đang xếp ghế.", t: "bi-dong" },
+    { q: "___ the bad weather, the trade fair was a great success.", c: ["Although", "Despite", "Because", "Because of"], a: 1, e: "Sau chỗ trống là cụm danh từ “the bad weather”, nghĩa trái ngược (thời tiết xấu nhưng vẫn thành công) → <b>Despite</b>. “Because of” sai nghĩa; “Although”, “Because” cần mệnh đề.", t: "lien-tu" },
+    { q: "Travel expenses can be paid either by the company ___ by the client.", c: ["or", "nor", "and", "but"], a: 0, e: "Cặp <b>either … or</b> = hoặc … hoặc.", t: "lien-tu" },
+    { q: "The candidate ___ résumé impressed us will be interviewed on Monday.", c: ["who", "whose", "which", "whom"], a: 1, e: "Sau chỗ trống là danh từ “résumé” → sở hữu: <b>whose</b> résumé (sơ yếu lý lịch của ứng viên đó).", t: "quan-he" },
+    { p: 2, say: "Have you met the accountant who started last week?", c: ["Yes, she seems very friendly.", "It starts at nine.", "I'll count them again."], a: 0, e: "Hỏi đã gặp người kế toán mới chưa → <b>Yes, she seems very friendly</b>. “It starts at nine” lặp âm “start”; “count” là bẫy âm giống “accountant”.", t: "hoi-dap" }
+  ]
+});
