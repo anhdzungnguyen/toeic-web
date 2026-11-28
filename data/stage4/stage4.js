@@ -1,6 +1,6 @@
 /* Giai đoạn 4 – Nâng cao (700 → 850). Hiện có khung + 1 bài mẫu. */
 TOEIC.addStage({
-  id: 4, name: "Nâng cao", range: [700, 850], target: 850, gateTest: null,
+  id: 4, name: "Nâng cao", range: [700, 850], target: 850, gateTest: "mini4",
   desc: "Ngữ pháp nâng cao (đảo ngữ, giả định, rút gọn mệnh đề), câu hỏi ý định người nói ở Part 3–4, đoạn ba ở Part 7 và quản lý thời gian. (Đang soạn: hiện có 1 bài mẫu.)",
   units: [{ id: "u1", title: "Chặng 1 – Ngữ pháp nâng cao", checkpoint: "cp-s4-u1" }, { id: "u2", title: "Chặng 2 – Từ vựng – ngữ pháp Part 5 cấp cao", checkpoint: "cp-s4-u2" }]
 });

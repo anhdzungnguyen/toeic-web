@@ -25,7 +25,7 @@ Dữ liệu là các file `.js` nạp bằng thẻ `<script>` (không dùng fetc
 | `data/tests/full1*.js` | **Đề đầy đủ 200 câu** (2026-11-27): `full1-p12.js` P1 6 + P2 25 · `full1-p3.js` P3 13×3 · `full1-p4.js` P4 10×3 · `full1-p56.js` P5 30 + P6 4×4 · `full1-p7.js` P7 54 (10 đoạn đơn = 29 câu, 2 đoạn kép × 5, 3 đoạn ba × 5). Mỗi file gán `TOEIC.full1.pXX`; `full1.js` (nạp sau cùng) ghép lại. Id `full1-pN-xx`. |
 | `tools/` | `validate.js` (rà dữ liệu), `e2e.py` (kiểm thử trình duyệt). Không được `index.html` nạp |
 
-**Số liệu hiện có:** 59 bài học · 1.218 từ vựng · 1.201 câu hỏi · 12 bài kiểm tra chặng · đề mini1, mini2 · **đề đầy đủ full1 200 câu** · ngân hàng luyện mỗi Part ≥ 10 nhóm. GĐ1 và GĐ2 đã đủ bài + bài thi chuyển giai đoạn.
+**Số liệu hiện có:** 59 bài học · 1.218 từ vựng · 1.301 câu hỏi · 12 bài kiểm tra chặng · đề mini1–mini4 · đề đầy đủ full1 200 câu · ngân hàng luyện mỗi Part ≥ 10 nhóm. **Đủ 4 bài thi chuyển giai đoạn:** mini1 (GĐ1→2, ≥ 300) · mini2 (GĐ2→3, ≥ 500) · mini3 (GĐ3→4, ≥ 700) · mini4 (GĐ4→5, ≥ 850).
 
 **Mới (2026-11-27):** giao diện mới (font Be Vietnam Pro, icon SVG, hero gradient); thêm 10 bài ngữ pháp GĐ1 (chặng u2b, u2c); trang **Ngữ pháp theo chủ đề** `#/grammar` theo cây 17 chủ đề (xem mục 2b); deploy Vercel tại https://toeic-0-990.vercel.app (chạy `npx vercel deploy --prod` trong thư mục này).
 
@@ -89,7 +89,7 @@ Nguyên tắc: GĐ1 dạy mức cơ bản của mỗi chủ đề, GĐ2–5 dạ
 
 **IV. Kỹ năng & chiến lược:** (2026-11-27: ĐÃ CÓ GĐ2 chặng 4 – s2-l18..l23 chiến lược Part 1, 2, 3–4, 5, 6, 7 + checkpoint `cp-s2-u4`; còn thiếu: dictation, shadowing, chiến lược nâng cao GĐ3–5) Part 1 chiến lược · Part 2 câu hỏi đuôi / đề nghị / trần thuật / trả lời gián tiếp · Part 3–4 hàm ý, biểu đồ, hội thoại 3 người · Part 6 chèn câu, đại từ trỏ ngược · Part 7 đoạn đôi/ba, NOT true, đồng nghĩa, phân bổ thời gian · dictation, shadowing
 
-**V. Ngân hàng câu & đề:** (2026-11-27: ĐÃ CÓ `data/tests/mini2.js` 50 câu = gateTest GĐ2 → GĐ3 ≥ 500; ĐÃ CÓ ngân hàng Part `data/parts/bank-p12.js` (P1 12, P2 20), `bank-p34.js` (P3 10, P4 10), `bank-p67.js` (P6 10, P7 12), lvl 1–5 – mỗi Part đã ≥ 10 nhóm; lựa chọn vị trí [1]–[4] không bị xáo) mỗi Part ≥ 10 nhóm · kiểm tra chặng GĐ3–5 · đề chuyển giai đoạn mini2 (≥ 500), GĐ3 (≥ 700), GĐ4 (≥ 850) · full1 đủ 200 câu · audio chất lượng cao nhiều giọng
+**V. Ngân hàng câu & đề:** (2026-11-27: ĐÃ CÓ `data/tests/mini2.js` 50 câu = gateTest GĐ2 → GĐ3 ≥ 500; ĐÃ CÓ ngân hàng Part `data/parts/bank-p12.js` (P1 12, P2 20), `bank-p34.js` (P3 10, P4 10), `bank-p67.js` (P6 10, P7 12), lvl 1–5 – mỗi Part đã ≥ 10 nhóm; lựa chọn vị trí [1]–[4] không bị xáo) mỗi Part ≥ 10 nhóm · kiểm tra chặng GĐ3–5 · ~~đề chuyển giai đoạn~~ ĐÃ XONG: mini3 (GĐ3→4, ≥ 700, `data/tests/mini3.js`), mini4 (GĐ4→5, ≥ 850, `data/tests/mini4.js`, đề khó nhất) · full1 đủ 200 câu · audio chất lượng cao nhiều giọng
 
 **VI. Lỗi code: đã sửa ngày 2026-11-27** (ẩn mô tả tranh Part 1 khi thi/luyện, loại câu đề thi khỏi trang chủ đề, đồng hồ theo mốc kết thúc, trừ điểm đoán mò, audio đánh dấu khi thực sự phát + chia câu, SRS chỉ chấm khi đến hạn / 1 lần mỗi phiên / lưu mỗi thẻ / quên chỉ trừ EF 0,2, sao lưu JSON hỏng, id cố định cho mọi câu, làm lại bài xếp lớp không đổi giai đoạn, lọc HTML khi nhập file, gắn lại nhãn, giữ thứ tự lựa chọn dạng số, sửa hiển thị điện thoại).
 
@@ -121,7 +121,7 @@ Thêm file mới thì thêm thẻ `<script src="...">` vào `index.html`, đặt
 TOEIC.addStage({ id: 1, name: "Nền tảng", range: [0, 300], target: 300, gateTest: "mini1", desc: "…",
   units: [{ id: "u1", title: "Chặng 1 – Phát âm", checkpoint: "cp-s1-u1" }, …] });
 ```
-Năm giai đoạn: 1 [0,300] · 2 [300,500] · 3 [500,700] · 4 [700,850] · 5 [850,990]. Giai đoạn 2–5 tạm thời `gateTest: null`.
+Năm giai đoạn: 1 [0,300] · 2 [300,500] · 3 [500,700] · 4 [700,850] · 5 [850,990]. gateTest: mini1, mini2, mini3, mini4; GĐ5 là giai đoạn cuối (`gateTest: null`).
 
 **Bài học**
 ```js

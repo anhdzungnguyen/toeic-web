@@ -1,6 +1,6 @@
 /* Giai đoạn 3 – Tăng tốc (500 → 700). Hiện có khung + 3 bài. */
 TOEIC.addStage({
-  id: 3, name: "Tăng tốc", range: [500, 700], target: 700, gateTest: null,
+  id: 3, name: "Tăng tốc", range: [500, 700], target: 700, gateTest: "mini3",
   desc: "Ngữ pháp trung cấp (câu điều kiện, bị động, mệnh đề quan hệ, so sánh), đoạn kép Part 7 và câu hỏi kèm biểu đồ ở Part 3–4. (Đang soạn: hiện có 6 bài.)",
   units: [{ id: "u1", title: "Chặng 1 – Ngữ pháp trung cấp", checkpoint: "cp-s3-u1" }, { id: "u2", title: "Chặng 2 – Ngữ pháp trung cấp 2", checkpoint: "cp-s3-u2" }]
 });
